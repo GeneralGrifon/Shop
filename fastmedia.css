@@ -2675,8 +2675,8 @@ textarea::-webkit-scrollbar-thumb
 .star
 {
     position: absolute;
-    top: 45px;
-    right: 180px;
+    top: 47px;
+    right: 175px;
     text-align: center;
     transform: translateZ(600px) scale(0.9);
     width: 100px;
