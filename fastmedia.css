@@ -64,8 +64,9 @@ body
     left: 0;
     width: 1000px;
     height: 1000px;
+    /* background: radial-gradient(#111111, #000000); */
     background: url(shells/Coolcircle.jpg);
-    filter: brightness(0.4) contrast(1.1);
+    filter: brightness(0.4);
     background-size: 100%;
     transform: translate3d(-500px, -245px, 0px) rotateX(90deg);
     backface-visibility: hidden;
@@ -535,7 +536,10 @@ body
   transform: translate3d(330px, -137px, 0px);
 }
 
-
+.smart2.smart2off
+{
+    display: none;
+}
 .scene .smart2
 {
 
@@ -557,7 +561,7 @@ body
 }
 .smart2.active8
 {
-    transform: translate3d(-50px,-380px, 100px) rotateY(-30deg) rotateX(5deg) scale(0.7);
+    transform: translate3d(-120px,-350px, 100px) rotateY(-20deg) rotateX(5deg) scale(0.7);
     filter: blur(1px);
     visibility: visible;
 
@@ -701,12 +705,12 @@ body
 }
 
 
-
+/* 
 .card:hover img
 {
     top: 300px;
     mix-blend-mode: color-dodge; 
-}
+} */
 .color
 {
     position: absolute;
@@ -1424,8 +1428,8 @@ textarea::-webkit-scrollbar-thumb
 .scenerotate
 {
     position: absolute;
-    bottom: 53%;
-    left: 40%;
+    bottom: 18%;
+    left: 35%;
     padding: 15px;
     color: rgb(255, 255, 255);
     font-size: 1rem;
