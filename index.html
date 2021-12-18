@@ -36,8 +36,6 @@
         const selector = document.getElementById('scene');
         selector.style.transform='rotateY(90deg) translateX(-500px) translateZ(-100px)';
         selector.style.transition="2s"
-        const scenerotate = document.getElementById('scenerotate');
-        scenerotate.style.display='none';
 
         // const metascene = document.getElementById('metascene');
         // metascene.style.transform='rotateY(90deg) translateX(-500px)';
@@ -136,8 +134,6 @@
                 const scene = document.getElementById('scene');
                 scene.style.transform='translate3d(0px, 0px, 0px)';
                 scene.style.transition="1.5s"
-                const scenerotate = document.getElementById('scenerotate');
-        scenerotate.style.display='block';
                 // const metascene = document.getElementById('metascene');
                 // metascene.style.transform='translate3d(0px, 0px, 0px)';
                 // metascene.style.transition="1.5s"
@@ -346,7 +342,7 @@
                     </h3></div>
                     <img src="shells/in3.png" alt="">
             </div>
-            <div class="smart">
+            <div id="smart" class="smart">
                 <div class="smartcontent">
                     <div class="smarthand"></div>
                     <h3>Это моя первая работа по веб-дизайну<br>
@@ -701,16 +697,8 @@
         <h1>Beta version:1.0 / 22.11.2021</h1>
     </div>
 
-    <!-- <div id="modedope" class="footer dope" onmousedown="DOPEMODE()", onclick="todope()">
-        <h1>Dope Mode</h1> 
-    </div>
-
-    <div id="modestandart" class="footer standart" onclick="tostandart()">
-        <h1>Click here to exit</h1>
-    </div> -->
-
     <div id="scenerotate" class="scenerotate" onclick="scenerotate()">
-        <div class="stop">Rotate mode</div>
+        <div class="stop">Rotate</div>
     </div>
 
     <div id="textboxselector" class="textboxselector">     
@@ -724,8 +712,10 @@
     $(document).ready(function(){
     $('.fav').on("click", function() {
     $('.favorite').toggleClass('active2');
-    // $('.choi').toggleClass('active5432');
-    $('.scenerotate').toggleClass('scenerotateoff');
+    $('.smart2').removeClass('active8');
+    $('.smart').removeClass('active5');
+    $('.person').removeClass('active10');
+    $('.menu').removeClass('menuon');
     });
     });
 </script>
@@ -734,63 +724,43 @@
     $(document).ready(function(){
     $('.p').on("click", function() {
     $('.person').toggleClass('active10');
-    $('.scenerotate').toggleClass('scenerotateoff');
+    $('.smart').removeClass('active5');
+    $('.smart2').removeClass('active8');
+    $('.favorite').removeClass('active2');
+    $('.poseselect').removeClass('active400');
+    $('.faceselect').removeClass('active401');
+    $('.cardselect').removeClass('active402');
+    $('.pose').removeClass('active7');
+    $('.face').removeClass('active5');
+    $('.card').removeClass('active6');
+    $('.opener').removeClass('openerfoto');
+    $('.menu').removeClass('menuon');
     });
     });
 </script>
 
 
-    <script>
-        const sidepage = document.querySelector('.sidepage');
-        const electroshield3 = document.querySelector('.electroshield3');
-        const cardtoggle4 = document.querySelector('.iside');
-        cardtoggle4.onclick = function(){
-            sidepage.classList.toggle('active4');
-            electroshield3.classList.toggle('active888');
-        }
-    </script>
-
     <!-- <script>
-        const smart2 = document.querySelector('.smart2');
-        const cardtoggle6 = document.querySelector('.music');
-        cardtoggle6.onclick = function(){
-            smart2.classList.toggle('active8');
-        }
-    </script> -->
-
-    <!-- <script>
-        const person = document.querySelector('.person');
-        const cardtoggle8 = document.querySelector('.p');
-        cardtoggle8.onclick = function(){
-            person.classList.toggle('active10');
-        }
-    </script> -->
-
-    <script>
         $(document).ready(function(){
       $('.trigger').on('mouseenter mouseleave', function() {
-    //   $('.sashkelectro').on('click', function() {
-    //   $('.imgsashk').toggleClass('active101');
       $('.manifest').toggleClass('active9');
-
-    //   $('.opener').toggleClass('active1111');
       $('.sashk').toggleClass('active2000');
       $('.reveal').toggleClass('fast');
       $('.grid').toggleClass('active616161');
-    //   $('.body').toggleClass('active00000');
+
     });
     });
-    </script>
+    </script> -->
 
     <script>
     $(document).ready(function(){
     $('.s').on("click", function() {
     $('.smart').toggleClass('active5');
     $('.menu').toggleClass('menuon');
-    $('.fotozzz').toggleClass('fotozzzoff');
-    $('.scenerotate').toggleClass('scenerotateoff');
-    
-    
+    $('.smart2').removeClass('active8');
+    $('.person').removeClass('active10');
+    $('.favorite').removeClass('active2');
+
 
     });
     });
@@ -802,14 +772,18 @@
     $('.poseselect').toggleClass('active400');
     $('.faceselect').toggleClass('active401');
     $('.cardselect').toggleClass('active402');
-    // $('.sashk').toggleClass('active');
     $('.pose').toggleClass('active7');
     $('.face').toggleClass('active5');
     $('.card').toggleClass('active6');
     $('.blocker1').toggleClass('activeblock1');
     $('.blocker2').toggleClass('activeblock2');
     $('.opener').toggleClass('openerfoto');
-    $('.scenerotate').toggleClass('scenerotateoff');
+    $('.person').removeClass('active10');
+    $('.favorite').removeClass('active2');
+    $('.smart2').removeClass('active8');
+    $('.smart').removeClass('active5');
+    $('.menu').removeClass('menuon');
+
     });
     });
 </script>
@@ -836,21 +810,21 @@
     $(document).ready(function(){
     $('.music').on("click", function() {
     $('.smart2').toggleClass('active8');
-    $('.wall1').toggleClass('dance');
+    $('.smart').removeClass('active5');
+    $('.person').removeClass('active10');
+    $('.favorite').removeClass('active2');
+    $('.poseselect').removeClass('active400');
+    $('.faceselect').removeClass('active401');
+    $('.cardselect').removeClass('active402');
+    $('.pose').removeClass('active7');
+    $('.face').removeClass('active5');
+    $('.card').removeClass('active6');
+    $('.opener').removeClass('openerfoto');
+    $('.menu').removeClass('menuon');
     });
     });
 </script>
-
-
-<!-- <script>
-    const smart2 = document.querySelector('.smart2');
-    const cardtoggle6 = document.querySelector('.music');
-    cardtoggle6.onclick = function(){
-        smart2.classList.toggle('active8');
-    }
-</script> -->
     
-
 
 <script type="text/javascript">
     $('.scenerotate').click(function(){  
@@ -1096,43 +1070,25 @@ function myClick() {
         }
     </script>
 
-    <!-- <script>
-    function reveal2() {
-       var element = document.getElementById("reveal");
-       element.classList.remove("active890892");
-       element.classList.add("active890890");
-    }
-    </script>
-
-    <script>
-    function reveal() {
-       var element = document.getElementById("reveal");
-                element.classList.remove("active890890");
-       element.classList.add("active890892");
-    }
-    </script> -->
-
-    <!-- <script>
-    function openerstand() {
-       var element = document.getElementById("opener");
-
-       element.classList.add("active1112");
-    }
-    </script>
-
-<script>
-    function openerfree() {
-       var element = document.getElementById("opener");
-                element.classList.remove("active1112");
-
-    }
-    </script> -->
 
 <script>
         function rotatepro() {
                     var element2 = document.getElementById("workpg");
                     element2.classList.remove("workoff");
                     element2.classList.add("workon");
+                    $('.smart').removeClass('active5');
+    $('.smart2').removeClass('active8');
+    $('.favorite').removeClass('active2');
+    $('.poseselect').removeClass('active400');
+    $('.faceselect').removeClass('active401');
+    $('.cardselect').removeClass('active402');
+    $('.pose').removeClass('active7');
+    $('.face').removeClass('active5');
+    $('.card').removeClass('active6');
+    $('.opener').removeClass('openerfoto');
+    $('.person').removeClass('active10');
+    $('.menu').removeClass('menuon');
+
         }
 </script>
 
@@ -1141,21 +1097,19 @@ function myClick() {
                 var element2 = document.getElementById("workpg");
                 element2.classList.remove("workon");
                 element2.classList.add("workoff");
+
     }
 </script>
 
 <script>
     function texton() {
-    //    var element = document.getElementById("scene");
-    //             element.classList.add("right");
                 var element = document.getElementById("textbox2");
                 element.classList.add("textboxon");
     }
 </script>
 <script>
     function textoff() {
-    //    var element = document.getElementById("scene");
-    //             element.classList.add("right");
+
                 var element = document.getElementById("textbox2");
                 element.classList.remove("textboxon");
     }
@@ -1178,7 +1132,17 @@ function myClick() {
                 var element = document.getElementById("modestandart");
                 element.classList.remove("active4004");
     }
-    </script>
+</script>
+
+<script>
+    const sidepage = document.querySelector('.sidepage');
+    const electroshield3 = document.querySelector('.electroshield3');
+    const cardtoggle4 = document.querySelector('.iside');
+    cardtoggle4.onclick = function(){
+        sidepage.classList.toggle('active4');
+        electroshield3.classList.toggle('active888');
+    }
+</script>
 
 
     <script>
@@ -1186,9 +1150,6 @@ function myClick() {
     sky();
     texton();
     blocker2();
-    // reveal2();
-    // openerstand();
-
 }
     </script>
     <script>
@@ -1196,69 +1157,54 @@ function myClick() {
     back();
     backpro();
     textoff();
-    // blocker3();
-    // reveal();
-    // openerback();
 }
     </script>
 
 <script>
     function startreveal() {
     start();
-    // reveal();
-    // openerback();
 }
 </script>
 
 <script>
     function rotatereveal() {
     rotate();
-    // reveal2();
-    // openerin();
-    // openerstand();
 } 
 </script>
 
 <script>
     function rotate2reveal() {
     rotate2();
-    // reveal2();
     rotatepro();
-    // openerstand();
 } 
 </script>
 
 <script>
     function startsexreveal() {
     start();
-    // reveal();
+
 } 
 </script>
 
 <script>
     function movereveal() {
     move();
-    // reveal2();
-    // openerstand();
 } 
 </script>
 
 <script>
     function carierreveal2() {
     carier();
-    // reveal2();
 } 
 </script>
 <script>
     function lifereveal2() {
     life();
-    // reveal2();
 } 
 </script>
 <script>
     function artreveal2() {
     art();
-    // reveal2();
 } 
 </script>
 
@@ -1370,6 +1316,7 @@ $("#look").on("mousemove", function (t) {
     function closemenu() {
        var element = document.getElementById("menu");
                 element.classList.remove("active");
+                
     }
     </script>
 
