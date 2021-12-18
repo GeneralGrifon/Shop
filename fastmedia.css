@@ -197,7 +197,7 @@ body
     background: url(content/king5.jpg);
     background-size: 100%;
     transition: 1s;
-    border-radius: 33px;
+    border-radius: 20px;
     border: solid 2px  white;
     opacity: 0;
     
@@ -229,7 +229,7 @@ body
     background-size: 180%;
     background-position: 50%;
     transition: 1s;
-    border-radius: 33px;
+    border-radius: 20px;
     border: solid 2px  white;
     opacity: 0;
 
@@ -256,26 +256,23 @@ body
     background-size: 250%;
     background-position: -270px;
     transition: 1s;
-    border-radius: 33px;
-    border: solid 2px  white;
-    opacity: 0; 
-}
-.face:hover
-{
+    border-radius: 20px;
+    border: solid 2px  white; 
     opacity: 0;
-
+    
 }
+
 .face.active5
 {
     opacity: 1;
-    filter: blur(0px) brightness(1) grayscale(0); 
+
 }
 
 .opener
 {
     position: absolute;
     top: -270px;
-    left: -480px;
+    left: -490px;
     height: 520px;
     width: 210px;
     transform:  translateZ(700px);
@@ -285,6 +282,13 @@ body
     cursor: pointer;
     /* outline: 1px solid rgb(0, 119, 255); */
     user-select: none;
+    transition: 0.5s;
+
+}
+.opener.openerfoto
+{
+    transform:  translateZ(630px);
+    opacity: 0.5;
 
 }
 
@@ -553,7 +557,7 @@ body
 }
 .smart2.active8
 {
-    transform: translate3d(-250px,-380px, 100px) rotateY(-30deg) rotateX(5deg) scale(0.7);
+    transform: translate3d(-50px,-380px, 100px) rotateY(-30deg) rotateX(5deg) scale(0.7);
     filter: blur(1px);
     visibility: visible;
 
@@ -646,7 +650,7 @@ body
 {
     position: relative;
     transform-style: preserve-3d;
-    transform: translateX(500px) translateY(-200px) translateZ(200px) rotateY(-90deg);
+    transform: translateX(440px) translateY(-150px) translateZ(170px) rotateY(-90deg) scale(0.7);
     transition: 1s;
     /* filter: blur(10px) brightness(0.2) grayscale(1); */
 
@@ -655,7 +659,7 @@ body
 {
     position: absolute;
     transform-style: preserve-3d;
-    transform: translateX(500px) translateY(-200px) translateZ(200px) rotateY(-90deg);
+    transform: translateX(450px) translateY(-150px) translateZ(170px) rotateY(-90deg) scale(0.7);
     transition: 1s;
     /* filter: blur(10px) brightness(0.1) grayscale(1); */
 
@@ -665,7 +669,7 @@ body
 {
     position: relative;
     transform-style: preserve-3d;
-    transform: translateX(500px) translateY(-200px) translateZ(200px) rotateY(-90deg);
+    transform: translateX(460px) translateY(-150px) translateZ(170px) rotateY(-90deg) scale(0.7);
     transition: 1s;
     /* filter: blur(10px) brightness(0.1) grayscale(1); */
     /* mix-blend-mode: color-burn; */
@@ -674,19 +678,28 @@ body
 
 .poseselect.active400
 {
-    transform: translateX(-480px) translateY(-150px) translateZ(730px) rotateY(0deg);
+    transform: translateX(-490px) translateY(-170px) translateZ(700px) rotateY(0deg);
     /* filter: blur(0px) brightness(1) grayscale(0); */
 }
 .faceselect.active401
 {
-    transform: translateX(-150px) translateY(-150px) translateZ(730px) rotateY(0deg);
+    transform: translateX(-180px) translateY(-170px) translateZ(700px) rotateY(0deg);
     /* filter: blur(0px) brightness(1) grayscale(0); */
 }
 .cardselect.active402
 {
-    transform: translateX(180px) translateY(-150px) translateZ(730px) rotateY(0deg);
+    transform: translateX(130px) translateY(-170px) translateZ(700px) rotateY(0deg);
     /* filter: blur(0px) brightness(1) grayscale(0); */
 }
+.fotozzz
+{
+    display: block;
+}
+.fotozzz.fotozzzoff
+{
+    display: none;
+}
+
 
 
 .card:hover img
@@ -1368,8 +1381,8 @@ textarea::-webkit-scrollbar-thumb
   transform: translateZ(600px) scale(0.9);
   position: absolute;
   color: rgb(255, 255, 255);
-  top: -340px;
-  right: 240px;
+  top: -345px;
+  right: 230px;
   width: 100px;
   height: 100px;
   border: solid 3px white;
@@ -1425,7 +1438,8 @@ textarea::-webkit-scrollbar-thumb
     outline: solid 1px rgb(255, 255, 255);
     cursor: pointer;
     font-size: 1.4rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
 }
 .scenerotate:hover
 {
@@ -1485,7 +1499,7 @@ textarea::-webkit-scrollbar-thumb
     font-size: 4rem;
     border-radius: 15px;
     transition: 1s;
-    transform: translate3d(-700px, 600px, 700px) rotateY(-270deg);
+    transform: translate3d(-700px, 670px, 700px) rotateY(-270deg);
     background: linear-gradient(
       170deg,
       rgba(255,255,255,0.8) 0%,
@@ -1511,7 +1525,7 @@ textarea::-webkit-scrollbar-thumb
       0 10px rgba(0, 0, 0, 0.05) inset,
       0 0 5px 2px rgba(255, 255, 255, 0.75),
       0 0 10px 2px rgba(255, 255, 255, 0.75) inset;
-      transform: translate3d(-700px, 600px, 700px) rotateY(-270deg) rotateY(20deg);
+      transform: translate3d(-700px, 670px, 700px) rotateY(-270deg) rotateY(20deg);
 }
 
 .button-skyleft
@@ -1588,7 +1602,7 @@ textarea::-webkit-scrollbar-thumb
     font-size: 5rem;
     border-radius: 15px;
     transition: 1s;
-    transform: translate3d(100px, 650px, 50px) rotateY(-90deg);
+    transform: translate3d(100px, 650px, 50px) rotateY(-90deg) scale(0.8);
     padding: 15px;
     color: rgba(255, 255, 255, 0.575);
     font-size: 4rem;
