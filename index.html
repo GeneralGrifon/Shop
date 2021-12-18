@@ -27,6 +27,7 @@
         smart2.style.display='none';
         const walleft = document.getElementById('walleft');
         walleft.style.display='block';
+        
     }
     </script>
 
@@ -35,6 +36,9 @@
         const selector = document.getElementById('scene');
         selector.style.transform='rotateY(90deg) translateX(-500px) translateZ(-100px)';
         selector.style.transition="2s"
+        const scenerotate = document.getElementById('scenerotate');
+        scenerotate.style.display='none';
+
         // const metascene = document.getElementById('metascene');
         // metascene.style.transform='rotateY(90deg) translateX(-500px)';
         // metascene.style.transition="2s"
@@ -132,6 +136,8 @@
                 const scene = document.getElementById('scene');
                 scene.style.transform='translate3d(0px, 0px, 0px)';
                 scene.style.transition="1.5s"
+                const scenerotate = document.getElementById('scenerotate');
+        scenerotate.style.display='block';
                 // const metascene = document.getElementById('metascene');
                 // metascene.style.transform='translate3d(0px, 0px, 0px)';
                 // metascene.style.transition="1.5s"
@@ -394,13 +400,13 @@
             </div>  
             <div class="pictures">
                 
-                <div id="card" class="cardselect">
+                <div id="card" class="cardselect fotozzz">
                     <div class="card"></div>
                 </div>
-                <div id="pose"  class="poseselect">
+                <div id="pose"  class="poseselect fotozzz">
                     <div class="pose"></div>
                 </div>
-                <div id="face1"  class="faceselect">
+                <div id="face1"  class="faceselect fotozzz">
                 <div class="face"></div>
                 </div>
                 <div id="opener" class="opener">
@@ -779,10 +785,9 @@
     <script>
     $(document).ready(function(){
     $('.s').on("click", function() {
-    // $('.selector').toggleClass('active204');
     $('.smart').toggleClass('active5');
-    // $('.mask').toggleClass('active500');
     $('.menu').toggleClass('menuon');
+    $('.fotozzz').toggleClass('fotozzzoff');
     $('.scenerotate').toggleClass('scenerotateoff');
     
     
@@ -803,6 +808,8 @@
     $('.card').toggleClass('active6');
     $('.blocker1').toggleClass('activeblock1');
     $('.blocker2').toggleClass('activeblock2');
+    $('.opener').toggleClass('openerfoto');
+    $('.scenerotate').toggleClass('scenerotateoff');
     });
     });
 </script>
@@ -1033,34 +1040,34 @@ function myClick() {
            });
     </script>
 
-<script>
-    var myaudio3 = $("#myaudio")[0];
-    $("#z1/")
+<!-- <script>
+    var myaudio2 = $("#myaudio")[0];
+    $("#z1")
        .mouseenter(function() {
-          myaudio3.play();
+          myaudio2.play();
        });
-       $("#z2/")
+       $("#z2")
        .mouseenter(function() {
-          myaudio3.play();
+          myaudio2.play();
        });
-       $("#z3/")
+       $("#z3")
        .mouseenter(function() {
-          myaudio3.play();
-       }); 
-       var myaudio3 = $("#myaudio")[0];
-        $("#z4/")
+          myaudio2.play();
+       });
+       var myaudio2 = $("#myaudio")[0];
+        $("#z4")
            .mouseenter(function() {
-              myaudio3.play();
+              myaudio2.play();
            });
-           $("#z5/")
+           $("#z5")
            .mouseenter(function() {
-              myaudio3.play();
+              myaudio2.play();
            });
-           $("#z6/")
+           $("#z6")
            .mouseenter(function() {
-              myaudio3.play();
+              myaudio2.play();
            });
-    </script>
+    </script> -->
 
     <script>
         var x = document.getElementById("myTrack"); 
