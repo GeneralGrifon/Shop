@@ -12,10 +12,11 @@ body
     justify-content: center;
     align-items: center;
     /* min-height: 1000px; */
-/*     min-height: 110vh; */
+    /* min-height: 110vh; */
     /* max-width: 100px; */
     /* max-height: 100vh; */
     /* max-height: 500px; */
+    transform: translateY(500px);
     background: rgb(7, 7, 7);
     overflow: hidden;
     transition:  0.4s;
@@ -4073,14 +4074,14 @@ textarea::-webkit-scrollbar-thumb
 /* ART___________________ */
 
 
-@media screen and (max-width: 1700px)
+@media (max-width: 1700px)
 {
     body
     {
         transform: scale(0.9);
     }
 }
-@media  screen and (max-width: 1500px)
+@media (max-width: 1500px)
 {
     body
     {
@@ -4088,7 +4089,7 @@ textarea::-webkit-scrollbar-thumb
     }
 
 }
-@media screen and (max-width: 1300px)
+@media (max-width: 1300px)
 {
     body
     {
@@ -4096,17 +4097,55 @@ textarea::-webkit-scrollbar-thumb
     }
 
 }
-/* 
-
-
-}
-@media screen (max-width: 1000px)
+@media (max-width: 1000px)
 {
     body
     {
-        transform: scale(1) translateX(350px) rotateY(0deg);
+        transform: scale(0.7) translateX(350px);
+    }
+
+
+#link
+{
+  transform: translateY(710px) translateX(-80px) translateZ(500px) scale(0.7);
+  display: none;
+}
+#show
+{
+  transform: translateY(710px) translateX(-60px) translateZ(500px) scale(0.7);
+  display: none;
+}
+#nice
+{
+  transform: translateY(710px) translateX(-30px) translateZ(500px) scale(0.7);
+  display: none;
+  /* visibility: hidden; */
+}
+
+
+#link:hover
+{
+  transform: translateY(710px) translateX(-80px) translateZ(520px) scale(0.7);
+}
+#show:hover
+{
+  transform: translateY(710px) translateX(-70px) translateZ(520px) scale(0.8);
+}
+#nice:hover
+{
+  transform: translateY(710px) translateX(-60px) translateZ(520px) scale(0.8);
+  /* visibility: hidden; */
+}
+
+
+}
+@media (max-width: 640px)
+{
+    body
+    {
+        transform: scale(1) translateX(350px) translateY(500px) rotateY(0deg);
         max-height: 1000px;
-        width: 640px;
+        max-width: 640px;
         /* overflow: scroll; */
     }
     /* .scene.scenedark
