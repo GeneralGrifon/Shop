@@ -13,9 +13,9 @@
 
     <script type="text/javascript">
     function rotate() {
-        const scene = document.getElementById('scene');
-        scene.style.transform='rotateY(-90deg) translateX(0px) translateZ(0px)';
-        scene.style.transition="2s"
+        // const scene = document.getElementById('scene');
+        // scene.style.transform='rotateY(-90deg) translateX(0px) translateZ(0px)';
+        // scene.style.transition="2s"
         // const metascene = document.getElementById('metascene');
         // metascene.style.transform='rotateY(-90deg) translateX(0px) translateZ(0px)';
         // metascene.style.transition="2s"
@@ -33,9 +33,9 @@
 
     <script type="text/javascript">
     function rotate2() {
-        const selector = document.getElementById('scene');
-        selector.style.transform='rotateY(90deg) translateX(-500px) translateZ(-100px)';
-        selector.style.transition="2s"
+        // const selector = document.getElementById('scene');
+        // selector.style.transform='rotateY(90deg) translateX(-500px) translateZ(-100px)';
+        // selector.style.transition="2s"
 
         // const metascene = document.getElementById('metascene');
         // metascene.style.transform='rotateY(90deg) translateX(-500px)';
@@ -61,9 +61,9 @@
     </script>
     <script type="text/javascript">
     function start() {
-            const selector = document.getElementById('scene');
-            selector.style.transform='rotateY(0deg)';
-            selector.style.transition="1.5s"
+            // const selector = document.getElementById('scene');
+            // selector.style.transform='rotateY(0deg)';
+            // selector.style.transition="1.5s"
         //     const metascene = document.getElementById('metascene');
         // metascene.style.transform='rotateY(0deg)';
         // metascene.style.transition="1.5s"
@@ -86,9 +86,9 @@
 
     <script type="text/javascript">
     function move() {
-        const selector = document.getElementById('scene');
-        selector.style.transform='translateZ(1500px) rotateX(3deg)';
-        selector.style.transition="10s"
+        // const selector = document.getElementById('scene');
+        // selector.style.transform='translateZ(1500px) rotateX(3deg)';
+        // selector.style.transition="10s"
         // const grid = document.getElementById('metascene');
         // grid.style.transform='translateZ(3500px) rotateX(3deg)';
         // grid.style.transition="10s"
@@ -109,9 +109,9 @@
 
     <script type="text/javascript">
     function sky() {
-        const selector = document.getElementById('scene');
-        selector.style.transform='translate3d(0px, 300px, 300px) rotateX(45deg)';
-        selector.style.transition="1s"
+        // const selector = document.getElementById('scene');
+        // selector.style.transform='translate3d(0px, 300px, 300px) rotateX(45deg)';
+        // selector.style.transition="1s"
         // const grid = document.getElementById('metascene');
         // grid.style.transform='translate3d(0px, 100px, 500px) rotateX(45deg)';
         // grid.style.transition="1s"
@@ -131,9 +131,9 @@
 
     <script type="text/javascript">
     function back() {
-                const scene = document.getElementById('scene');
-                scene.style.transform='translate3d(0px, 0px, 0px)';
-                scene.style.transition="1.5s"
+                // const scene = document.getElementById('scene');
+                // scene.style.transform='translate3d(0px, 0px, 0px)';
+                // scene.style.transition="1.5s"
                 // const metascene = document.getElementById('metascene');
                 // metascene.style.transform='translate3d(0px, 0px, 0px)';
                 // metascene.style.transition="1.5s"
@@ -305,8 +305,8 @@
                 <button class="button2" onclick=" backblock()">down</button>
                 <button id="button3" class="button3" onclick=" backblock()">back</button>
                 <button class="button-startleft" onclick="startreveal()">back</button>
+                <button class="button-startmusic" onclick="startreveal()">back</button>
                 <button class="button-startsex" onclick="startsexreveal()">back</button>
-                
 
             </div>
             <div class="workpage">
@@ -331,7 +331,7 @@
                 </div>
             </div>
              -->
-<!--             <div class="manifest">
+            <div class="manifest">
                 <div class="manifestblur"></div>
                 <div class="content2">
                     <h3>Alex Only<br>
@@ -341,7 +341,7 @@
                         - Продюсер<br>
                     </h3></div>
                     <img src="shells/in3.png" alt="">
-            </div> -->
+            </div>
             <div id="smart" class="smart">
                 <div class="smartcontent">
                     <div class="smarthand"></div>
@@ -429,7 +429,7 @@
                     <iframe id="w2" width="400" height="225" src="https://www.youtube.com/embed/E4K71wdckNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>;
 
                 </div>
-                <div id="z3" class="star">
+                <div id="z3" class="star" onclick="sceneleft2()" >
                     <audio id="myaudio2" preload="auto">
                         <source src="audio/cl.ogg"></audio></li>
                     <img src="shells/message3.png" class="s" id="s">
@@ -447,7 +447,6 @@
                           
                         </div>
                         <li><a href="#">Art</a></li>
-                     
                     </ul>
                 </div>
                 <div id="z4" class="person">
@@ -706,6 +705,8 @@
 
     <div id="look" class="look" onmouseenter="LOOKMODE()"></div>
 
+    <!-- <div class="darker"></div> -->
+
     <!-- <audio id="mySoundClip"><source src="/audio/cl.ogg" type="audio/mp3" /></audio> -->
 
 <script>
@@ -820,7 +821,8 @@
     $('.face').removeClass('active5');
     $('.card').removeClass('active6');
     $('.opener').removeClass('openerfoto');
-    $('.menu').removeClass('menuon');
+    $('.scene').addClass('scenemusic');
+    $('.wall3').addClass('dance');
     });
     });
 </script>
@@ -1070,13 +1072,57 @@ function myClick() {
         }
     </script>
 
+<script>
+    function sceneright() 
+    {
+       var element = document.getElementById("scene");
+       element.classList.add("sceneright");
+    }
+    function sceneleft() 
+    {
+       var element = document.getElementById("scene");
+       element.classList.add("sceneleft");
+    }
+    function sceneleft2() 
+    {
+       var element = document.getElementById("scene");
+       element.classList.add("sceneleft2");
+    }
+    function scenemove() 
+    {
+       var element = document.getElementById("scene");
+       element.classList.add("scenemove");
+    }
+    function scenesky() 
+    {
+       var element = document.getElementById("scene");
+       element.classList.add("scenesky");
+    }
+    function scenedefault() {
+                var element = document.getElementById("scene");
+                element.classList.remove("sceneright");
+                element.classList.remove("sceneleft");
+                element.classList.remove("sceneleft2");
+                element.classList.remove("scenemove");
+                element.classList.remove("scenesky");
+                element.classList.remove("scenemusic");
+                var element2 = document.getElementById("smart");
+                element2.classList.remove("active5");
+                var element3 = document.getElementById("smart2");
+                element3.classList.remove("active8");
+                var element4 = document.getElementById("wall3");
+                element4.classList.remove("dance");
+
+    }
+</script>
+
 
 <script>
         function rotatepro() {
                     var element2 = document.getElementById("workpg");
                     element2.classList.remove("workoff");
                     element2.classList.add("workon");
-                    $('.smart').removeClass('active5');
+    $('.smart').removeClass('active5');
     $('.smart2').removeClass('active8');
     $('.favorite').removeClass('active2');
     $('.poseselect').removeClass('active400');
@@ -1097,7 +1143,6 @@ function myClick() {
                 var element2 = document.getElementById("workpg");
                 element2.classList.remove("workon");
                 element2.classList.add("workoff");
-
     }
 </script>
 
@@ -1149,7 +1194,8 @@ function myClick() {
         function skyblock() {
     sky();
     texton();
-    blocker2();
+    // blocker2();
+    scenesky();
 }
     </script>
     <script>
@@ -1157,18 +1203,21 @@ function myClick() {
     back();
     backpro();
     textoff();
+    scenedefault();
 }
     </script>
 
 <script>
     function startreveal() {
     start();
+    scenedefault();
 }
 </script>
 
 <script>
     function rotatereveal() {
     rotate();
+    sceneleft();
 } 
 </script>
 
@@ -1176,12 +1225,15 @@ function myClick() {
     function rotate2reveal() {
     rotate2();
     rotatepro();
+    sceneright();
 } 
 </script>
 
 <script>
     function startsexreveal() {
     start();
+    scenedefault();
+    
 
 } 
 </script>
@@ -1189,6 +1241,7 @@ function myClick() {
 <script>
     function movereveal() {
     move();
+    scenemove();
 } 
 </script>
 
