@@ -4090,7 +4090,7 @@ textarea::-webkit-scrollbar-thumb
 
 }
 
-@media screen and (max-width: 1300px)
+@media screen and (max-width: 1000px)
 {
     body
     {
@@ -4139,9 +4139,14 @@ textarea::-webkit-scrollbar-thumb
     {
         overflow: hidden;
         transform: scale(1) translateX(350px) translateY(500px) rotateY(0deg);
-        max-height: 1000px;
-        max-width: 640px;
+        /* min-height: 200px; */
+        max-width: 1000px;
         /* overflow: scroll; */
+    }
+    .footer
+    {
+        top: 0;
+        left: 0;
     }
     /* .scene.scenedark
     {
@@ -4658,4 +4663,11 @@ svg
 
 
 
-  
+    
+
+
+
+
+
+
+    
