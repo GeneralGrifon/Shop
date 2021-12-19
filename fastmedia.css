@@ -4133,14 +4133,14 @@ textarea::-webkit-scrollbar-thumb
 
 
 }
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 800px)
 {
     body
     {
         overflow: hidden;
         transform: scale(1) translateX(350px) translateY(500px) rotateY(0deg);
         /* min-height: 200px; */
-        max-width: 1000px;
+        min-width: 800px;
         /* overflow: scroll; */
     }
     .footer
@@ -4256,7 +4256,7 @@ textarea::-webkit-scrollbar-thumb
     }
     .wall.wall3.dance
     {
-        background: url(https://i.gifer.com/4RNk.gif); 
+        background: url(music.gif); 
     filter: hue-rotate(-30deg);
     background-position: 20% 100%;
     background-size: 100%;
@@ -4321,7 +4321,10 @@ textarea::-webkit-scrollbar-thumb
         left: -250px;
 
     }
-
+    .favorite iframe
+    {
+        width: 500px;
+    }
     #z1
     {
         transform: translateZ(300px) scale(0.9);
