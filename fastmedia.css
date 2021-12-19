@@ -4090,7 +4090,7 @@ textarea::-webkit-scrollbar-thumb
 
 }
 
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 1300px)
 {
     body
     {
@@ -4133,7 +4133,7 @@ textarea::-webkit-scrollbar-thumb
 
 
 }
-@media screen and (max-width: 640px)
+@media screen and (max-width: 1000px)
 {
     body
     {
