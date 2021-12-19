@@ -4073,14 +4073,14 @@ textarea::-webkit-scrollbar-thumb
 /* ART___________________ */
 
 
-@media (max-width: 1700px)
+@media screen and (max-width: 1700px)
 {
     body
     {
         transform: scale(0.9);
     }
 }
-@media (max-width: 1500px)
+@media  screen and (max-width: 1500px)
 {
     body
     {
@@ -4088,7 +4088,7 @@ textarea::-webkit-scrollbar-thumb
     }
 
 }
-@media (max-width: 1300px)
+@media screen and (max-width: 1300px)
 {
     body
     {
@@ -4096,7 +4096,7 @@ textarea::-webkit-scrollbar-thumb
     }
 
 }
-@media (max-width: 1000px)
+@media screen and (max-width: 1000px)
 {
     body
     {
@@ -4138,7 +4138,7 @@ textarea::-webkit-scrollbar-thumb
 
 
 }
-@media (max-width: 800px)
+@media screen and (max-width: 800px)
 {
     body
     {
