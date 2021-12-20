@@ -1010,6 +1010,9 @@ textarea::-webkit-scrollbar-thumb
     height: 100px;
     position: absolute;
     outline: rgb(0, 42, 255) 1px solid;
+    box-shadow: 0 0 5px rgb(231, 255, 13),
+    0 0 10px rgb(255, 251, 13),
+    0 0 50px rgb(231, 255, 13); 
 
 }
 #modestandart
@@ -4136,10 +4139,10 @@ textarea::-webkit-scrollbar-thumb
         top: 0;
         left: -500px;
         outline: rgb(215, 255, 235);
-        box-shadow: 0 0 5px rgb(13, 255, 13),
-        0 0 10px rgb(13, 255, 45),
-        0 0 50px rgb(13, 255, 45); 
-        mix-blend-mode: color-dodge;
+        box-shadow: 0 0 5px rgb(231, 255, 13),
+        0 0 10px rgb(255, 251, 13),
+        0 0 50px rgb(231, 255, 13); 
+        /* mix-blend-mode: color-dodge; */
     }
 
     .menu
@@ -4677,3 +4680,15 @@ svg
     width: 50px;
     transform: scale(0.5);
   }
+  
+
+
+
+    
+
+
+
+
+
+
+    
