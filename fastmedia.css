@@ -1469,9 +1469,9 @@ textarea::-webkit-scrollbar-thumb
     font-size: 1.4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: block;
-    box-shadow: 0 0 5px rgb(255, 0, 0),
-    0 0 10px rgb(255, 0, 0),
-    0 0 20px rgb(255, 0, 0);
+    box-shadow: 0 0 5px rgb(0, 255, 55),
+    0 0 10px rgb(9, 255, 0),
+    0 0 20px rgb(0, 255, 64);
 }
 .scenerotate:hover
 {
@@ -4138,12 +4138,13 @@ textarea::-webkit-scrollbar-thumb
     {
         top: 0;
         left: -500px;
-        outline: hotpink;
-        box-shadow: 0 0 5px rgb(255, 13, 13),
-        0 0 10px rgb(255, 13, 13),
-        0 0 50px rgb(255, 13, 13); 
+        outline: rgb(215, 255, 235);
+        box-shadow: 0 0 5px rgb(13, 255, 13),
+        0 0 10px rgb(13, 255, 45),
+        0 0 50px rgb(13, 255, 45); 
         mix-blend-mode: color-dodge;
     }
+
     .menu
     {
         display: none;
