@@ -1469,6 +1469,9 @@ textarea::-webkit-scrollbar-thumb
     font-size: 1.4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: block;
+    box-shadow: 0 0 5px rgb(255, 0, 0),
+    0 0 10px rgb(255, 0, 0),
+    0 0 20px rgb(255, 0, 0);
 }
 .scenerotate:hover
 {
@@ -4118,6 +4121,7 @@ textarea::-webkit-scrollbar-thumb
 
 
 } */
+
 @media screen and (max-width: 800px)
 {
     body
@@ -4125,7 +4129,7 @@ textarea::-webkit-scrollbar-thumb
         /* display: block; */
         transform: translateX(600px) translateY(500px);
 
-        overflow: hidden;
+        overflow-y: scroll;
         max-width: 0px;
 
         outline: 3px solid red;
@@ -4133,10 +4137,11 @@ textarea::-webkit-scrollbar-thumb
     .footer
     {
         top: 0;
-        left: 0;
-        box-shadow: 0 0 5px rgb(13, 49, 255),
-        0 0 10px rgb(13, 49, 255),
-        0 0 50px rgb(13, 49, 255); 
+        left: -500px;
+        outline: hotpink;
+        box-shadow: 0 0 5px rgb(255, 13, 13),
+        0 0 10px rgb(255, 13, 13),
+        0 0 50px rgb(255, 13, 13); 
         mix-blend-mode: color-dodge;
     }
     .menu
