@@ -16,7 +16,7 @@ body
     /* max-width: 100px; */
     /* max-height: 100vh; */
     /* max-height: 500px; */
-    /* transform: translateY(500px); */
+    transform: translateY(500px);
     background: rgb(7, 7, 7);
     overflow: hidden;
     transition:  0.4s;
@@ -4127,7 +4127,7 @@ textarea::-webkit-scrollbar-thumb
     body
     {
         /* display: block; */
-        /* transform: translateX(600px) translateY(500px); */
+        transform: translateX(600px) translateY(500px);
 
         overflow-y: scroll;
         max-width: 0px;
