@@ -1013,8 +1013,8 @@ textarea::-webkit-scrollbar-thumb
     width: 200px;
     height: 100px;
     position: absolute;
-    outline: rgb(13, 49, 255) 1px solid;
-    border-radius: 10px;
+    outline: rgb(0, 42, 255) 1px solid;
+
 }
 #modestandart
 {
@@ -4118,20 +4118,26 @@ textarea::-webkit-scrollbar-thumb
 
 
 } */
-@media screen and (max-width: 800px)
+@media screen and (max-width: 1000px)
 {
     body
     {
         overflow: hidden;
-        transform: scale(1) translateX(350px) translateY(500px) rotateY(0deg);
-        /* min-height: 200px; */
-        max-width: 500px;
-        /* overflow: scroll; */
+        transform: scale(0.8) translateX(350px) translateY(500px) rotateY(0deg);
+
+        overflow: hidden;
+        max-width: 0px;
+
+        outline: 3px solid red;
     }
     .footer
     {
         top: 0;
         left: 0;
+        box-shadow: 0 0 5px rgb(13, 49, 255),
+        0 0 10px rgb(13, 49, 255),
+        0 0 50px rgb(13, 49, 255); 
+        mix-blend-mode: color-dodge;
     }
     .menu
     {
