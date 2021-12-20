@@ -4074,7 +4074,7 @@ textarea::-webkit-scrollbar-thumb
 /* ART___________________ */
 
 
-@media screen and (max-width: 1700px)
+/* @media screen and (max-width: 1700px)
 {
     body
     {
@@ -4088,7 +4088,7 @@ textarea::-webkit-scrollbar-thumb
         transform: scale(0.85) translateY(500px);
     }
 
-}
+} */
 
 /* @media screen and (max-width: 1000px)
 {
@@ -4118,12 +4118,12 @@ textarea::-webkit-scrollbar-thumb
 
 
 } */
-@media screen and (max-width: 1000px)
+@media (max-width: 600px)
 {
     body
     {
-        overflow: hidden;
-        transform: scale(0.8) translateX(350px) translateY(500px) rotateY(0deg);
+        /* display: block; */
+        transform: translateX(600px) translateY(500px);
 
         overflow: hidden;
         max-width: 0px;
