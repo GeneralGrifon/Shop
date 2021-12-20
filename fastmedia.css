@@ -10,13 +10,9 @@ body
 {   
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* min-height: 1000px; */
-    /* min-height: 110vh; */
-    /* max-width: 100px; */
-    /* max-height: 100vh; */
-    /* max-height: 500px; */
-    transform: translateY(500px);
+    /* max-height: 100%; */
+    /* align-items: center; */
+    transform: translateY(500px) scale(100%);
     background: rgb(7, 7, 7);
     overflow: hidden;
     transition:  0.4s;
@@ -4122,12 +4118,12 @@ textarea::-webkit-scrollbar-thumb
 
 } */
 
-@media (max-width: 500px)
+@media (max-width: 600px)
 {
     body
     {
         /* display: block; */
-        transform: translateX(1000px) translateY(800px) scale(1.6);
+        transform: translateX(620px) translateY(450px) scale(95%);
         /* height: 500px; */
 
         /* overflow-y: scroll; */
