@@ -4126,10 +4126,10 @@ textarea::-webkit-scrollbar-thumb
     body
     {
         /* display: block; */
-        transform: translateX(1000px) translateY(670px) scale(150%);
+        transform: translateX(1100px) translateY(750px) scale(170%);
         /* height: 500px; */
 
-        /* overflow-y: scroll; */
+        overflow-y: scroll;
         max-width: 0px;
 
         outline: 3px solid red;
