@@ -4183,7 +4183,7 @@ textarea::-webkit-scrollbar-thumb
     }
     .scene.sceneright
     {
-        transform: rotateY(90deg) translateX(300px);
+        transform: rotateY(90deg) translateX(300px) translateZ(-30px);
 
     }
     .scene.sceneleft2
@@ -4336,13 +4336,14 @@ textarea::-webkit-scrollbar-thumb
         }
     .v1
     {
-        top: 100px;
-        left: -250px;
+        top: 120px;
+        left: -245px;
 
     }
     .favorite iframe
     {
         width: 500px;
+        transform: scale(1.1);
     }
     #z1
     {
@@ -4382,11 +4383,11 @@ textarea::-webkit-scrollbar-thumb
     }
     .poseselect.active400
     {
-        transform: translateX(-440px) translateY(-220px) translateZ(401px) rotateY(0deg) scale(0.9);
+        transform: translateX(-440px) translateY(-210px) translateZ(401px) rotateY(0deg) scale(0.9);
     }
     .faceselect.active401
     {
-        transform: translateX(-420px) translateY(-130px) translateZ(400px) rotateY(0deg) scale(0.9);
+        transform: translateX(-420px) translateY(-120px) translateZ(400px) rotateY(0deg) scale(0.9);
     }
     .cardselect.active402
     {
