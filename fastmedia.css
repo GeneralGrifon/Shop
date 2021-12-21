@@ -4129,7 +4129,7 @@ textarea::-webkit-scrollbar-thumb
         transform: translateX(1200px) translateY(900px) scale(195%);
         /* height: 500px; */
 
-        /* overflow: scroll; */
+        overflow: scroll;
         max-width: 0px;
 
         outline: 3px solid red;
@@ -4183,7 +4183,7 @@ textarea::-webkit-scrollbar-thumb
     }
     .scene.sceneright
     {
-        transform: rotateY(90deg) translateX(300px) translateZ(-30px);
+        transform: rotateY(90deg) translateX(300px) translateZ(-20px);
 
     }
     .scene.sceneleft2
@@ -4340,6 +4340,11 @@ textarea::-webkit-scrollbar-thumb
         left: -245px;
 
     }
+    .v1:hover
+{
+    z-index: 10;
+    transform: scale(1)
+}
     .favorite iframe
     {
         width: 500px;
@@ -4409,13 +4414,13 @@ textarea::-webkit-scrollbar-thumb
     .button-startleft
 {
 
-    transform: translate3d(-350px, 690px, 330px) rotateY(-270deg) scale(0.7);
+    transform: translate3d(-350px, 690px, 345px) rotateY(-270deg) scale(0.7);
     
 
 }
 .button-startleft:hover
 {
-      transform: translate3d(-350px, 690px, 330px) rotateY(-270deg) rotateY(20deg) scale(0.7);
+      transform: translate3d(-350px, 690px, 345px) rotateY(-270deg) rotateY(20deg) scale(0.7);
 }
 
 .button-startmusic
