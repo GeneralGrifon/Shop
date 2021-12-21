@@ -4121,7 +4121,7 @@ textarea::-webkit-scrollbar-thumb
 
 } */
 
-@media (max-width: 600px) and (orientation: portrait)  
+@media (max-width: 1000px)  
 {
     body
     {
