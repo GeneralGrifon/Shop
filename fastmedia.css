@@ -63,7 +63,7 @@ body
     width: 1000px;
     height: 1000px;
     /* background: radial-gradient(#111111, #000000); */
-    background: url(/Coolcircle2.png);
+    background: url(Coolcircle2.png);
     filter: brightness(0.4);
     background-size: 100%;
     transform: translate3d(-500px, -245px, 0px) rotateX(90deg);
