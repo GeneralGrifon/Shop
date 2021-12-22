@@ -63,7 +63,7 @@ body
     width: 1000px;
     height: 1000px;
     /* background: radial-gradient(#111111, #000000); */
-    background: url(shells/Coolcircle.jpg);
+    background: url(/Coolcircle2.png);
     filter: brightness(0.4);
     background-size: 100%;
     transform: translate3d(-500px, -245px, 0px) rotateX(90deg);
@@ -573,7 +573,7 @@ body
     background-size: 2000px;
     border-radius: 20px;
     transform: translate3d(-90px, -50px,200px) rotateY(0deg) rotateX(90deg) scale(0.7);
-    filter: blur(1px);
+    /* filter: blur(1px); */
     transition: 0.7s;
     transition-delay: 0.1s;
     border: solid 3px white;
@@ -583,7 +583,7 @@ body
 .smart2.active8
 {
     transform: translate3d(-120px,-350px, 100px) rotateY(-20deg) rotateX(5deg) scale(0.7);
-    filter: blur(1px);
+    /* filter: blur(1px); */
     visibility: visible;
 
 }
@@ -604,7 +604,7 @@ body
 
 .scene .smart2:hover
 {
-    filter: blur(0.4px);
+    /* filter: blur(0.4px); */
     background: #000000b4;
     height: 666px;
     border: solid 3px wheat;     
@@ -614,7 +614,7 @@ body
 {
   position: absolute;
   /* padding: 10px;    */
-  transform: translate3d(-310px, -20px, 0px) scale(1);
+  transform: translate3d(-306px, -14px, 0px) scale(1);
   height: 680px;
   transition: 0.7s;
   opacity: 0.9;
@@ -986,7 +986,7 @@ textarea::-webkit-scrollbar-thumb
     position: absolute;
     width: 300px;
     height: 300px;
-    top: 0;
+    top: -400px;
     right: 0;
     display: none;
 
@@ -1004,15 +1004,16 @@ textarea::-webkit-scrollbar-thumb
 }
 .footer
 {
-    bottom: 100px;
+    transform: scale(0.8);
+    bottom: -420px;
     right: 20px;
     width: 200px;
     height: 100px;
     position: absolute;
     outline: rgb(0, 42, 255) 1px solid;
-    box-shadow: 0 0 5px rgb(231, 255, 13),
+    /* box-shadow: 0 0 5px rgb(231, 255, 13),
     0 0 10px rgb(255, 251, 13),
-    0 0 50px rgb(231, 255, 13); 
+    0 0 50px rgb(231, 255, 13);  */
 
 }
 #modestandart
@@ -1132,7 +1133,7 @@ textarea::-webkit-scrollbar-thumb
     width: 998px;
     height: 998px;
     border: 2px solid #ffffff46;
-    filter: saturate(0.6);
+    /* filter: contrast(1.6); */
     background-size: 2000px;
     backface-visibility: hidden;
     
@@ -1142,7 +1143,8 @@ textarea::-webkit-scrollbar-thumb
 .wall.wall1
 {
     /* TOP!!!!!!!!! */
-    background: radial-gradient(#000e4b, #000000);
+    /* background: radial-gradient(#000e4b, #000000); */
+    background: radial-gradient(#1f1f1f, #000000);
     transform: translate3d(-500px,-750px,-500px);
 
 
@@ -1161,11 +1163,12 @@ textarea::-webkit-scrollbar-thumb
 .wall.wall2 
 {
     /* RIGHT!!!  */
+    background: radial-gradient(#1f1f1f, #000000);
     /* background-color: rgb(0, 0, 0); */
-    background: radial-gradient(#00025f, #000000);
+    /* background: radial-gradient(#00025f, #000000); */
 
     transform: translate3d(0px,-750px, 0px) rotateY(270deg) rotateZ(-0deg);
-    transition: 1s;
+    /* transition: 1s; */
     border-radius: 1px;
     text-align: center;
 
@@ -1178,7 +1181,8 @@ textarea::-webkit-scrollbar-thumb
 
     /* BACK!!!! */
     transform: translate3d(-500px, -750px, 500px) rotateY(180deg);
-    background: radial-gradient(#00025f, #000000);
+    /* background: radial-gradient(#00025f, #000000); */
+    background: radial-gradient(#1f1f1f, #000000);
 
     background-size: cover;
     background-position: 50%;
@@ -1190,7 +1194,8 @@ textarea::-webkit-scrollbar-thumb
 }
 .wall.wall4
 {
-    background: radial-gradient(#00025f, #000000);
+    background: radial-gradient(#1f1f1f, #000000);
+    /* background: radial-gradient(#00025f, #000000); */
 
         transform: translate3d(-1000px,-750px, 0px) rotateY(90deg) rotateZ(0deg);
     transition: 0.2s;
@@ -1452,12 +1457,12 @@ textarea::-webkit-scrollbar-thumb
 .scenerotate
 {
     position: absolute;
-    bottom: 18%;
-    left: 35%;
+    bottom: 200px;
+    left: 5%;
     padding: 15px;
     color: rgb(255, 255, 255);
     font-size: 1rem;
-    width: 100px;
+    width: 80px;
     height: 60px;
     background-color: rgba(255, 255, 255, 0.027);
     border-radius: 7px;
@@ -1468,9 +1473,9 @@ textarea::-webkit-scrollbar-thumb
     font-size: 1.4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: block;
-    box-shadow: 0 0 5px rgb(0, 255, 55),
+    /* box-shadow: 0 0 5px rgb(0, 255, 55),
     0 0 10px rgb(9, 255, 0),
-    0 0 20px rgb(0, 255, 64);
+    0 0 20px rgb(0, 255, 64); */
 }
 .scenerotate:hover
 {
@@ -3417,7 +3422,7 @@ textarea::-webkit-scrollbar-thumb
 
 .block
 {
-    top: 10px;
+    top: -450px;
     right: 5px;
     position: absolute;
     width: 666px;
@@ -3446,9 +3451,9 @@ textarea::-webkit-scrollbar-thumb
     top: 5px;
     left: 5px;
     position: relative;
-    width: 1000px;
+    width: 600px;
     height: 220px;
-    outline: solid 2px rgb(0, 0, 0);
+    /* outline: solid 2px rgb(102, 255, 0); */
     border-radius: 5px;
     /* display: none; */
     /* z-index: 10; */
@@ -3460,7 +3465,7 @@ textarea::-webkit-scrollbar-thumb
     left: 10px;
     /* color: green; */
     /* height: 50px; */
-    width: 60%;
+    width: 100%;
     /* filter: invert(1); */
     outline: solid 2px black;
     /* padding-top: 30px; */
@@ -3615,7 +3620,7 @@ textarea::-webkit-scrollbar-thumb
 .events
 {
     left: 20px;
-    top: 100px;
+    top: -450px;
     position: absolute;
     width: 920px;
     height: 790px;
