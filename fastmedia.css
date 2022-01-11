@@ -17,6 +17,7 @@ body
     overflow: hidden;
     transition:  0.4s;
     perspective: 1000px;
+    -webkit-perspective: 1000px;
     cursor: url(shells/cursour33.png), auto;
     /* transform: scale(1.5) translateX(200px) translateY(200px); */
 }
@@ -63,7 +64,7 @@ body
     width: 1000px;
     height: 1000px;
     /* background: radial-gradient(#111111, #000000); */
-    background: url(Coolcircle2.png);
+    background: url(/Coolcircle2.png);
     filter: brightness(0.4);
     background-size: 100%;
     transform: translate3d(-500px, -245px, 0px) rotateX(90deg);
@@ -73,6 +74,7 @@ body
 {
     transition: 2s;
     transform: rotateY(90deg) translateX(-500px) translateZ(-100px);
+    /* transform: rotateY(90deg); */
 
 }
 .scene.sceneleft
@@ -1143,8 +1145,11 @@ textarea::-webkit-scrollbar-thumb
 .wall.wall1
 {
     /* TOP!!!!!!!!! */
-    /* background: radial-gradient(#000e4b, #000000); */
-    background: radial-gradient(#1f1f1f, #000000);
+    background: radial-gradient(#2c2c2c, #000000);
+    /* background: url(top.gif); */
+    /* background-size: cover; */
+    /* background-size: 110%; */
+    /* background: radial-gradient(#1f1f1f, #000000); */
     transform: translate3d(-500px,-750px,-500px);
 
 
@@ -1456,7 +1461,6 @@ textarea::-webkit-scrollbar-thumb
 }
 .scenerotate
 {
-    display: none;
     position: absolute;
     bottom: 200px;
     left: 5%;
@@ -1473,7 +1477,7 @@ textarea::-webkit-scrollbar-thumb
     cursor: pointer;
     font-size: 1.4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-/*     display: block; */
+    display: none;
     /* box-shadow: 0 0 5px rgb(0, 255, 55),
     0 0 10px rgb(9, 255, 0),
     0 0 20px rgb(0, 255, 64); */
@@ -1675,7 +1679,7 @@ textarea::-webkit-scrollbar-thumb
     font-size: 5rem;
     border-radius: 15px;
     transition: 1s;
-    transform: translate3d(100px, 650px, 50px) rotateY(-90deg) scale(0.8);
+    transform: translate3d(480px, 670px, 50px) rotateY(-90deg) scale(0.6);
     padding: 15px;
     color: rgba(255, 255, 255, 0.575);
     font-size: 4rem;
@@ -1852,6 +1856,18 @@ textarea::-webkit-scrollbar-thumb
 {
   transform: translateY(680px) translateX(410px) translateZ(370px);
   /* visibility: hidden; */
+}
+#link.btnoff
+{
+    display: none;
+}
+#show.btnoff
+{
+    display: none;
+}
+#nice.btnoff
+{
+    display: none;
 }
 
 
@@ -2412,6 +2428,62 @@ textarea::-webkit-scrollbar-thumb
 
 }
 /* TEXTBOX_________________ */
+.clients
+{
+    transform-style: preserve-3d;
+    top: 0px;
+    left: 100px;
+    position: absolute;
+    width: 300px;
+    height: 410px;
+    /* background-color: rgba(255, 217, 0, 0.041); */
+    /* outline: solid 1px rgb(255, 217, 0); */
+    border-radius: 7px;
+}
+.mixed
+{
+    transform-style: preserve-3d;
+    top: 0px;
+    left: 500px;
+    position: absolute;
+    width: 300px;
+    height: 410px;
+    /* background-color: rgba(255, 217, 0, 0.041); */
+    /* outline: solid 1px rgb(255, 217, 0); */
+    border-radius: 7px;
+}
+.clients h1
+{
+    position: relative;
+    top: -40px;
+    float: left;
+    /* left: 0; */
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.mixed h1
+{
+    position: relative;
+    top: -40px;
+    float: left;
+    /* left: 0; */
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cover::after
+{
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background-color: aqua;
+    top: 0;
+    left: 0;
+}
 
 #workpg
 {
@@ -2472,10 +2544,10 @@ textarea::-webkit-scrollbar-thumb
 {
     position: absolute;
     border: solid 1px white;
-    /* border-radius: 15px; */
+    margin-left: 2%;
+    margin-top: 2%;
     transform: scale(1);
-    
-    
+    border-radius: 10px;
 }
 #w1
 {
@@ -2486,8 +2558,404 @@ textarea::-webkit-scrollbar-thumb
 #w2
 {
     top: 0px;
-    left: 450px;
+    left: 150px;
     /* display: none; */
+}
+#w3
+{
+    top: 140px;
+    left: 0px;
+    /* display: none; */
+}
+#w4
+{
+    top: 140px;
+    left: 150px;
+    /* display: none; */
+}
+#w5
+{
+    top: 280px;
+    left: 0px;
+    /* display: none; */
+}
+#w6
+{
+    top: 280px;
+    left: 150px;
+    /* display: none; */
+}
+/* MIXED _________________ */
+.pdcd
+{
+    right: 0;
+    top: -500px;
+    position: absolute;
+    width: 55%;
+    height: 1000px;
+    background-color: rgba(255, 255, 255, 0.527);
+    backdrop-filter: blur(10px);
+    outline: 1px solid white;
+    display: none;
+}
+.productcard1
+{
+    display: none;
+}
+.productcard1.cardon
+{
+    display: block;
+}
+.productcard1 button
+{
+
+    bottom: -200px;
+    right: -20px;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(0, 110, 255);
+    color: black;
+    cursor: pointer;
+}
+.if1
+{
+    position: absolute;
+    display: none;
+}
+.if1.ifon
+{
+    display: block;
+}
+.if2
+{
+    position: absolute;
+    display: none;
+}
+.if2.ifon
+{
+    display: block;
+}
+.if3
+{
+    position: absolute;
+    display: none;
+}
+.if3.ifon
+{
+    display: block;
+}
+.if4
+{
+    position: absolute;
+    display: none;
+}
+.if4.ifon
+{
+    display: block;
+}
+/* .productcard2
+{
+    display: none;
+}
+.productcard3
+{
+    display: none;
+} */
+
+/* 
+.productcard2.cardon
+{
+    display: block;
+}
+.productcard3.cardon
+{
+    display: block;
+}
+.productcard4.cardon
+{
+    display: block;
+} */
+.pdiframe iframe
+{
+    position: relative;
+    margin-left: 4%;
+    margin-top: 3%;
+}
+
+
+.pdiframe img
+{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 8%;
+    cursor: pointer;
+
+}
+.mixcover
+{
+    margin-top: 2%;
+    margin-left: 2%;
+    position: absolute;
+    width: 130px;
+    height: 0px;
+    background-color: rgba(255, 255, 255, 0.692);
+    transition: 0.5s;
+   text-align: center;
+   border-radius: 10px;
+
+    
+
+}
+.mixcover:hover
+{
+    height: 130px;
+}
+.mixcover h1
+{
+    top: 8%;
+    position: absolute;
+    font-size: 0.9rem;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.mixcover:hover h1
+{
+    opacity: 1;
+}
+.mixcover a
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0;
+    top: 0px;
+    position: relative;
+    color: white;
+    background-color: rgb(0, 153, 255);
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    cursor: pointer;
+    /* border-radius: 10px; */
+    text-decoration: none;
+    transition: 0.5s;
+}
+.mixcover:hover a
+{
+    opacity: 1;
+    top: 80px;
+    
+}
+.mixcover a:hover
+{
+    background-color: rgb(30, 255, 0);
+}
+.mix
+{
+    
+    position: absolute;
+    outline: solid 1px white;
+    border-radius: 10px;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 130px;
+    height: 130px;
+    z-index: -1;
+}
+.clt
+{
+    
+    position: absolute;
+    outline: solid 1px white;
+    border-radius: 10px;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 130px;
+    height: 130px;
+    z-index: -1;
+}
+.mix1
+{
+    background-image: url($/DeathMetalInterface_13fda5a1-c2e3-42f9-8d01-8bab9b9bb705.png);
+    background-position: 30%;
+}
+.mix2
+{
+    background-image: url($/modern2.jpg);
+    background-position: 50%;
+}
+.mix3
+{
+    background-image: url($/no.png);
+    background-position: 5%;
+}
+.mix4
+{
+    background-image: url($/cass.jpg);
+
+    background-position: 5%;
+}
+.mix5
+{
+    background-image: url($/song2.png);
+    background-position: 5%;
+}
+.mix6
+{
+    background-image: url($/voc1.png);
+    background-position: 40%;
+}
+.clt1
+{
+    background-image: url($/sd.jpg);
+}
+.clt2
+{
+    background-image: url($/dec.jpg);
+    background-position: 45%;
+}
+.clt3
+{
+    background-image: url($/cv.jpg);
+    background-position: 45%;
+}
+.clt4
+{
+    background-image: url($/sp.jpg);
+    background-position: 45%;
+}
+.clt5
+{
+    background-image: url($/hf.jpg);
+    background-position: 45%;
+}
+.clt6
+{
+    background-image: url($/at.jpg);
+    background-position: 45%;
+}
+#cover2
+{
+    /* position: absolute; */
+    top: 0;
+    left: 155px;
+}
+
+#cover3
+{
+    top: 140px;
+    left: 0px;
+    /* display: none; */
+}
+#cover4
+{
+    top: 140px;
+    left: 155px;
+    /* display: none; */
+}
+#cover5
+{
+    top: 280px;
+    left: 0px;
+    /* display: none; */
+}
+#cover6
+{
+    top: 280px;
+    left: 155px;
+    /* display: none; */
+}
+#cover6 h1
+{
+    margin-top: -5%;
+    margin-left: 10%;
+}
+.h1
+{
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+.h2
+{
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+.h3
+{
+    position: absolute;
+    font-size: 1.2rem;
+    display: none;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 4%;
+    margin-top: -1%;
+}
+.h4
+{
+    position: absolute;
+    font-size: 1.2rem;
+    display: none;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+.h1.hon
+{
+    display: block;
+}
+.h2.hon
+{
+    display: block;
+}
+.h3.hon
+{
+    display: block;
+}
+.h4.hon
+{
+    display: block;
+}
+.productcard1 a
+{
+    top: 50px;
+    left: 460px;
+    position: relative;
+    /* width: 20%; */
+    /* height: 20%; */
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    background-color: rgba(0, 140, 255, 0.685);
+    outline: solid 1px rgb(0, 174, 255);
+    padding-left : 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    /* border-radius: 8px; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 /* WORKPG_________________ */
 
