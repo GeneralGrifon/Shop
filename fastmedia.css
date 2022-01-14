@@ -4689,8 +4689,8 @@ textarea::-webkit-scrollbar-thumb
     body
     {
         /* display: block; */
-/*         transform: translateX(750px) translateY(500px) scale(1.2); */
-        transform: translateX(1200px) translateY(900px) scale(195%);
+        transform: translateX(750px) translateY(500px) scale(1.2);
+        /* transform: translateX(1200px) translateY(900px) scale(195%); */
         /* height: 500px; */
 
         /* overflow: scroll; */
@@ -4896,7 +4896,7 @@ textarea::-webkit-scrollbar-thumb
     left: -620px;
     top: -410px;
     position: absolute;
-    width: 530px;
+    width: 505px;
     height: 700px;
     background-color: rgba(255, 255, 255, 0.527);
     backdrop-filter: blur(10px);
@@ -4964,16 +4964,16 @@ textarea::-webkit-scrollbar-thumb
 {
     position: relative;
     top: -20px;
-    left: -50px;
-    transform: scale(0.8);
+    left: -60px;
+    transform: scale(0.78);
 }
 
 .youtube iframe
 {
     position: relative;
     top: -20px;
-    left: -50px;
-    transform: scale(0.8);
+    left: -70px;
+    transform: scale(0.78);
 }
 
 
@@ -5266,7 +5266,7 @@ textarea::-webkit-scrollbar-thumb
     left: -620px;
     top: -410px;
     position: absolute;
-    width: 530px;
+    width: 505px;
     height: 700px;
     background-color: rgba(255, 255, 255, 0.527);
     backdrop-filter: blur(10px);
