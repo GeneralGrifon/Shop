@@ -988,7 +988,7 @@ textarea::-webkit-scrollbar-thumb
     position: absolute;
     width: 300px;
     height: 300px;
-    top: -400px;
+    top: -450px;
     right: 0;
     display: none;
 
@@ -996,12 +996,12 @@ textarea::-webkit-scrollbar-thumb
 .closeall img
 {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     top: 20px;
     right: 20px;
     filter: invert(1);
-    outline: 1px solid rgb(255, 255, 255);
+    /* outline: 1px solid rgb(255, 255, 255); */
     cursor: pointer;
 }
 .footer
@@ -2654,28 +2654,7 @@ textarea::-webkit-scrollbar-thumb
 {
     display: block;
 }
-/* .productcard2
-{
-    display: none;
-}
-.productcard3
-{
-    display: none;
-} */
 
-/* 
-.productcard2.cardon
-{
-    display: block;
-}
-.productcard3.cardon
-{
-    display: block;
-}
-.productcard4.cardon
-{
-    display: block;
-} */
 .pdiframe iframe
 {
     position: relative;
@@ -2696,7 +2675,7 @@ textarea::-webkit-scrollbar-thumb
     position: absolute;
     top: 0px;
     right: 0;
-    width: 8%;
+    width: 60px;
     cursor: pointer;
 
 }
@@ -2705,7 +2684,7 @@ textarea::-webkit-scrollbar-thumb
     position: absolute;
     top: 0px;
     right: 0;
-    width: 8%;
+    width: 60px;
     cursor: pointer;
 
 }
@@ -4099,10 +4078,11 @@ textarea::-webkit-scrollbar-thumb
 
 .life
 {
-    top: -3100px;
-    left: -800px;
+    /* transform: scale(0.8); */
+    top: -3000px;
+    left: -500px;
     position: absolute;
-    width: 1000px;
+    width: 700px;
     height: 580px;
     outline: 1px solid rgb(255, 255, 255);
     overflow-y: scroll;
@@ -4334,12 +4314,17 @@ textarea::-webkit-scrollbar-thumb
 
 .carier
 {
-    top: -3050px;
-    left: -800px;
+    /* transform:(0.6); */
+    /* top: -3050px; */
+    /* left: -800px; */
+    top: -3000px;
+    left: -500px;
     position: absolute;
-    width: 1250px;
-    height: 366px;
-    background-color: rgba(255, 235, 205, 0);
+    width: 900px;
+    height: 500px;
+    /* width: 1250px; */
+    /* height: 366px; */
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     outline: solid 2px white;
     transition: 0.5s;
@@ -4501,6 +4486,7 @@ textarea::-webkit-scrollbar-thumb
 
 .carier:hover
 {
+    /* transform: scale(0.6); */
     height: 900px;
     backdrop-filter: blur(10px);
     background-color: rgb(255, 255, 255);
@@ -4569,7 +4555,7 @@ textarea::-webkit-scrollbar-thumb
 
 #c6
 {
-    width: 1200px;
+    width: 100%;
 }
 #c7
 {
@@ -4592,9 +4578,10 @@ textarea::-webkit-scrollbar-thumb
 
 .art
 {
+    transform: translateZ(-300px);
     z-index: 10;
     top: -3500px;
-    left: -800px;
+    left: -700px;
     height: 800px;
     width: 1000px;
     position: absolute;
@@ -4637,52 +4624,6 @@ textarea::-webkit-scrollbar-thumb
     border-radius: 10px;
 }
 /* ART___________________ */
-
-
-/* @media screen and (max-width: 1700px)
-{
-    body
-    {
-        transform: scale(0.9) translateY(500px);
-    }
-}
-@media screen and (max-width: 1500px)
-{
-    body
-    {
-        transform: scale(0.85) translateY(500px);
-    }
-
-} */
-
-/* @media screen and (max-width: 1000px)
-{
-    body
-    {
-       
-        transform: scale(0.7) translateX(350px) translateY(500px) ;
-    }
-
-
-
-
-
-#link:hover
-{
-  transform: translateY(710px) translateX(-80px) translateZ(520px) scale(0.7);
-}
-#show:hover
-{
-  transform: translateY(710px) translateX(-70px) translateZ(520px) scale(0.8);
-}
-#nice:hover
-{
-  transform: translateY(710px) translateX(-60px) translateZ(520px) scale(0.8);
-
-}
-
-
-} */
 
 @media screen and (max-width: 1000px)  
 {
