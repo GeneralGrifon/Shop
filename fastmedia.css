@@ -438,7 +438,7 @@ body
     background-size: 2000px;
     backface-visibility: hidden;
     border-radius: 20px;
-    transform: translate3d(-1199px,-800px,-1090px) rotateY(90deg) scale(0.65);
+    transform: translate3d(-700px,-400px,-300px) rotateY(90deg) scale(0.5);
     transition: 0.5s;
     filter: blur(6px) opacity(0.8);
     transition-delay: 0.1s;
@@ -459,7 +459,7 @@ body
 }
 .manifest.active9
 {
-    transform: translate3d(-900px,-260px, 0px) rotateY(0deg);
+    transform: translate3d(-220px,-200px, 100px) rotateY(0deg) scale(0.5);
     filter: blur(0px) opacity(1);
     border: 2px solid rgb(255, 255, 255); 
     box-shadow: 0 0 3px 0 rgb(255, 255, 255);
@@ -3263,9 +3263,9 @@ textarea::-webkit-scrollbar-thumb
 .work img
 {
     position: relative;
-    width: 80px;
-    top: 10%;
-    left: 9%;
+    width: 50px;
+    top: 14%;
+    left: 24%;
     filter: invert(1);
     cursor: pointer;
 }
@@ -4622,6 +4622,32 @@ textarea::-webkit-scrollbar-thumb
     width: 20px;
     background: rgba(255, 255, 255, 0.267);
     border-radius: 10px;
+}
+
+.name
+{
+    width: 800px;
+    height: 200px;
+    /* letter-spacing: 10px; */
+    /* outline: 1px solid #636eff; */
+    transform-style: preserve-3d;
+    transform: translateZ(300px) translateY(100px);
+    left: -480px;
+    top: -500px;
+    position: absolute;
+    z-index: 2;
+    font-family: 'Enchanted Land';
+    color: rgb(255, 255, 255);
+    font-size: 6rem;
+    text-align: center;
+    scale: 100%;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #003cff, 0 0 40px #003cff, 0 0 50px #003cff, 0 0 60px #003cff, 0 0 70px #003cff;
+
+}
+@font-face
+{
+  font-family: 'Enchanted Land';
+  src: url('/enchanted_land/Enchanted\ Land.otf'); 
 }
 /* ART___________________ */
 
