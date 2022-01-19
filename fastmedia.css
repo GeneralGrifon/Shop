@@ -1336,19 +1336,15 @@ textarea::-webkit-scrollbar-thumb
 
 .button
 {
-    right: -70%;
-    
-    /* bottom: 90px; */
-    /* position: absolute; */
-    /* position: relative; */
-  padding: 10px;
-  color: rgba(255, 255, 255, 0.575);
-    font-size: 3rem;
-    /* width: 800px; */
+    /* font-size: 2vw; */
+    right: -90%;
+    width: 30%;
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.575);
+    font-size: 3vw;
     /* background-color: rgba(255, 255, 255, 0.247); */
     border-radius: 8px;
     transition: 1s;
-
     background: linear-gradient(
       175deg,
       rgba(255,255,255,0.8) 0%,
@@ -3368,7 +3364,7 @@ textarea::-webkit-scrollbar-thumb
     cursor: pointer;
     
 }
-
+  
 .pictures
 {
     /* left: 250px; */
@@ -3379,24 +3375,25 @@ textarea::-webkit-scrollbar-thumb
     height: 60%;
     /* height: 20%; */
     left: 36vw;
+    /* left: 200px; */
     bottom: 16vh;
     /* position:absolute; */
     /* width: 15%; */
     /* padding-top: 10%; */
     /* height: 75%; */
-    /* outline: 2px solid rgb(4, 8, 255); */
+    outline: 2px solid rgb(4, 8, 255);
     /* background-color: rgba(4, 0, 255, 0.089); */
     transform-style: preserve-3d;
-    transform: translateZ(-150px);
+    transform: translateZ(-200px);
     transition: 0.1s;
 
 }
-/* PIC______________________________ */
 .opener
 {
     width: 80%;
     position: absolute;
-    top: 15%;
+    top: 20%;
+    /* left: -35%; */
     right: 108%;
     height: 95%;
     transform: translateZ(143px);
@@ -3412,6 +3409,108 @@ textarea::-webkit-scrollbar-thumb
     height: 100%;
     float: right;
 }
+@media screen and (max-width: 1100px)
+{
+    .pictures
+    {
+        left: 40vw;
+        bottom: 16vh;
+    }
+    .menu
+    {
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .pictures
+    {
+        left: 42vw;
+    }
+    .menu
+    {
+        background-color: orange;
+    }
+    
+}
+@media screen and (max-width: 800px)
+{
+    .pictures
+    {
+        left: 46vw;
+        transform: scale(0.9) translateZ(-100px);
+        /* height: 55%; */
+        
+    }
+    .buttons
+    {
+        /* background-color: red; */
+        left: 29%;
+    }
+    .menu
+    {
+        background-color: rgb(255, 230, 0);
+    }
+
+}
+@media screen and (max-width: 650px)
+{
+
+    .pictures
+    {
+
+        left: 48vw;
+        transform: scale(0.9) translateZ(-250px);
+        /* height: 60%; */
+        
+    }
+    .menu
+    {
+        background-color: rgb(72, 255, 0);
+    }
+
+}
+@media screen and (max-width: 500px)
+{
+
+    .pictures
+    {
+        bottom: 18vh;
+        left: 53vw;
+        transform: scale(0.9) translateZ(-300px);
+        height: 60%;
+    }
+    .avatar
+    {
+        height: 110%;
+
+    }
+    .opener
+    {
+        top: 25%
+
+    }
+    .menu
+    {
+        background-color: rgb(0, 255, 179);
+    }
+
+}
+@media screen and (max-width: 450px)
+{
+    .pictures
+    {
+        left: 58vw;
+
+    }
+    .menu
+    {
+        background-color: rgb(0, 140, 255);
+    }
+}
+/* PIC______________________________ */
+
 .opener.openerfoto
 {
     transform:  translateZ(0px);
@@ -4665,7 +4764,7 @@ textarea::-webkit-scrollbar-thumb
 }
 /* ART___________________ */
 
-@media (max-width: 1000px)  
+@media screen and (max-width: 8px)  
 {
 
     .footer
