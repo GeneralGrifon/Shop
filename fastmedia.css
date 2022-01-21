@@ -1922,7 +1922,7 @@ textarea::-webkit-scrollbar-thumb
 } */
 .menu
 {
-    display: none;
+    /* display: none; */
     position: absolute;
     /* position: absolute; */
     /* top: -350px; */
@@ -3470,7 +3470,8 @@ textarea::-webkit-scrollbar-thumb
 {
     .pictures
     {
-        left: 40vw;
+        /* transform: translateZ(-200px)cale(0.9); */
+        left: 55%;
         bottom: 16vh;
     }
     .menu
