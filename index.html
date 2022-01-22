@@ -243,7 +243,7 @@
                     <button id="nice" class="button" onclick="rotatereveal()">thing</button>
                     <button id="show" class="button" onclick="movereveal()">show</button>
                     <button id="link" class="button" onclick="skyblock()"">link</button>
-                    <button class="button2" onclick=" backblock()">down</button>
+                    <button id="linkoff" class="button2" onclick=" backblock()">down</button>
                     <button id="button3" class="button3" onclick=" backblock()">back</button>
                     <button class="button-startleft" onclick="startreveal()">back</button>
                     <button class="button-startmusic" onclick="startreveal()">back</button>
@@ -692,6 +692,12 @@
           $("#wp").load("worknews.html"); 
         });
     </script>
+
+<!-- <script> 
+    $('.opener').on("click", function() {
+      $('.chatspace').addClass('.chaton'); 
+    });
+</script> -->
     
 <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
@@ -843,7 +849,8 @@ $('.sub1').height($('.sub1').width()/0.75);
 <script>
     $(document).ready(function(){
     $('.opener').on("mousedown", function() {
-    $('.manifest').toggleClass('active9');
+    // $('.manifest').toggleClass('active9');
+    $('.chatspace').toggleClass('chaton'); 
     });
     });
 </script>
@@ -1217,6 +1224,14 @@ function myClick() {
 </script>
 
 <script>
+    function btnon2() {
+    var elem = document.getElementById("linkoff");
+    elem.classList.addClass("btnon2");
+
+    }
+</script>
+
+<script>
     const sidepage = document.querySelector('.sidepage');
     const electroshield3 = document.querySelector('.electroshield3');
     const cardtoggle4 = document.querySelector('.iside');
@@ -1233,6 +1248,7 @@ function myClick() {
     texton();
     // blocker2();
     scenesky();
+    btnon2()
 }
     </script>
     <script>
@@ -1365,12 +1381,12 @@ function myClick() {
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.0/lottie.js'></script>
 
-<script>
+<!-- <script>
     window.replainSettings = { id: '8d742552-8d62-4497-adf0-ef5b1d1a33be' };
     (function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
     var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
     })('https://widget.replain.cc/dist/client.js');
-    </script>
+    </script> -->
 
 
 
