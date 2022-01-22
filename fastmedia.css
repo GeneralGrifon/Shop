@@ -127,7 +127,8 @@ body
     top: 0;
     left: 0;
     position: absolute;
-    perspective: 1300px;
+    -webkit-perspective:1300px;
+    /* perspective: 1300px; */
     width: 100%;
     height: 100%;
     /* min-height: 600px; */
@@ -2548,12 +2549,29 @@ textarea::-webkit-scrollbar-thumb
     right: 0;
     width: 80%;
     height: 100%;
-    background-color: rgb(255, 99, 71);
+    /* background-color: rgba(0, 0, 0, 0.685); */
     display: none;
     /* overflow-y: scroll;
     overflow-x: hidden; */
 }
 .mediafield.mfon
+{
+    display: block;
+
+}
+.mediaclose
+{
+    position: absolute;
+    top: 50px;
+    /* left: 0; */
+    right: 10px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    display: none;
+
+}
+.mediaclose.on
 {
     display: block;
 }
@@ -2678,7 +2696,25 @@ textarea::-webkit-scrollbar-thumb
     position: absolute;
     width: 100%;
     height: 100%;
+    overflow-X: hidden;
+    overflow-y: scroll;
     /* outline: 1px solid rgb(0, 255, 0); */
+}
+.worknews::-webkit-scrollbar
+{
+    width: 15px;
+}
+.worknews::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    width: 10px;
+    background: transparent;
+}
+.worknews::-webkit-scrollbar-thumb
+{
+    width: 10px;
+    background: rgba(179, 179, 179, 0.493);
+    border-radius: 10px;
 }
 #workpg.workon
 {
@@ -2772,7 +2808,7 @@ textarea::-webkit-scrollbar-thumb
 {
     left: 0;
     /* right: 0; */
-    top: 2%;
+    top: 6%;
     position: absolute;
     width: 100%;
     height: 1000px;
@@ -3095,9 +3131,12 @@ textarea::-webkit-scrollbar-thumb
 }
 .productcard1 a
 {
-    top: 50px;
-    left: 460px;
-    position: relative;
+    position: absolute;
+    top: 40%;
+    left: 444px;
+    /* float: left; */
+    /* left: 460px; */
+    /* position: relative; */
     /* width: 20%; */
     /* height: 20%; */
     color: rgb(255, 255, 255);
@@ -3435,6 +3474,7 @@ textarea::-webkit-scrollbar-thumb
 .pictures
 {
 
+
     position: absolute;
     height: 60%;
     bottom: 16vh;
@@ -3446,6 +3486,7 @@ textarea::-webkit-scrollbar-thumb
 }
 .opener
 {
+    
     width: 80%;
     position: absolute;
     top: 20%;
@@ -3472,6 +3513,7 @@ textarea::-webkit-scrollbar-thumb
         /* transform: translateZ(-200px)cale(0.9); */
         left: 55%;
         bottom: 16vh;
+        transform-style: preserve-3d;
     }
     .menu
     {
@@ -3550,38 +3592,38 @@ textarea::-webkit-scrollbar-thumb
     #link
     {
         left: 38%;
-    transform: translateY(50px) translateX(-75px) translateZ(300px) scale(0.9);
+    transform: translateY(50px) translateX(-85px) translateZ(300px) scale(0.9);
     /* display: none; */
     }
     #show
     {
         left: 36%;
-    transform: translateY(50px) translateX(-60px) translateZ(300px) scale(0.9);
+    transform: translateY(50px) translateX(-70px) translateZ(300px) scale(0.9);
     /* display: none; */
     }
     #nice
     {
         left: 30%;
-    transform: translateY(50px) translateX(-30px) translateZ(300px) scale(0.9);
+    transform: translateY(50px) translateX(-40px) translateZ(300px) scale(0.9);
     /* display: none; */
 
     }
     #link:hover
     {
         left: 38%;
-    transform: translateY(50px) translateX(-75px) translateZ(320px) scale(0.9);
+    transform: translateY(50px) translateX(-85px) translateZ(320px) scale(0.9);
     /* display: none; */
     }
     #show:hover
     {
         left: 36%;
-    transform: translateY(50px) translateX(-60px) translateZ(320px) scale(0.9);
+    transform: translateY(50px) translateX(-70px) translateZ(320px) scale(0.9);
     /* display: none; */
     }
     #nice:hover
     {
         left: 30%;
-    transform: translateY(50px) translateX(-30px) translateZ(320px) scale(0.9);
+    transform: translateY(50px) translateX(-40px) translateZ(320px) scale(0.9);
     /* display: none; */
 
     }
@@ -3622,6 +3664,7 @@ textarea::-webkit-scrollbar-thumb
     {
         left: 0;
         margin-left: 400px;
+        
 
     }
     .menu
@@ -3961,10 +4004,13 @@ textarea::-webkit-scrollbar-thumb
     border-radius: 5px;
     border: 2px solid rgb(255, 255, 255); 
     display: block;
+    
 }
 
 .v1 
 {
+    transform: translateZ(111px);
+    /* transform-style: preserve-3d; */
     top: 0%;
     left: -400px;
     /* top: -200px; */
