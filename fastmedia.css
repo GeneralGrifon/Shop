@@ -6292,6 +6292,16 @@ svg
     height: 100%;
     width: 100%;
 }
+
+.chatiframe
+{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 1%;
+    right: 0%;
+    outline: 1px solid white;
+}
 /* .chatportal
 {
     width: 50%;
