@@ -7,9 +7,16 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <title>Influencer</title>
     <link rel="stylesheet" href="fastmedia.css">
+    <link rel="stylesheet" href="index.css">
 
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <!-- <script src="socketio.js"></script> -->
+    <script defer src="script.js"></script>
+    <!-- <script defer src="server.js"></script> -->
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script> -->
 
     <!-- <script src="js/jquery-2.2.3.min.js"></script> -->
 
@@ -477,6 +484,15 @@
             <!-- сцена -->
           
         </div>
+        <div class="place">
+            <div id="message-container"></div>
+            <form id="send-container">
+                <input type="text" id="message-input">
+                <button type="submit" id="send-button">бахнуть</button>
+            </form>
+            
+
+        </div>
 
     </div>
 
@@ -668,6 +684,10 @@
         <!-- <img id="mediaclose" class="mediaclose" src="shells/closeST.png" alt=""> -->
     </div>
 
+    <!-- <div id="chp" class="chatportal">
+
+    </div> -->
+
     <div class="chatspace">
         <div class="chat">
             <iframe class="ch" src="https://tlk.io/grandgrifon#_=_" frameborder="0"></iframe>
@@ -678,6 +698,16 @@
 
     
 
+
+    <script>
+        $(document).ready(function(){
+        $('.chatportal').on("click", function() {
+        // $('.mediafield').addClass("mfon");
+
+        $("#chp").load("/Socket/index.html"); 
+        });
+        });
+    </script>
    
 
     <!-- <div class="name">Alex Only</div> -->
