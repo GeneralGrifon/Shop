@@ -1499,15 +1499,14 @@ textarea::-webkit-scrollbar-thumb
 {
     position: relative;
     top: -15%;
-    right: -100%;
+    right: 0%;
     color: rgba(255, 255, 255, 0.575);
    padding: 15px;
     z-index: 12;
     font-size: 4rem;
     border-radius: 15px;
     transition: 1s;
-    transform: translate3d(0,-1000px, 200px) rotateX(-40deg);
-
+    transform: translate3d(0,-600px, 200px) rotateX(-40deg) scale(0.6);
     background: linear-gradient(
       175deg,
       rgba(255,255,255,0.8) 0%,
@@ -1520,11 +1519,12 @@ textarea::-webkit-scrollbar-thumb
     border-image: none;
     border-style: inset;
     border-width: 3px;
-    cursor: pointer;     
+    cursor: pointer;
+    /* display: none;      */
 }
 .button2:hover 
 {
-    right: -100%;
+    /* right: -100%; */
     color: rgba(255, 255, 255, 0.99);
     text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.99), 0px 0px 4px rgba(255, 255, 255, 0.75);
     border-color: rgba(255, 255, 255, 0.4);
@@ -1534,7 +1534,7 @@ textarea::-webkit-scrollbar-thumb
       0 10px rgba(0, 0, 0, 0.05) inset,
       0 0 5px 2px rgba(255, 255, 255, 0.75),
       0 0 10px 2px rgba(255, 255, 255, 0.75) inset;
-      transform: translate3d(0px, -1000px, 200px) rotateX(-55deg);
+      transform: translate3d(0,-600px, 200px) rotateX(-40deg) scale(0.6) rotateX(-5deg);
       
 }
 .button-startleft
@@ -1546,7 +1546,7 @@ textarea::-webkit-scrollbar-thumb
     font-size: 4rem;
     border-radius: 15px;
     transition: 1s;
-    transform: translate3d(-700px, 0px, 600px) rotateY(-270deg);
+    transform: translate3d(-700px, 0px, 700px) rotateY(-270deg) scale(0.8);
     background: linear-gradient(
       170deg,
       rgba(255,255,255,0.8) 0%,
@@ -1572,7 +1572,7 @@ textarea::-webkit-scrollbar-thumb
       0 10px rgba(0, 0, 0, 0.05) inset,
       0 0 5px 2px rgba(255, 255, 255, 0.75),
       0 0 10px 2px rgba(255, 255, 255, 0.75) inset;
-      transform: translate3d(-700px, 0px, 600px) rotateY(-270deg) rotateY(20deg);
+    transform: translate3d(-700px, 0px, 700px) rotateY(-270deg) scale(0.8) rotateY(20deg);
 }
 .button-startmusic
 {
@@ -1665,11 +1665,11 @@ textarea::-webkit-scrollbar-thumb
 {
   /* РАБОТА НАЗАД */
   position: absolute;
-  right: -50%;
+  right: 50%;
     font-size: 5rem;
     border-radius: 15px;
     transition: 1s;
-    transform: translate3d(0px, 0px, 550px) rotateY(-90deg) scale(0.6);
+    transform: translate3d(0px, 0px, 350px) rotateY(-90deg) scale(0.5);
     padding: 15px;
     color: rgba(255, 255, 255, 0.575);
     font-size: 4rem;
@@ -1922,7 +1922,7 @@ textarea::-webkit-scrollbar-thumb
 } */
 .menu
 {
-    /* display: none; */
+    display: none;
     position: absolute;
     /* position: absolute; */
     /* top: -350px; */
@@ -2546,12 +2546,12 @@ textarea::-webkit-scrollbar-thumb
 {
     position: absolute;
     right: 0;
-    width: 43%;
+    width: 80%;
     height: 100%;
-    background-color: rgba(255, 99, 71, 0);
+    background-color: rgb(255, 99, 71);
     display: none;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
 }
 .mediafield.mfon
 {
@@ -2566,7 +2566,7 @@ textarea::-webkit-scrollbar-thumb
     margin-right: 3%;
     width: 45%;
     height: 100%;
-    outline: 1px solid rgb(255, 255, 255);
+    /* outline: 1px solid rgb(255, 255, 255); */
     /* background-color: rgba(255, 184, 30, 0); */
 
     border-radius: 7px;
@@ -2583,7 +2583,7 @@ textarea::-webkit-scrollbar-thumb
         top: 0px;
     width: 45%;
     height: 100%;
-    outline: 1px solid rgba(255, 255, 255, 0.863);
+    /* outline: 1px solid rgba(255, 255, 255, 0.863); */
     background-color: #003cff00;
     border-radius: 7px;
     /* margin-left: 15px; */
@@ -2594,7 +2594,7 @@ textarea::-webkit-scrollbar-thumb
     /* position: relative; */
     top: -40px;
     float: left;
-    /* left: 0; */
+    /* left: -100px; */
     color: white;
     font-size: 1.4rem;
     font-weight: 400;
@@ -2630,27 +2630,27 @@ textarea::-webkit-scrollbar-thumb
     position: relative;
     transform: translate3d(100px, 0px, 0px) rotateY(-90deg);
     /* background-color: #ff00ea00; */
-     outline: 1px solid rgb(0, 255, 0);
+     /* outline: 1px solid rgb(0, 98, 255); */
     width: 70%;
     height: 60%;
     cursor: pointer;
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     animation: portalflick 0.1s linear infinite
 }
 @keyframes  portalflick
 {
     0%
     {
-        outline: 0.1px solid rgb(0, 255, 0);
+        outline: 0.1px solid rgb(0, 98, 255);
         opacity: 0.9;
 
     }
     100%
     {
-        outline: 2.5px solid rgb(0, 255, 0);
+        outline: 2.5px solid rgb(0, 98, 255);
         opacity: 1;
 
     }
@@ -2875,24 +2875,23 @@ textarea::-webkit-scrollbar-thumb
 .mixcover
 {
 
+    margin: 2%;
     /* position: absolute; */
     position: relative;
     width: 130px;
-    height: 0px;
-    margin-top: 2%;
-    margin-left: 2%;
-    background-color: rgba(255, 255, 255, 0.692);
+    height: 130px;
+    /* margin-top: 2%; */
+    /* margin-left: 2%; */
+    background-color: rgba(255, 255, 255, 0);
     transition: 0.5s;
    text-align: center;
    border-radius: 10px;
    /* padding-right: 20px; */
 }
-.mixed .mixcover
+
+.mixcover:hover 
 {
-    padding-right: 20px;
-}
-.worknews .mixcover:hover 
-{
+    background-color: rgba(255, 255, 255, 0.671);
     height: 130px;
     /* height: 100px; */
     /* top: 100%; */
@@ -3439,7 +3438,7 @@ textarea::-webkit-scrollbar-thumb
     position: absolute;
     height: 60%;
     bottom: 16vh;
-    outline: 2px solid rgb(4, 8, 255);
+    /* outline: 2px solid rgb(4, 8, 255); */
     transform-style: preserve-3d;
     transform: translateZ(-200px);
     transition: 1s;
@@ -3455,7 +3454,7 @@ textarea::-webkit-scrollbar-thumb
     height: 95%;
     transform: translateZ(143px);
     cursor: pointer;
-    outline: 1px solid rgb(0, 38, 255);
+    /* outline: 1px solid rgb(0, 38, 255); */
     user-select: none;
     transition: 0.5s;
 
@@ -3547,14 +3546,74 @@ textarea::-webkit-scrollbar-thumb
     transform: rotateY(0deg);
 
     }
-    /* iframe .v1 
+
+    #link
     {
-    top: 0px;
-    left: -400px;
-    position: absolute;
-    transition: 0.5s;
+        left: 38%;
+    transform: translateY(50px) translateX(-75px) translateZ(300px) scale(0.9);
+    /* display: none; */
+    }
+    #show
+    {
+        left: 36%;
+    transform: translateY(50px) translateX(-60px) translateZ(300px) scale(0.9);
+    /* display: none; */
+    }
+    #nice
+    {
+        left: 30%;
+    transform: translateY(50px) translateX(-30px) translateZ(300px) scale(0.9);
+    /* display: none; */
+
+    }
+    #link:hover
+    {
+        left: 38%;
+    transform: translateY(50px) translateX(-75px) translateZ(320px) scale(0.9);
+    /* display: none; */
+    }
+    #show:hover
+    {
+        left: 36%;
+    transform: translateY(50px) translateX(-60px) translateZ(320px) scale(0.9);
+    /* display: none; */
+    }
+    #nice:hover
+    {
+        left: 30%;
+    transform: translateY(50px) translateX(-30px) translateZ(320px) scale(0.9);
+    /* display: none; */
+
+    }
+
+    .button-startleft
+    {
+    position: relative;
+    bottom: 6%;
+    padding: 15px;
+    transform: translate3d(-700px, 0px, 400px) rotateY(-270deg) scale(0.8);
+
+    }
+    .button-startleft:hover
+    {
+
+    transform: translate3d(-700px, 0px, 400px) rotateY(-270deg) scale(0.8) rotateY(20deg);
+    }
+
+    .blurscene .post
+    {
+    transform: translateX(0px);
+    width: 80%;
+    }
+    .chatspace.chaton
+    {
+        width: 50%;
+        height: 50%;
+        /* background-color: #003cff; */
+    }
+
     
-    } */
+
 }
 
 @media screen and (max-width: 900px)
@@ -3691,6 +3750,7 @@ textarea::-webkit-scrollbar-thumb
 .person.active10
 {
     
+
     position: relative;
     /* position: absolute; */
     background: rgba(0, 0, 0, 0.363);
@@ -3874,6 +3934,7 @@ textarea::-webkit-scrollbar-thumb
     right: 160px;
      text-align: center;
     transition: 0.5s;  
+    /* transform: translateZ(1px); */
 
 }
 
@@ -6136,17 +6197,25 @@ svg
 }
 .chatspace
 {
-    top: 25%;
+    top: 2%;
     left: 0;
     position: absolute;
     perspective: 1500px;
     width: 40%;
     height: 50%;
-    background-color: rgba(64, 224, 208, 0);
+    background-color: rgba(0, 76, 255, 0);
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    opacity: 0;
+    transition: 0.5s;
+    /* display: none; */
+
+
+}
+.chatspace.chaton
+{
+    opacity: 1;
 
 }
 .chat
