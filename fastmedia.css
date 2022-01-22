@@ -6292,3 +6292,14 @@ svg
     height: 100%;
     width: 100%;
 }
+/* .chatportal
+{
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #003cff;
+    outline: 1px solid red;
+    cursor: pointer;
+} */
