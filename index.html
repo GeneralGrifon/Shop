@@ -306,7 +306,9 @@
                         </h3>
                     </div>
                 </div>
-                <div id="wall3" class="wall wall3"></div>
+                <div id="wall3" class="wall wall3">
+                    <h1>открыть/закрыть чат</h1>
+                </div>
                 <div class="wall wall4">
                     <div class="wallcontent4">
     
@@ -688,28 +690,30 @@
 
     </div> -->
 
-    <div class="chatspace">
+    <!-- <div class="chatspace">
         <div class="chat">
             <iframe class="ch" src="https://tlk.io/grandgrifon#_=_" frameborder="0"></iframe>
         </div>
-    </div>
+    </div> -->
     <img id="mediaclose" class="mediaclose" src="shells/closeST.png" alt="">
 
-    <iframe class="chatiframe" src="http://localhost:5500/" frameborder="0"></iframe>
+    <iframe id="charframe" class="chatiframe" src="http://localhost:5500/" frameborder="0">
+        
+    </iframe>
+
+    
     
 
     
 
 
-    <script>
+    <!-- <script>
         $(document).ready(function(){
         $('.chatportal').on("click", function() {
-        // $('.mediafield').addClass("mfon");
-
         $("#chp").load("/Socket/index.html"); 
         });
         });
-    </script>
+    </script> -->
    
 
     <!-- <div class="name">Alex Only</div> -->
@@ -883,12 +887,36 @@ $('.sub1').height($('.sub1').width()/0.75);
 
 <script>
     $(document).ready(function(){
-    $('.opener').on("mousedown", function() {
-    // $('.manifest').toggleClass('active9');
-    $('.chatspace').toggleClass('chaton'); 
+    $('.wall3').on("click", function() {
+        $('.mediaclose').addClass('on2');
+    $('.chatiframe').toggleClass('chaton');
+    $('.wall3').toggleClass('dance');    
+
     });
     });
 </script>
+
+<script>
+    $(document).ready(function(){
+    $('.opener').on("mousedown", function() {
+    $('.scene').addClass('sceneback');
+    
+    // $('.pictures').addClass('opa');
+
+    });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+    $('.mediaclose').on("click", function() {
+    $('.chatiframe').removeClass('chaton');
+    $('.wall3').removeClass('dance');
+    $('.scene').removeClass('sceneback'); 
+    $('.mediaclose').removeClass('on2');   
+    });
+    });
+</script>
+
 
 <script>
     $(document).ready(function(){
