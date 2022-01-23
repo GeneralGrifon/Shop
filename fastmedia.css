@@ -218,7 +218,12 @@ body
     transform: translate3d(0px, 300px, 300px) rotateX(45deg);
     transition: 1s;
 }
-
+.scene.sceneback
+{
+    transition: 2s;
+    /* transform: rotateY(90deg) translateX(-500px) translateZ(-100px); */
+    transform: rotateY(180deg) translateY(-100px) translateX(0px) translateZ(-700px);
+}
 .scenelift
 {
     position: absolute;
@@ -1202,7 +1207,13 @@ textarea::-webkit-scrollbar-thumb
     background-size: cover;
     transition: 1s;
 }
-
+.wall.wall3.dance
+{
+    background: url(shells/wall3dance.gif); 
+    /* filter: hue-rotate(-30deg); */
+    background-size: cover;
+    transition: 2s;
+}
 
 .wall.wall2 
 {
@@ -1229,8 +1240,21 @@ textarea::-webkit-scrollbar-thumb
     background-position: 50%;
     backface-visibility: hidden;
     display: block;
+    cursor: pointer;
+    transition: 2s;
 
     /* isolation: isolate; */
+}
+.wall3 h1
+{
+    position: absolute;
+    top: 85%;
+    left: 40%;
+    color: rgba(255, 255, 255, 0.26);
+    font-size: 3vh;
+    outline: 1px solid rgba(255, 255, 255, 0.123);
+    padding: 2px;
+    /* font-family: 'Seagram TFB'; */
 }
 .wall.wall4
 {
@@ -2573,6 +2597,11 @@ textarea::-webkit-scrollbar-thumb
 }
 .mediaclose.on
 {
+    display: block;
+}
+.mediaclose.on2
+{
+    filter: invert(1);
     display: block;
 }
 .clients
@@ -6295,12 +6324,25 @@ svg
 
 .chatiframe
 {
-    width: 50%;
-    height: 100%;
+    display: none;
+    width: 70%;
+    height: 80%;
     position: absolute;
-    top: 1%;
-    right: 0%;
-    outline: 1px solid white;
+    top: 3%;
+    left: 20%;
+    outline: 1px solid rgb(27, 106, 255);
+    border-radius: 13px;
+    box-shadow: 0 0 0px white,
+                /* 0 0 4px white, */
+                /* 0 0 8px white, */
+                0 0 25px rgba(0, 68, 255, 0.205),  
+                0 0 35px rgba(0, 68, 255, 0.205)  
+
+}
+.chatiframe.chaton
+{
+    display: block;
+    
 }
 /* .chatportal
 {
@@ -6313,3 +6355,29 @@ svg
     outline: 1px solid red;
     cursor: pointer;
 } */
+
+#exit
+{
+    filter: invert(1);
+    width: 80px;
+
+    position: absolute;
+    top: 22%;
+    left: 5%;
+    /* float: right; */    width: 19%;
+    height: 12%;
+
+    cursor: pointer;
+
+}
+#exit:hover
+{
+    text-shadow: 0 0 2px tomato,
+    /* 0 0 5px tomato, */
+    0 0 10px tomato,
+    0 0 12px tomato,
+    0 0 17px tomato;
+    box-shadow: 0 0 2px tomato,
+    0 0 30px tomato;
+    background-color: rgba(255, 99, 71, 0);
+}
