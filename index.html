@@ -247,7 +247,7 @@
             </div> -->
             <div id="scene" class="scene dance">
                 <div class="buttons">
-                    <button id="nice" class="button" onclick="rotatereveal()">thing</button>
+                    <button id="nice" class="button">thing</button>
                     <button id="show" class="button" onclick="movereveal()">show</button>
                     <button id="link" class="button" onclick="skyblock()"">link</button>
                     <button id="linkoff" class="button2" onclick=" backblock()">down</button>
@@ -356,13 +356,13 @@
                         </ul>
                     </div>
     
-                    <div id="z2" class="favorite user">
+                    <div id="z2" class="favorite user" onclick="rotatereveal()">
                         <audio id="myaudio2" preload="auto">
                             <source src="audio/cl.ogg"></audio></li>  
                         <img src="shells/develish2.png" class="fav">
                         <div class="v1">
                            
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/JjtoVpGDj1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/JjtoVpGDj1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         </div>
     
                         <!-- <div id="vk_playlist_-2000990070_13990070"></div> -->
@@ -414,7 +414,13 @@
 
                 <div id="workpg" class="workpage">
 
-                </div> 
+                </div>
+                
+                <div id="np" class="newsportal">
+                    <!-- <h1>Music</h1>
+                    <h2>Social</h2>                     -->
+                </div>
+
                 <div id="wp" class="workportal"></div>
 
                 <div id="menu" class="menu">
@@ -686,67 +692,54 @@
         <!-- <img id="mediaclose" class="mediaclose" src="shells/closeST.png" alt=""> -->
     </div>
 
-    <!-- <div id="chp" class="chatportal">
-
-    </div> -->
-
-    <!-- <div class="chatspace">
-        <div class="chat">
-            <iframe class="ch" src="https://tlk.io/grandgrifon#_=_" frameborder="0"></iframe>
-        </div>
-    </div> -->
     <img id="mediaclose" class="mediaclose" src="shells/closeST.png" alt="">
 
     <iframe id="charframe" class="chatiframe" src="https://onlychatapp2.herokuapp.com/" frameborder="0">
         
     </iframe>
 
-    
-    
 
-    
-
-
-    <!-- <script>
-        $(document).ready(function(){
-        $('.chatportal').on("click", function() {
-        $("#chp").load("/Socket/index.html"); 
-        });
-        });
-    </script> -->
-   
-
-    <!-- <div class="name">Alex Only</div> -->
-    <script>
+<script>
         function workon() 
         {
            var element = document.getElementById("wp");
            element.classList.add("wpon");
         }
-    </script>
+</script>
 
 
-    <script> 
+<script> 
         $('.workportal').on("click", function() {
           $("#wp").load("worknews.html"); 
         });
-    </script>
+</script>
 
-<!-- <script> 
-    $('.opener').on("click", function() {
-      $('.chatspace').addClass('.chaton'); 
+<script> 
+    $('.newsportal').on("click", function() {
+      $("#np").addClass('npon'); 
+      $("#np").load("socialnews.html"); 
     });
-</script> -->
-    
-<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+</script>
+<script> 
+    $('#z2').on("click", function() {
+      $("#np").addClass('npon'); 
+    });
+</script>
 
-<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-    <script>
+<script>
     $('.button3' ).click(function() {
       $('.workportal' ).empty();
       $('#wp').removeClass('wpon');
     });
     </script>
+
+<script>
+    $('.button-startleft' ).click(function() {
+      $('.newsportal' ).empty();
+      $('#np').removeClass('npon');
+    });
+    </script>
+
 
     <script>
         $(function(){
