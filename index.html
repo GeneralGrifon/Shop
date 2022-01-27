@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <title>Influencer</title>
-    <link rel="stylesheet" href="fastmedia.css">
+    <link rel="stylesheet" href="actual.css">
     <link rel="stylesheet" href="index.css">
 
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
@@ -341,17 +341,12 @@
                         <audio id="myaudio2" preload="auto">
                             <source src="audio/cl.ogg"></audio></li>
                         <img src="shells/star3.png" class="p" id="p">
+
+
+
+                       
     
-                        <a href="https://www.instagram.com/kharitonova_a12/"><img src="persons/настя.png" frameborder="0" scrolling="no" id="pp1"></img></a>
                         
-                     
-                        <a href="https://vk.com/nesterovpromo"><img src="persons/артем.png" frameborder="0" scrolling="no" id="pp2"></img></a>
-                        
-    
-                        <a href="https://vk.com/id4876589"><img src="persons/дашка.png" frameborder="0" scrolling="no" id="pp3"></img></a>
-    
-                      
-                        <a href="https://www.instagram.com/kseniakisavna/"><img src="persons/она.jpg" frameborder="0" scrolling="no" id="pp4" class="pp4"></img></a>
                         <ul>
                         </ul>
                     </div>
@@ -409,6 +404,20 @@
                     <div class="r5"></div>
                     <div class="r6"></div>
                 </div> -->
+                <div class="personpage">
+                    <h2>Nice Persons</h2>
+                    <h1 class="ppp1" href="https://www.instagram.com/kharitonova_a12/"><img src="persons/настя.png" frameborder="0" scrolling="no" id="pp1" class="ppp"></img></h1>
+                    <h1 class="ppp2" href="https://vk.com/nesterovpromo"><img src="persons/артем.png" frameborder="0" scrolling="no" id="pp2" class="ppp"></img></a>
+                    <h1 class="ppp3" href="https://vk.com/id4876589"><img src="persons/gantke.png" frameborder="0" scrolling="no" id="pp3" class="ppp"></img></a>
+                    <h1 class="ppp4" href="https://www.instagram.com/kseniakisavna/"><img src="persons/она.jpg" frameborder="0" scrolling="no" id="pp4" class="ppp"></img></a>
+
+                    <div id="pv" class="personview">
+                        <!-- <h1></h1> -->
+                        
+                    </div>
+
+
+                </div>
 
                 
 
@@ -707,6 +716,31 @@
         }
 </script>
 
+<script> 
+    $('.ppp1').on("click", function() {
+      $("#pv").load("nicepersons.html"); 
+    });
+</script>
+<script> 
+    $('.ppp2').on("click", function() {
+      $("#pv").load("niceperson2.html"); 
+    });
+</script>
+<script> 
+    $('.ppp3').on("click", function() {
+      $("#pv").load("niceperson3.html"); 
+    });
+</script>
+<script> 
+    $('.ppp4').on("click", function() {
+      $("#pv").load("niceperson4.html"); 
+    });
+</script>
+<script> 
+    $(body).on("click", function() {
+      $('.personview').empty(); 
+    });
+</script>
 
 <script> 
         $('.workportal').on("click", function() {
@@ -778,7 +812,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     $('.smart2').removeClass('active8');
     $('.blur').removeClass('poston');
     $('.smart').removeClass('active5');
-    $('.person').removeClass('active10');
+    $('.personpage').removeClass('ppon');
     $('.menu').removeClass('menuon');
     });
     });
@@ -786,8 +820,8 @@ $('.sub1').height($('.sub1').width()/0.75);
 
 <script>
     $(document).ready(function(){
-    $('.p').on("click", function() {
-    $('.person').toggleClass('active10');
+    $('#z4').on("click", function() {
+    $('.personpage').toggleClass('ppon');
     $('.smart').removeClass('active5');
     $('.blur').removeClass('poston');
     $('.smart2').removeClass('active8');
@@ -813,7 +847,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     $('.name').toggleClass('nameoff');
     $('.menu').toggleClass('menuon');
     $('.smart2').removeClass('active8');
-    $('.person').removeClass('active10');
+    $('.personpage').removeClass('ppon');
     $('.favorite').removeClass('active2');
 
 
@@ -833,7 +867,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     $('.blocker1').toggleClass('activeblock1');
     $('.blocker2').toggleClass('activeblock2');
     $('.opener').toggleClass('openerfoto');
-    $('.person').removeClass('active10');
+    $('.personpage').removeClass('ppon');
     $('.favorite').removeClass('active2');
     $('.smart2').removeClass('active8');
     $('.smart').removeClass('active5');
@@ -917,7 +951,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     $('.smart2').toggleClass('active8');
     $('.smart').removeClass('active5');
     $('.blur').removeClass('poston');
-    $('.person').removeClass('active10');
+    $('.personpage').removeClass('ppon');
     $('.favorite').removeClass('active2');
     $('.poseselect').removeClass('active400');
     $('.faceselect').removeClass('active401');
@@ -1209,7 +1243,7 @@ function myClick() {
     $('.face').removeClass('active5');
     $('.card').removeClass('active6');
     $('.opener').removeClass('openerfoto');
-    $('.person').removeClass('active10');
+    $('.personpage').removeClass('ppon');
     $('.menu').removeClass('menuon');
 
         }
