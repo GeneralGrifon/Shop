@@ -1427,14 +1427,14 @@ textarea::-webkit-scrollbar-thumb
 }
 .button-startleft
 {
-    position: relative;
+    position: absolute;
     bottom: 6%;
   padding: 15px;
   color: rgba(255, 255, 255, 0.575);
     font-size: 4rem;
     border-radius: 15px;
     transition: 1s;
-    transform: translate3d(-700px, 0px, 700px) rotateY(-270deg) scale(0.8);
+    transform: translate3d(-90px, 0px, 700px) rotateY(-270deg) scale(0.8);
     background: linear-gradient(
       170deg,
       rgba(255,255,255,0.8) 0%,
@@ -1460,7 +1460,7 @@ textarea::-webkit-scrollbar-thumb
       0 10px rgba(0, 0, 0, 0.05) inset,
       0 0 5px 2px rgba(255, 255, 255, 0.75),
       0 0 10px 2px rgba(255, 255, 255, 0.75) inset;
-    transform: translate3d(-700px, 0px, 700px) rotateY(-270deg) scale(0.8) rotateY(20deg);
+    transform: translate3d(-90px, 0px, 700px) rotateY(-270deg) scale(0.8) rotateY(20deg);
 }
 .button-startmusic
 {
@@ -1729,12 +1729,13 @@ textarea::-webkit-scrollbar-thumb
 #nice
 {
     
-    position: relative;
+    display: none;
+    /* position: relative; */
     bottom: 1%;
     margin: 1%;
     /* right: 20%; */
   transform: translateY(0px) translateX(0px) translateZ(300px);
-  opacity: 0;
+  /* opacity: 0; */
   /* visibility: hidden; */
 }
 
