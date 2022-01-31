@@ -3526,18 +3526,16 @@ textarea::-webkit-scrollbar-thumb
     }
 
     .button-startleft
-    {
-    position: relative;
-    bottom: 6%;
-    padding: 15px;
-    transform: translate3d(-700px, 0px, 400px) rotateY(-270deg) scale(0.8);
+{
 
-    }
-    .button-startleft:hover
-    {
+    transform: translate3d(-190px, 0px, 700px) rotateY(-270deg) scale(0.8);
 
-    transform: translate3d(-700px, 0px, 400px) rotateY(-270deg) scale(0.8) rotateY(20deg);
-    }
+}
+.button-startleft:hover
+{
+
+    transform: translate3d(-90px, 0px, 700px) rotateY(-270deg) scale(0.8) rotateY(20deg);
+}
 
     .blurscene .post
     {
