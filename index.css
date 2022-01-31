@@ -2540,12 +2540,12 @@ textarea::-webkit-scrollbar-thumb
 {
     transform-style: preserve-3d;
     top: 0%;
-    left: 0;
+    /* left: 0%; */
     position: relative;
-    transform: translate3d(100px, 0px, 0px) rotateY(-90deg);
+    transform: translate3d(100px, 0px, 85px) rotateY(-90deg);
     /* background-color: #ff00ea00; */
      /* outline: 1px solid rgb(0, 98, 255); */
-    width: 70%;
+    width: 57%;
     height: 60%;
     cursor: pointer;
     display: flex;
