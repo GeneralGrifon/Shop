@@ -1554,6 +1554,7 @@ textarea::-webkit-scrollbar-thumb
   /* РАБОТА НАЗАД */
   position: absolute;
   right: 50%;
+     bottom: 0%;
     font-size: 5rem;
     border-radius: 15px;
     transition: 1s;
