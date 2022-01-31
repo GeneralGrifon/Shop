@@ -3362,6 +3362,7 @@ textarea::-webkit-scrollbar-thumb
 .pictures.opa
 {
     filter: opacity(0);
+    transform: translateZ(-200px) translateX(-400px);
 }
 .opa2
 {
