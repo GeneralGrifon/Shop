@@ -2311,6 +2311,7 @@ textarea::-webkit-scrollbar-thumb
     background-color: rgba(255, 255, 255, 0.116);
     color: white;
     padding-left: 20pX;
+    font-family: 'subway-ticker.regular';
 }
 
 .textbox2
