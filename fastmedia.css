@@ -2580,7 +2580,7 @@ textarea::-webkit-scrollbar-thumb
 
 }
 /* TEXTBOX_________________ */
-.mediafield
+.mediafield2
 {
     position: absolute;
     right: 0;
@@ -2592,6 +2592,11 @@ textarea::-webkit-scrollbar-thumb
     overflow-x: hidden; */
 }
 .mediafield.mfon
+{
+    display: block;
+
+}
+.mediafield2.mfon
 {
     display: block;
 
