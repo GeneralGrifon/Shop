@@ -708,7 +708,7 @@
         
     </iframe>
 
-                                                                                                       <script>
+    <script>
         document.querySelector('article').addEventListener('click', myClick);
         
         
@@ -717,9 +717,10 @@
             // get input
             // input - value
             let a = document.querySelector('.i-1').value;
-            a.value = "";
             console.log(a);
-            document.querySelector('.out2').innerHTML += a;
+            document.querySelector('.out2').innerHTML += a + " <br>";
+            elem = document.getElementById("elem");
+         elem.value = "";
             
         }
     </script>
