@@ -2415,7 +2415,20 @@ textarea::-webkit-scrollbar-thumb
 }
 .textbox2 input
 {
-    display: none;
+    position: relative;
+    /* display: block; */
+    position: absolute;
+    border-radius: 8px;
+    bottom: -400px;
+    left: 160px;
+    height: 70px;
+    width: 500px;
+    font-size: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.116);
+    color: white;
+    padding-left: 20pX;
+    font-family: 'subway-ticker.regular';
+    
 }
 
 .textbox2
