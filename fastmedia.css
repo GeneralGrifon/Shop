@@ -3470,7 +3470,7 @@ textarea::-webkit-scrollbar-thumb
 .name
 {
 
-    width: 667px;
+     width: 607px;
     height: 150px;
     /* letter-spacing: 10px; */
     outline: 1px solid #636eff;
@@ -3478,7 +3478,7 @@ textarea::-webkit-scrollbar-thumb
     backdrop-filter: blur(8px);
     background: #5a6a9e31;
     /* transform: translateZ(-300px) translateY(100px); */
-    right: 0px;
+    right: 100px;
     top: 0px;
     position: absolute;
     z-index: 2;
