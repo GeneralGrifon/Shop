@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <title>Influencer</title>
+    <!-- <link rel="stylesheet" href="fastmedia.css"> -->
     <link rel="stylesheet" href="fastmedia.css">
     <link rel="stylesheet" href="index.css">
 
@@ -247,6 +248,7 @@
             </div> -->
             <div id="scene" class="scene dance">
                 <div class="buttons">
+                    <!-- <button class="sendtext" onclick="SENDTEXT()">SENDTEXT</button> -->
                     <button id="nice" class="button">thing</button>
                     <button id="show" class="button" onclick="movereveal()">show</button>
                     <button id="link" class="button" onclick="skyblock()"">link</button>
@@ -404,7 +406,15 @@
                     <div class="r5"></div>
                     <div class="r6"></div>
                 </div> -->
-                
+                <!-- <div class="personpage">
+                    <h2>Nice Persons</h2>
+                    <h1 class="ppp1" href="https://www.instagram.com/kharitonova_a12/"><img src="persons/настя.png" frameborder="0" scrolling="no" id="pp1" class="ppp"></img></h1>
+                    <h1 class="ppp2" href="https://vk.com/nesterovpromo"><img src="persons/tery.jpg" frameborder="0" scrolling="no" id="pp2" class="ppp"></img></a>
+                    <h1 class="ppp3" href="https://vk.com/id4876589"><img src="persons/gantke.png" frameborder="0" scrolling="no" id="pp3" class="ppp"></img></a>
+                    <h1 class="ppp4" href="https://www.instagram.com/kseniakisavna/"><img src="persons/она.jpg" frameborder="0" scrolling="no" id="pp4" class="ppp"></img></a>
+                    <div id="pv" class="personview">                 
+                    </div>
+                </div> -->
 
                 
 
@@ -463,23 +473,21 @@
                 </div>
 
                 <!-- <div class="name">Alex Only
-                    <h1>Я невъебац крут и выебу тебя</h1>
+                    <h1>не шути со мной а то выебу</h1>
                 </div>   -->
 
                                 
-
                 <div id="textbox2" class="textbox2">
-                        <input type="text" id="elem" class="i-1" value.replace(/\n/g, '<br/>')>
-                        <article class="article">SEND</article>
+                   
+                        <input type="text" id="elem" class="i-1" value()>
                         <div class="outblur"></div>
-                        <div class="out">
-                            <br>
-                        -- music will connect your mind to another channel
+                        <div class="out"><br>-- 21.11.2021:<br>
+
                         </div>
-                        <div class="out2">
-                            <br>
-                        -- music will connect your mind to another channel
+                        <div class="out2"><br>-- 21.11.2021:<br>
+
                         </div>
+                        <article class="article" onclick="resetValue()">SEND</article>
                 </div>
                 
             </div> 
@@ -530,10 +538,6 @@
         <h1>не шути со мной а то выебу</h1>
     </div>  
 
-
-
-    
-
     <!-- <div id="lottieselector" class="lottieselector">
         <div id="lottiescene" class="lottiescene">
 
@@ -562,7 +566,6 @@
             </div>
         </div>
     </div> -->
-
 
     <!-- </div> -->
 
@@ -700,9 +703,8 @@
     <div id="look" class="look" onmouseenter="LOOKMODE()"></div>
 
     <div id="mf" class="mediafield">
-        <!-- <img id="mediaclose" class="mediaclose" src="shells/closeST.png" alt=""> -->
     </div>
-     <div id="ytf" class="mediafield2">
+    <div id="ytf" class="mediafield2">
     </div>
 
     <img id="mediaclose" class="mediaclose" src="shells/closeST.png" alt="">
@@ -711,7 +713,8 @@
         
     </iframe>
 
-   <script>
+    
+    <script>
         document.querySelector('article').addEventListener('click', myClick);
         
         
@@ -727,6 +730,8 @@
             
         }
     </script>
+
+
 
 <script>
         function workon() 
@@ -768,12 +773,6 @@
         });
 </script>
 
-<script> 
-    $('.newsportal').on("click", function() {
-      $("#np").addClass('npon'); 
-      $("#np").load("socialnews.html"); 
-    });
-</script>
 <script> 
     $('#z2').on("click", function() {
       $("#np").addClass('npon'); 
@@ -903,7 +902,8 @@ $('.sub1').height($('.sub1').width()/0.75);
     });
 </script>
 
-                <script>
+
+<script>
     $(document).ready(function(){
     $('.music').on("click", function() {
     $('.smart2').toggleClass('active8');
@@ -926,6 +926,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     });
     });
 </script>
+
 
 <script>
     function closemenu() {
@@ -991,7 +992,6 @@ $('.sub1').height($('.sub1').width()/0.75);
     });
     });
 </script>
-
 
 
 
@@ -1403,7 +1403,7 @@ function myClick() {
     rotate2();
     rotatepro();
     sceneright();
-<!--     blurright(); -->
+    // blurright();
     menuoff();
     btnoff(); 
     workon();
