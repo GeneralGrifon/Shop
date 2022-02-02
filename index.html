@@ -838,7 +838,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     $(document).ready(function(){
     $('#z4').on("click", function() {
     $('.blur').toggleClass('poston2');
-    $('.blur').toggleClass('poston');
+    $('.blur').removeClass('poston');
     $('.personpage').addClass('ppon');
     $('.smart').removeClass('active5');
     $('.post').removeClass('on');
@@ -863,13 +863,13 @@ $('.sub1').height($('.sub1').width()/0.75);
     $('.s').on("click", function() {
     // $('.smart').toggleClass('active5');
     $('.blur').toggleClass('poston');
+    $('.post').toggleClass('on');
     $('.name').toggleClass('nameoff');
     $('.menu').toggleClass('menuon');
+    $('.blur').removeClass('poston2');
     $('.smart2').removeClass('active8');
     $('.personpage').removeClass('ppon');
     $('.favorite').removeClass('active2');
-
-
     });
     });
     </script>   
