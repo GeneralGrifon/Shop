@@ -6344,24 +6344,32 @@ svg
 
 .chatiframe
 {
-    display: none;
-    width: 70%;
-    height: 80%;
+    /* transform: translateZ(-400px); */
+    /* display: none; */
+    transition: 0.3s;
+    width: 60%;
+    height: 0%;
     position: absolute;
-    top: 3%;
-    left: 20%;
-    outline: 1px solid rgb(27, 106, 255);
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+
+    /* top: 0; */
+    /* left: 0; */
+    top: 0%;
+    left: 10%;
+    outline: 1px solid rgb(0, 89, 255);
     border-radius: 13px;
-    box-shadow: 0 0 0px white,
-                /* 0 0 4px white, */
-                /* 0 0 8px white, */
+    backdrop-filter: blur(10px);
+    /* background-color: #ffffff0c; */
+    /* box-shadow: 0 0 0px white,
                 0 0 25px rgba(0, 68, 255, 0.205),  
-                0 0 35px rgba(0, 68, 255, 0.205)  
+                0 0 35px rgba(0, 68, 255, 0.205); */
 
 }
 .chatiframe.chaton
 {
-    display: block;
+    /* display: block; */
+    height: 65%;
     
 }
 /* .chatportal
