@@ -1790,10 +1790,10 @@ textarea::-webkit-scrollbar-thumb
   /* visibility: hidden; */
 }
 
-#link:hover
+/* #link:hover
 {
   transform: translateZ(370px);
-}
+} */
 /* #show:hover
 {
   transform: translateZ(370px);
