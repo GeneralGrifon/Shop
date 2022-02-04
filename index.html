@@ -264,7 +264,7 @@
     
                 </div>
                 <button id="link" onclick="skyblock()"">
-                    <img src="shells/zametki.png" alt=""></button>
+                    <img src="/shells/zametki.png" alt=""></button>
                 <div class="workpage">
                 </div>
 
@@ -737,7 +737,16 @@
     });
     });
     </script>
-    
+
+    <script>
+        $(document).ready(function(){
+        $('.manifest').on("mouseenter mouseleave", function() {
+        // $('.mediaclose').addClass('on2');
+        $('.manifest').toggleClass('active9');  
+        });
+        });
+        </script>
+
     <script>
         document.querySelector('article').addEventListener('click', myClick);
         
