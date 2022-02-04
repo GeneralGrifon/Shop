@@ -1446,6 +1446,7 @@ textarea::-webkit-scrollbar-thumb
     border-style: inset;
     border-width: 3px;
     cursor: pointer;
+    opacity: 0;
     /* display: none;      */
 }
 .button2:hover 
