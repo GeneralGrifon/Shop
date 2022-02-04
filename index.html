@@ -890,6 +890,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     $('.smart2').removeClass('active8');
     $('.personpage').removeClass('ppon');
     $('.favorite').removeClass('active2');
+    $('.chatiframe').removeClass('chaton');
     });
     });
     </script>   
@@ -940,6 +941,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     $('.pictures').addClass('picturesmusic');
     $('.blur').removeClass('poston2');
     $('.post').removeClass('on');
+    $('.chatiframe').removeClass('chaton');
     });
     });
 </script>
@@ -978,16 +980,18 @@ $('.sub1').height($('.sub1').width()/0.75);
     });
 </script>
 
-<script>
     $(document).ready(function(){
     $('.opener').on("click", function() {
-//         $('.mediaclose').addClass('on2');
+    // $('.mediaclose').addClass('on2');
     $('.chatiframe').toggleClass('chaton');
-//     $('.wall3').toggleClass('dance');    
-
+    $('.blur').removeClass('poston2');
+    $('.blur').removeClass('poston');
+    $('.smart2').removeClass('active8');
+    // $('.scene').addClass('sceneback');
+    // $('.wall3').toggleClass('dance');    
     });
     });
-</script>
+    </script>
 
 <!-- <script>
     $(document).ready(function(){
