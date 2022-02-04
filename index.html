@@ -722,6 +722,20 @@
 
     
     <script>
+    $(document).ready(function(){
+    $('.opener').on("click", function() {
+    // $('.mediaclose').addClass('on2');
+    $('.chatiframe').toggleClass('chaton');
+    $('.blur').removeClass('poston2');
+    $('.blur').removeClass('poston');
+    $('.smart2').removeClass('active8');
+    // $('.scene').addClass('sceneback');
+    // $('.wall3').toggleClass('dance');    
+    });
+    });
+    </script>
+    
+    <script>
         document.querySelector('article').addEventListener('click', myClick);
         
         
@@ -779,19 +793,25 @@
           $("#wp").load("worknews.html"); 
         });
 </script>
-                
+
 <script> 
     $('.newsportal').on("click", function() {
       $("#np").load("socialnews.html"); 
     });
 </script>
-                
+
 <script> 
     $('.wallsex').on("click", function() {
       $("#wallsex").load("video.html"); 
     });
 </script>
-                
+
+<!-- <script>
+    $('.button-startsex button' ).click(function() {
+      $('.wallsex' ).empty();
+    });
+    </script> -->
+
 <script> 
     $('#z2').on("click", function() {
       $("#np").addClass('npon'); 
@@ -893,6 +913,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     $('.personpage').removeClass('ppon');
     $('.favorite').removeClass('active2');
     $('.chatiframe').removeClass('chaton');
+    
     });
     });
     </script>   
@@ -915,6 +936,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     $('.blur').removeClass('poston');
     $('.blur').removeClass('poston2');
     $('.personpage').removeClass('ppon');
+    
     // $('.menu').removeClass('menuon');
     
 
@@ -982,34 +1004,13 @@ $('.sub1').height($('.sub1').width()/0.75);
     });
 </script>
 
-    <script>
-    $(document).ready(function(){
-    $('.opener').on("click", function() {
-    // $('.mediaclose').addClass('on2');
-    $('.chatiframe').toggleClass('chaton');
-    $('.blur').removeClass('poston2');
-    $('.blur').removeClass('poston');
-    $('.smart2').removeClass('active8');
-    // $('.scene').addClass('sceneback');
-    // $('.wall3').toggleClass('dance');    
-    });
-    });
-    </script>
 
-<!-- <script>
-    $(document).ready(function(){
-    $('.opener').on("mousedown", function() {
-    $('.scene').addClass('sceneback');
-    
-    });
-    });
-</script> -->
 <script>
     $(document).ready(function(){
     $('.mediaclose').on("click", function() {
     $('.chatiframe').removeClass('chaton');
-//     $('.wall3').removeClass('dance');
-//     $('.scene').removeClass('sceneback'); 
+    $('.wall3').removeClass('dance');
+    $('.scene').removeClass('sceneback'); 
     $('.mediaclose').removeClass('on2');   
     });
     });
@@ -1094,7 +1095,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     </script>
 
 
-<script>
+<!-- <script>
 document.querySelector('article').addEventListener('click', myClick);
 
 
@@ -1106,7 +1107,7 @@ function myClick() {
     document.querySelector('.out2').innerHTML += a;
     
 }
-</script>
+</script> -->
 
 
     <script>
@@ -1364,13 +1365,13 @@ function myClick() {
     }
 </script>
 
-<script>
-    function btnon2() {
+<!-- <script>
+    function btn2on() {
     var elem = document.getElementById("linkoff");
-    elem.classList.addClass("btnon2");
+    elem.classList.addClass("btn2on");
 
     }
-</script>
+</script> -->
 
 <script>
     const sidepage = document.querySelector('.sidepage');
@@ -1387,9 +1388,8 @@ function myClick() {
         function skyblock() {
     sky();
     texton();
-    // blocker2();
     scenesky();
-    btnon2()
+    // btn2on();
 }
     </script>
     <script>
