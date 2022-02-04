@@ -1114,7 +1114,7 @@ textarea::-webkit-scrollbar-thumb
 {
     /* RIGHT!!!  */
     /* left: 100px; */
-    background: radial-gradient(#1f1f1f, #000000);
+    background: radial-gradient(#111111, #000000);
     transform: translate3d(500px, 0px, 100px) rotateY(270deg) rotateZ(-0deg);
     /* transition: 1s; */
     border-radius: 1px;
@@ -1130,7 +1130,7 @@ textarea::-webkit-scrollbar-thumb
     /* BACK!!!! */
     /* transform: translate3d(-500px, -750px, 500px) rotateY(180deg); */
     transform: translate3d(0px, 0px, 600px) rotateY(180deg);
-    background: radial-gradient(#1f1f1f, #000000);
+    background: radial-gradient(#111111, #000000);
     background-size: cover;
     background-position: 50%;
     backface-visibility: hidden;
@@ -1154,7 +1154,7 @@ textarea::-webkit-scrollbar-thumb
 .wall.wall4
 {
     /* ЛЕВО */
-    background: radial-gradient(#1f1f1f, #000000);
+    background: radial-gradient(#111111, #000000);
     /* background: radial-gradient(#00025f, #000000); */
 
         transform: translate3d(-500px, 0px, 100px) rotateY(90deg) rotateZ(0deg);
