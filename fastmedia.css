@@ -1067,7 +1067,6 @@ textarea::-webkit-scrollbar-thumb
     
 }
 
-
 .wall.wall1
 {
     /* TOP!!!!!!!!! */
@@ -1075,6 +1074,24 @@ textarea::-webkit-scrollbar-thumb
     position: absolute;
     background: radial-gradient(#111111, #000000);
     transform: translate3d(0px, 0px,-400px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* mix-blend-mode: s; */
+}
+.wall.wall1 img
+{
+    width: 40%;
+    mix-blend-mode: screen;
+    opacity: 0;
+    transition: 0.6s;
+    cursor: pointer;
+    filter: hue-rotate(30deg);
+    transition-delay: 0.5s;
+}
+.wall1:hover img
+{
+    opacity: 1;
 }
 .wall.wall1.dance
 {
