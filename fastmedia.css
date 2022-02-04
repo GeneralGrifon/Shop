@@ -2353,9 +2353,9 @@ textarea::-webkit-scrollbar-thumb
 .article
 {
     bottom: -270px;
-    left: 65%;
+    left: 120px;
     position: absolute;
-    width: 300px;
+    width: 100%;
     height: 100px;
     background-color: #ffffff11;
     border-radius: 10px;
@@ -2364,7 +2364,7 @@ textarea::-webkit-scrollbar-thumb
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2vw;
     font-family: 'subway-ticker.regular';
 
 }
