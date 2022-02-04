@@ -1147,16 +1147,24 @@ textarea::-webkit-scrollbar-thumb
 }
 .wall.wallsex
 {
-    background: url(https://thumbs.gfycat.com/BlaringRashAmericanalligator-max-1mb.gif);
+    /* background: url(https://thumbs.gfycat.com/BlaringRashAmericanalligator-max-1mb.gif); */
 
-    transform: translate3d(250px, -100px,-1500px);
-    outline: 1px solid rgb(0, 174, 255);
-    box-shadow: 0 0 1px rgb(0, 174, 255),
-    0 0 80px rgb(0, 174, 255);
-    background-size: cover;
-    background-position: 50%;
-    width: 300px;
-    height: 300px;
+    transform: translate3d(-100px, -100px,-1500px);
+    border: none;
+    outline: 1px solid rgb(0, 68, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    /* box-shadow: 0 0 1px rgb(0, 174, 255), */
+    /* 0 0 80px rgb(0, 174, 255); */
+    /* background-size: cover; */
+    /* background-position: 50%; */
+    width: 50%;
+    height: 50%;
+}
+.wallsex h1
+{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .wallcontent5 h3
