@@ -1102,9 +1102,9 @@ textarea::-webkit-scrollbar-thumb
 }
 .wall.wall3.dance
 {
-    background: url(shells/wall3dance.gif); 
+/*     background: url(shells/wall3dance.gif);  */
     /* filter: hue-rotate(-30deg); */
-    background-size: cover;
+/*     background-size: cover; */
     transition: 2s;
 }
 
