@@ -761,14 +761,14 @@ body
 .poseselect.active400
 {
 
-    right: 24%;
+    right: 25%;
     transform: rotateY(0deg);
 
 }
 .faceselect.active401
 {
  
-    right: 42%;
+    right: 42.5%;
     transform: rotateY(0deg);
 
 }
