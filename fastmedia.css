@@ -1729,16 +1729,28 @@ textarea::-webkit-scrollbar-thumb
   border: solid 3px white;
   z-index: 10;
   cursor: pointer;
+}#link img
+{
+    width: 90%;
 }
 #link
 {
-    position: relative;
-    bottom: 1%;
+    background-color: rgba(0, 0, 0, 0);
+    bottom: 90px;
+    left: 320px;
+    position: absolute;
+    /* bottom: 1%; */
     margin: 1%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* padding: 5px; */
     /* right: 10; */
     /* margin-left: 20px; */
-
-  transform: translateY(0px) translateX(0px) translateZ(300px);
+  /* transform: translateY(0px) translateX(0px) translateZ(300px); */
 }
 #show
 {
