@@ -1423,16 +1423,16 @@ textarea::-webkit-scrollbar-thumb
 
 .button2
 {
-    position: relative;
+    position: absolute;
     top: -15%;
-    right: 0%;
+    left: 0%;
     color: rgba(255, 255, 255, 0.575);
    padding: 15px;
     z-index: 12;
     font-size: 4rem;
     border-radius: 15px;
     transition: 1s;
-    transform: translate3d(0,-600px, 200px) rotateX(-40deg) scale(0.6);
+    transform: translate3d(350px,-600px, 200px) rotateX(-40deg) scale(0.6);
     background: linear-gradient(
       175deg,
       rgba(255,255,255,0.8) 0%,
@@ -1460,7 +1460,7 @@ textarea::-webkit-scrollbar-thumb
       0 10px rgba(0, 0, 0, 0.05) inset,
       0 0 5px 2px rgba(255, 255, 255, 0.75),
       0 0 10px 2px rgba(255, 255, 255, 0.75) inset;
-      transform: translate3d(0,-600px, 200px) rotateX(-40deg) scale(0.6) rotateX(-5deg);
+      transform: translate3d(350px,-600px, 200px) rotateX(-44deg) scale(0.6);
       
 }
 .button-startleft
