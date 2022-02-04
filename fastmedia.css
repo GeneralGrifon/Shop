@@ -3450,6 +3450,8 @@ textarea::-webkit-scrollbar-thumb
     transform-style: preserve-3d;
     transform: translateZ(-200px);
     transition: 1s;
+    /* background-color: blue; */
+    left: 39%;
 
 }
 .opener
