@@ -1777,10 +1777,10 @@ textarea::-webkit-scrollbar-thumb
 {
   transform: translateZ(370px);
 }
-#show:hover
+/* #show:hover
 {
   transform: translateZ(370px);
-}
+} */
 #nice:hover
 {
   transform: translateZ(370px);
