@@ -300,6 +300,7 @@
                 </div>
                 <div id="wall1" class="wall wall1"></div>
                 <div id="wallsex" class="wall wallsex">
+                <h1>ckick here</h1>
                     <!-- <img src="https://i.pinimg.com/originals/9e/75/9f/9e759fd37ccd98da121b670249f34afa.gif"> -->
                 </div>
                 <div id="wall2" class="wall wall2">
@@ -778,7 +779,13 @@
       $("#np").load("socialnews.html"); 
     });
 </script>
-
+                
+<script> 
+    $('.wallsex').on("click", function() {
+      $("#wallsex").load("video.html"); 
+    });
+</script>
+                
 <script> 
     $('#z2').on("click", function() {
       $("#np").addClass('npon'); 
@@ -1193,6 +1200,7 @@ function myClick() {
                 element5.classList.remove("picturesmusic");
                 var element5 = document.getElementById("pictures");
                 element5.classList.remove("opa");
+                $('.wallsex' ).empty();
 
     }
 </script>
