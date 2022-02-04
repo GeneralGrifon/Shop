@@ -224,7 +224,7 @@ body
 .scene.scenemove
 {
     transform: translateZ(1500px) rotateX(3deg);
-    transition: 10s;
+    transition: 5s;
 }
 .scene.scenesky
 {
