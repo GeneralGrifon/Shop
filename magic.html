@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="magic.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body id="body">
+    <div id="efir" class="efir">
+        <div id="strata" class="strata"  >
+            <!-- <div id="center" class="center" onclick="DOPEMODE()"></div> -->
+            <div id="spell" class="spell spl1" onclick="DOPEMODE()" ondblclick="MOUSEUP()">
+                <div class="mirror mrrr1">
+                    <div id="center" class="center" ></div>
+                    <div class="cover cvr1"></div>
+                </div>
+                <div class="mirror mrrr2">
+                    <div id="center" class="center" ></div>
+                    <div class="cover cvr2">
+                        
+                    </div>
+                </div>
+                <div class="mirror mrrr3">
+                    <div id="center" class="center" "></div>
+                    <div class="cover cvr3">
+                        
+                    </div>
+                   
+                </div>
+                
+                
+                <!-- <div class="ring rng1"></div>
+                <div class="ring rng2"></div>
+                <div class="ring rng3"></div>
+                <div class="ring rng4"></div>
+                <div class="ring rng5"></div>
+                <div class="ring rng6"></div>
+                <div class="ring rng7"></div>
+                <div class="ring rng8"></div>
+                <div class="ring rng9"></div> -->
+                
+            </div>
+            <!-- <div class="info">click to rotate / dblclick to exit</div> -->
+            <!-- <div class="controller">ALLO</div> -->
+            
+        </div>
+        <!-- <div id="unbind" class="unbind"></div> -->
+        <!-- <div class="spell spl2">
+            <div class="mirror mrrr1">
+                <div class="cover cvr1"></div>
+            </div>
+        </div>
+        <div class="spell spl3">
+            <div class="mirror mrrr1">
+                <div class="cover cvr1"></div>
+            </div>
+        </div> -->
+    </div>
+    <div class="data">
+        <h2>INFO:</h2>
+        <h1 class="inf i1">Клиторальный стимулятор Mickey от бренда Pink Rabbit с длинными кроличьими ушками создан для ласк клитора, а также для экспериментов с другими эрогенными зонами.
+        </h1>
+        <h1 class="inf i2">Узорные непрозрачные чулки от бренда Lapin Rose сделаны с добавлением лайкры.
+             У них есть гладкая резинка с рюшами, которая будет удерживать их на месте.
+              Сзади чулки украшает декоративная шнуровка черного цвета, благодаря которой 
+              Ваш образ будет более эффектным и дерзким.
+               Чулки с таким интересным дизайном можно носить с мини-юбками,
+                шортами или платьями для придания своему образу сексуальности.
+                 Также ими можно дополнить ролевой или маскарадный костюм.
+        </h1>
+        <h1 class="inf i3">Эта реалистичная секс-кукла, выполненная в полный рост, практически неотличима от настоящей девушки благодаря своим пропорциям, манящим изгибам тела, весу и невероятно нежному материалу. Слегка приоткрытые пухлые губки, аккуратный нос и легкий макияж делают ее лицо очень выразительным. С ней будет возможно исполнить все свои самые тайные фантазии, а она, в свою очередь, никогда не откажет. Куклу можно наряжать в самые откровенные наряды и менять цвет волос при помощи париков, создавая из нее идеальную для себя любовницу, согласную на все.
+        </h1>
+    </div>
+
+
+    <script>
+        function DOPEMODE() {
+            var o = $(".strata");
+            // var m = $(".lottieselector");
+    $("#efir").on("mousemove", function (t) {
+        var e = -($(window).innerWidth() / 2 - t.pageX) / 0.7,
+            n = ($(window).innerHeight() / 2 - t.pageY) / 10;
+        o.attr("style", "transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-webkit-transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-moz-transform: rotateY(" + e + "deg) rotateX(" + n + "deg)")
+        $("#spell").addClass('off');
+        // m.attr("style", "transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-webkit-transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-moz-transform: rotateY(" + e + "deg) rotateX(" + n + "deg)")
+    })
+        // $('.dope').toggleClass('active4000');
+        
+    //     .mouseup(function () {
+    //         $("#body").unbind('mousemove');
+        
+    // })    
+    }
+    </script>
+
+<script>
+    function MOUSEUP() {
+        $("#efir").unbind('mousemove');
+        $("#spell").removeClass('off');
+        // var o = $(".spell");
+        // o.attr("style", "transform: rotateY(0deg) rotateX(0deg);-webkit-transform: rotateY(0deg) rotateX(0deg);-moz-transform: rotateY(0deg) rotateX(0deg); transform: translateZ(0px)")
+        // m.attr("style", "transform: rotateY(0deg) rotateX(0deg);-webkit-transform: rotateY(0deg) rotateX(0deg);-moz-transform: rotateY(0deg) rotateX(0deg); transform: translateZ(0px)")
+    }
+</script>
+
+<script>
+    $(document).ready(function(){
+    $('.mrrr1').on("mouseenter mouseleave", function() {
+    $('.i1').toggleClass('on');  
+    });
+    });
+    </script>
+    
+    <script>
+        $(document).ready(function(){
+        $('.mrrr2').on("mouseenter mouseleave", function() {
+        $('.i2').toggleClass('on');  
+        });
+        });
+        </script>
+<script>
+    $(document).ready(function(){
+    $('.mrrr3').on("mouseenter mouseleave", function() {
+    $('.i3').toggleClass('on');  
+    });
+    });
+    </script>
+
+
+<!-- <script>
+    $(document).ready(function(){
+    animateDiv('.spell');
+    animateDiv('.b');
+    animateDiv('.c');
+    animateDiv('.d');
+});
+
+function makeNewPosition(){
+    
+    var h = $(window).height() - 50;
+    var w = $(window).width() - 50;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateDiv(myclass){
+    var newq = makeNewPosition();
+    $(myclass).animate({ top: newq[0], left: newq[1] }, 10000,   function(){
+      animateDiv(myclass);        
+    });
+    
+};
+</script> -->
+</body>
+</html>
