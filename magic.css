@@ -256,7 +256,7 @@ h2
 }
 .cvr2
 {
-    /* background-image: url(/shells/korn.gif); */
+    /* background-image: url(shells/korn.gif); */
     background-image: url(/shells/dance.gif);
     /* background-color: aqua; */
     background-position: 20%;
@@ -266,7 +266,7 @@ h2
 .cvr3
 {
    
-    /* background-image: url(/shells/bmc.gif); */
+    /* background-image: url(shells/bmc.gif); */
     background-image: url(/shells/mrrr2.gif);
     background-position: 40%;
     /* filter: blur(2px); */
@@ -275,7 +275,7 @@ h2
 .cvr1
 {
     background-position: 31%;
-    /* background-image: url(/shells/mrrr3.gif); */
+    /* background-image: url(shells/mrrr3.gif); */
      background-image: url(/shells/TV.gif);
     /* background-image: url(/shells/bmc.gif); */
     /* filter: blur(2px); */
