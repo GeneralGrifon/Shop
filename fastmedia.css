@@ -67,7 +67,7 @@ body
     position: absolute;
     transform-style: preserve-3d;
     width: 100%;
-    height: 100%;
+    height: 88%;
     display: flex;
     justify-content: center;
     /* outline:  1px solid white; */
@@ -414,7 +414,7 @@ body
     background-size: 2000px;
     backface-visibility: hidden;
     border-radius: 20px;
-    transform: translate3d(-450px, -100px, -100px) rotateY(90deg) scale(0.5);
+    transform: translate3d(-450px, -80px, 50px) rotateY(90deg) scale(0.5);
     transition: 0.5s;
     filter: blur(6px) opacity(0.8);
     transition-delay: 0.1s;
@@ -1079,6 +1079,7 @@ textarea::-webkit-scrollbar-thumb
     display: flex;
     justify-content: center;
     align-items: center;
+    /* display: none; */
     /* mix-blend-mode: s; */
 }
 .wall.wall1 img
@@ -1104,7 +1105,7 @@ textarea::-webkit-scrollbar-thumb
 }
 .wall.wall3.dance
 {
-    background: url(shells/wall3dance.gif); 
+    /* background: url(shells/wall3dance.gif);  */
     /* filter: hue-rotate(-30deg); */
     background-size: cover;
     transition: 2s;
@@ -1119,11 +1120,34 @@ textarea::-webkit-scrollbar-thumb
     /* transition: 1s; */
     border-radius: 1px;
     text-align: center;
-
     transition-delay: 0.3s;
+    display: flex;
+    justify-content: center;
 
 }
-
+.wall.wall2 h1
+{
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: ; */
+    bottom: 12%;
+    left: 5%;
+    font-size: 17rem;
+    color: rgba(255, 255, 255, 0.007);
+}
+.wall.wall2 .wallcontent
+{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 70%;
+    height: 70%;
+    /* background-color: #003cff; */
+    border-right: rgba(255, 255, 255, 0.014) 0.6rem solid;
+    border-bottom: rgba(255, 255, 255, 0.014) 1rem solid;
+    border-left: rgba(128, 128, 128, 0) 2rem solid;
+    border-top: rgba(128, 128, 128, 0) 2rem solid;
+}
 .wall.wall3
 {
 
@@ -1155,14 +1179,40 @@ textarea::-webkit-scrollbar-thumb
 {
     /* ЛЕВО */
     background: radial-gradient(#1f1f1f, #000000);
-    /* background: radial-gradient(#00025f, #000000); */
-
-        transform: translate3d(-500px, 0px, 100px) rotateY(90deg) rotateZ(0deg);
+    transform: translate3d(-500px, 0px, 100px) rotateY(90deg) rotateZ(0deg);
     transition: 0.2s;
-    text-align: center;
+    /* display: block; */
+    /* text-align: center; */
     /* left: -100px; */
 
 
+}
+.wall.wall4 .wallcontent4
+{
+
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    display: block;
+    /* background-color: #003cff; */
+    border-left: rgba(255, 255, 255, 0.014) 0.6rem solid;
+    border-bottom: rgba(255, 255, 255, 0.014) 1rem solid;
+    border-right: rgba(128, 128, 128, 0) 2rem solid;
+    border-top: rgba(128, 128, 128, 0) 2rem solid;
+    /* z-index: 100; */
+
+}
+.wall.wall4 .wallcontent4 h1
+{
+    position: absolute;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Enchanted Land'; */
+    bottom: 0;
+    left: -60%;
+    font-size: 17rem;
+    color: rgba(255, 255, 255, 0.007);
 }
 .wall.wallsex
 {
@@ -1756,18 +1806,20 @@ textarea::-webkit-scrollbar-thumb
 }
 #link img
 {
-    width: 90%;
+    width: 50%;
+    opacity: 0.5;
 }
 #link
 {
     background-color: rgba(0, 0, 0, 0);
-    bottom: 90px;
-    left: 450px;
+    bottom: 50px;
+    left: 22%;
     position: absolute;
+    border-radius: 50%;
     /* bottom: 1%; */
     margin: 1%;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3427,8 +3479,8 @@ textarea::-webkit-scrollbar-thumb
     display:flex;
     justify-content: center; /*центрируем элемент по горизонтали */
     align-items: center;
-    width: 80%;
-    height: 20%;
+    width: 77%;
+    height: 18%;
     /* padding-top: 20%; */
     
     /* width: 100px; */
@@ -3518,7 +3570,7 @@ textarea::-webkit-scrollbar-thumb
 .name
 {
 
-    width: 555px;
+    width: 500px;
     height: 150px;
     /* letter-spacing: 10px; */
     outline: 1px solid #636eff;
@@ -5510,7 +5562,7 @@ svg
     /* transform: translateZ(-400px); */
     /* display: none; */
     transition: 0.3s;
-    width: 60%;
+    width: 50%;
     height: 0%;
     position: absolute;
     /* overflow-x: hidden; */
@@ -5519,8 +5571,9 @@ svg
     /* top: 0; */
     /* left: 0; */
     top: 0%;
-    left: 10%;
-    outline: 1px solid rgb(0, 89, 255);
+    left: 12%;
+    /* outline: 1px solid rgb(0, 89, 255); */
+    outline: 1px solid rgba(255, 255, 255, 0.52);
     border-radius: 13px;
     backdrop-filter: blur(10px);
     /* background-color: #ffffff0c; */
@@ -5533,6 +5586,7 @@ svg
 {
     /* display: block; */
     height: 65%;
+    width: 50%;
     
 }
 
@@ -5650,4 +5704,300 @@ svg
 {
     
     padding-left: 10px;
+}
+.petportal
+{
+    position: absolute;
+    height: 70%;
+    width: 40%;
+    top: 15%;
+    left: 55%;
+    transition: 0.2s;
+    /* outline: 1px solid rgb(0, 60, 255); */
+    /* mix-blend-mode: screen; */
+    /* mix-blend-mode: color-dodge; */
+}
+.petportal.ppoff
+{
+    width: 0;
+}
+.galki
+{
+    /* outline: 1px solid red; */
+    position: absolute;
+    /* transform: translateX(-20px); */
+    right: 2%;
+    bottom: 0;
+    width: 3%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.galka
+{
+    bottom: 20px;
+    margin-top: 50px;
+    /* padding: 10px; */
+    transform: rotate(135deg);
+    /* bottom: 0%; */
+    /* left: 0%; */
+    position: relative;
+    width: 10%;
+    padding-top: 10%;
+    /* background-color: #ff0000; */
+    border-top: 0.3rem solid rgb(255, 255, 255);
+    border-right: 0.3rem solid rgb(255, 255, 255);
+    animation: galka 0.9s linear infinite;
+
+}
+.glk1
+{
+    animation-delay: 0.1s;
+    /* background-color: #003cff; */
+}
+.glk2
+{
+    animation-delay: 0.2s;
+}
+.glk3
+{
+    animation-delay: 0.3s;
+}
+.glk4
+{
+    animation-delay: 0.4s;
+}
+.glk5
+{
+    animation-delay: 0.5s;
+}
+.glk6
+{
+    animation-delay: 0.6s;
+}
+.glk7
+{
+    animation-delay: 0.7s;
+}
+.glk8
+{
+    animation-delay: 0.8s;
+}
+.glk9
+{
+    animation-delay: 0.9s;
+}
+.glk10
+{
+    animation-delay: 1s;
+    /* background-color:#00c3ff; */
+}
+@keyframes galka
+{
+    0%
+    {
+        opacity: 0;
+    }
+    25%
+    {
+        opacity: 50%;
+    }
+    60%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+.gadjet
+{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 3%;
+    height: 40%;
+    background-color: #003cff00;
+    outline: 1px rgba(255, 255, 255, 0.349) solid;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 0 0% 50% 50%;
+    transition: 0.2s;
+    backdrop-filter: blur(8px);
+}
+.gadjet.gdjton
+{
+    width: 30%;
+    backdrop-filter: blur(8px);
+    border-radius: 0 0% 100% 0%;
+}
+.gadjet.gdjton h1
+{
+    display: block;
+}
+.gadjet h1
+{
+    padding: 10%;
+    color: white;
+    font-size: 1vw;
+    font-family: 'Courier New', Courier, monospace;
+    display: none;
+}
+.myicon
+{
+    position: absolute;
+    bottom: 15%;
+    left: 5.8%;
+    width: 1.5%;
+    height: 30%;
+    /* background-color: #003cff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+.myicon .mi
+{
+    position: relative;
+    /* border: 1px solid wheat; */
+    width: 70%;
+    padding-top: 70%;
+    margin: 30%;
+    border-radius: 50%;
+    background-color: #00000000;
+}
+.myicon h1
+{
+    position: absolute;
+    left: -450%;
+    top: 30%;
+    /* background-color: #003cff; */
+    width: 1500%;
+    letter-spacing: 10px;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    transform: rotate(-90deg);
+    color: rgba(255, 255, 255, 0.335);
+}
+@keyframes span
+{
+    0%
+    {
+        background-color: rgba(255, 123, 0, 0);
+        transform: scale(0);
+        
+    }
+    20%
+    {
+        box-shadow:  0 0 2px rgb(255, 0, 0),
+    0 0 5px rgb(255, 0, 0),
+    0 0 10px red,
+    0 0 15px red,
+    0 0 20px red;
+    background-color: rgb(255, 123, 0);
+    transform: scale(1);
+    }
+    70%
+    {
+        box-shadow: none;
+        background-color: rgba(255, 123, 0, 0);
+        transform: scale(0);
+    }
+    100%
+    {
+        
+    }
+}
+.mi1
+{
+    animation: span 6.5s linear infinite;
+    animation-delay: 3s;
+    
+    /* border-radius: 50%; */
+    /* transform: rotate(0deg); */
+}
+.mi2
+{
+    /* border-radius: 50%; */
+    animation: span 6.5s linear infinite;
+    animation-delay: 2.5s;
+    background-color: rgb(255, 123, 0);
+    /* transform: scale(2); */
+    /* transform: rotate(90deg); */
+}
+.mi3
+{
+    
+    animation: span 6.5s linear infinite;
+    animation-delay: 2s;
+    background-color: rgb(255, 123, 0);
+    /* transform: rotate(270deg); */
+}
+.mi4
+{
+    /* border-radius: 50%; */
+    animation: span 6.5s linear infinite;
+    background-color: rgb(255, 123, 0);
+    animation-delay: 1.5s;
+    /* transform: rotate(180deg); */
+}
+.mi5
+{
+    /* border-radius: 50%; */
+    animation: span 6.5s linear infinite;
+    animation-delay: 1s;
+    background-color: rgb(255, 123, 0);
+    /* transform: rotate(270deg); */
+}
+.mi6
+{
+    /* border-radius: 50%; */
+    animation: span 6.5s linear infinite;
+    background-color: rgb(255, 123, 0);
+    animation-delay: 0.5s;
+    /* transform: rotate(180deg); */
+}
+.mi7
+{
+    /* border-radius: 50%; */
+    animation: span 6.5s linear infinite;
+    animation-delay: 0s;
+    background-color: rgb(255, 123, 0);
+    /* transform: rotate(270deg); */
+}
+.mi8
+{
+    /* border-radius: 50%; */
+    animation: span 6.5s linear infinite;
+    animation-delay: 4s;
+    background-color: rgb(255, 123, 0);
+    /* transform: rotate(270deg); */
+}
+.mi9
+{
+    /* border-radius: 50%; */
+    animation: span 6.5s linear infinite;
+    animation-delay: 3.5s;
+    background-color: rgb(255, 123, 0);
+    /* transform: rotate(270deg); */
+}
+.fakel
+{
+    top: -22%;
+    position: absolute;
+    width: 100%;
+    padding-top: 100%;
+    margin: 0%;
+    border-radius: 50%;
+    /* background-color: #00000000; */
+ 
+    /* border-radius: 50%; */
+    animation: span 6.5s linear infinite;
+    animation-delay: 6s;
+    /* background-color: rgb(0, 204, 255); */
+    /* transform: rotate(270deg); */
 }
