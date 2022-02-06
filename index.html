@@ -6,240 +6,25 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <title>Influencer</title>
+    <!-- <link rel="stylesheet" href="fastmedia.css"> -->
     <link rel="stylesheet" href="fastmedia.css">
-<!--     <link rel="stylesheet" href="actual.css"> -->
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="user.js">
 
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
     <!-- <script src="socketio.js"></script> -->
-    <script defer src="script.js"></script>
+    <!-- <script defer src="script.js"></script> -->
+    <script src="actual.js"></script>
+    <script src="user.js"></script>
     <!-- <script defer src="server.js"></script> -->
     <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script> -->
 
     <!-- <script src="js/jquery-2.2.3.min.js"></script> -->
-
-    <script type="text/javascript">
-    function rotate() {
-        // const scene = document.getElementById('scene');
-        // scene.style.transform='rotateY(-90deg) translateX(0px) translateZ(0px)';
-        // scene.style.transition="2s"
-        // const metascene = document.getElementById('metascene');
-        // metascene.style.transform='rotateY(-90deg) translateX(0px) translateZ(0px)';
-        // metascene.style.transition="2s"
-        // const lottiescene = document.getElementById('lottiescene');
-        // lottiescene.style.transform='rotateY(-90deg) translateX(0px) translateZ(0px)';
-        // lottiescene.style.transition="2s"
-
-        const smart2 = document.getElementById('smart2');
-        smart2.style.display='none';
-        const walleft = document.getElementById('walleft');
-        walleft.style.display='block';
-        
-    }
-    </script>
-
-    <script type="text/javascript">
-    function rotate2() {
-        // const selector = document.getElementById('scene');
-        // selector.style.transform='rotateY(90deg) translateX(-500px) translateZ(-100px)';
-        // selector.style.transition="2s"
-
-        // const metascene = document.getElementById('metascene');
-        // metascene.style.transform='rotateY(90deg) translateX(-500px)';
-        // metascene.style.transition="2s"
-        // const lottiescene = document.getElementById('lottiescene');
-        // lottiescene.style.transform='rotateY(90deg) translateX(-500px)';
-        // lottiescene.style.transition="2s"
-
-        const button3 = document.getElementById('button3');
-        button3.style.display='block';
-        const smart2 = document.getElementById('smart2');
-        smart2.style.display='none';
-        }
-    </script>
-
-    <script type="text/javascript">
-    function look() {
-            const selector = document.getElementById('select');
-            selector.style.transform='rotateY(-185deg) rotateX(35deg) translateZ(600px) translateY(800px) translateX(1000px)';
-            selector.style.transition="3s"
-
-            }
-    </script>
-    <script type="text/javascript">
-    function start() {      
-            const wall11 = document.getElementById('wall1');
-            wall11.style.transform='rotateX(0deg) translateY(0px) translateX(0px) translateZ(-400px)';
-            wall11.style.transition="5s"
-            const smart2 = document.getElementById('smart2');
-        smart2.style.display='block';
-        const walleft = document.getElementById('walleft');
-        walleft.style.display='none';
-        // const wallsex = document.getElementById('wallsex');
-        // wallsex.style.display='none';
-        }
+   
  
-    </script>
-
-    <script type="text/javascript">
-    function move() {
-
-        const wall = document.getElementById('wall1');
-        wall.style.transform='rotateX(90deg) translateY(-1000px) translateX(-0px) translateZ(-600px)';
-        wall.style.transition="3s"
-
-        const smart2 = document.getElementById('smart2');
-        smart2.style.display='none';
-        const wallsex = document.getElementById('wallsex');
-        wallsex.style.display='block';
- 
-            }
-    </script>
-
-    <script type="text/javascript">
-    function sky() {
-
-
-        const carier = document.getElementById('carier');
-            carier.style.display='none';
-            const life = document.getElementById('life');
-            life.style.display='none';
-            const art = document.getElementById('art');
-            art.style.display='none';
-            const btn2 = document.getElementById('linkoff');
-            btn2.style.opacity='1';
-
-        }
-    </script>
-
-    <script type="text/javascript">
-    function back() {
-
-
-                const button3 = document.getElementById('button3');
-                button3.style.display='none';
- 
-                const smart2 = document.getElementById('smart2');
-                smart2.style.display='block';
-                const walleft = document.getElementById('walleft');
-                walleft.style.display='none';
-                const btn2 = document.getElementById('linkoff');
-                btn2.style.opacity='0';
-            }
-    </script>
-
-    <script type="text/javascript">
-    function down() {
-                const selector = document.getElementById('select');
-                selector.style.transform='translate3d(0px, -800px, -300px) rotateX(15deg) translateX(-900px)';
-                selector.style.transition="1s"
-            }
-    </script>
-
-<script type="text/javascript">
-    function carier() {
-            // const selector = document.getElementById('select');
-            // selector.style.transform='translate3d(0px, 0px, 400px)';
-            // selector.style.transition="1s"
-
-            // const carier = document.getElementById('carier');
-            // carier.style.display='block';
-            // const life = document.getElementById('life');
-            // life.style.display='none';
-            // const art = document.getElementById('art');
-            // art.style.display='none';
-            // const textbox2 = document.getElementById('textbox2');
-            // textbox2.style.display='none';
-           
-
-        }
-</script>
-<script type="text/javascript">
-    function life() {
-            // const selector = document.getElementById('select');
-            // selector.style.transform='translate3d(0px, 100px, 400px)';
-            // selector.style.transition="1s"
-
-            const life = document.getElementById('life');
-            life.style.display='block';
-            const carier = document.getElementById('carier');
-            carier.style.display='none';
-            const art2 = document.getElementById('art');
-            art2.style.display='none';
-            // const closeall = document.getElementById('closeall');
-            // closeall.style.display='block';
-            // const closeallid = document.getElementById('closeallid');
-            // closeallid.style.display='block';
-            const textbox2 = document.getElementById('textbox2');
-            textbox2.style.display='none'; 
-        }
-</script>
-
-<script type="text/javascript">
-    function art() {
-            // const selector = document.getElementById('select');
-            // selector.style.transform='translate3d(0px, 100px, 400px)';
-            // selector.style.transition="1s"
-
-            const art3 = document.getElementById('art');
-            art3.style.display='block';
-            const life = document.getElementById('life');
-            life.style.display='none';
-            const carier = document.getElementById('carier');
-            carier.style.display='none';
-            // const closeall = document.getElementById('closeall');
-            // closeall.style.display='block';
-            // const closeallid = document.getElementById('closeallid');
-            // closeallid.style.display='block';
-        const textbox2 = document.getElementById('textbox2');
-        textbox2.style.display='none';  
-        }
-</script>
-
-<script type="text/javascript">
-    function carierdown() {
-            // const selector = document.getElementById('select');
-            // selector.style.transform='translate3d(0px, -90px, 400px)';
-            // selector.style.transition="1s"
-
-            
-            const carier = document.getElementById('carier');
-            carier.style.display='none';
-            // const closeallid = document.getElementById('closeallid');
-            // closeallid.style.display='none';
-
-        }
-</script>
-
-<script type="text/javascript">
-    function lifedown() {
-            // const selector = document.getElementById('select');
-            // selector.style.transform='translate3d(0px, -90px, 400px)';
-            // selector.style.transition="1s"
-
-            const life = document.getElementById('life');
-            life.style.display='none';
-            // const closeallid = document.getElementById('closeallid');
-            // closeallid.style.display='none';
-        }
-</script>
-
-<script type="text/javascript">
-    function artdown() {
-            // const selector = document.getElementById('select');
-            // selector.style.transform='translate3d(0px, -90px, 400px)';
-            // selector.style.transition="1s"
-
-            const art = document.getElementById('art');
-            art.style.display='none';
-            // const closeallid = document.getElementById('closeallid');
-            // closeallid.style.display='none';
-        }
-</script>
-
 </head>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script> -->
 <body id="body" class="body">
@@ -264,7 +49,7 @@
     
                 </div>
                 <button id="link" onclick="skyblock()"">
-                    <img src="shells/zametki.png" alt=""></button>
+                    <img src="/shells/zametki.png" alt=""></button>
                 <div class="workpage">
                 </div>
 
@@ -313,18 +98,18 @@
                     <!-- <img src="https://i.pinimg.com/originals/9e/75/9f/9e759fd37ccd98da121b670249f34afa.gif"> -->
                 </div>
                 <div id="wall2" class="wall wall2">
+                    <h1>M#$$%*
+                    </h1>
                     <div class="wallcontent">
-                        <h3>СОСИТЕ ВСЕ
-                        </h3>
+                        
                     </div>
                 </div>
                 <div id="wall3" class="wall wall3">
-<!--                     <h1>открыть/закрыть чат</h1> -->
+                    <!-- <h1>открыть/закрыть чат</h1> -->
                 </div>
                 <div class="wall wall4">
                     <div class="wallcontent4">
-    
-                        </h3>
+                        <h1>8->>></h1>
                     </div>
                 </div>
                 <div id="walleft" class="wall wallleft">
@@ -692,18 +477,15 @@
             <img src="events/1/vg4.png" alt="">
         </div>
     </div>
-    <!-- <div class="workblocker"></div> -->
-    
+    <!-- <div class="workblocker"></div> --> 
     <div id="closeall" class="closeall">
         <!-- <img id="closeallid" src="shells/close..png" alt=""  onclick="lifedown()", onclick="carierdown()", onclick="artdown()"> -->
         <img id="closeallid" src="shells/closeST.png" alt=""  onclick="closeall()">
         
     </div>
-
-    <div id="footer" class="footer">
+    <!-- <div id="footer" class="footer">
         <h1>Beta version:1.0 / 22.11.2021</h1>
-    </div>
-
+    </div> -->
     <div id="scenerotate" class="scenerotate" onclick="scenerotate()">
         <div class="stop">Rotate</div>
     </div>
@@ -724,16 +506,83 @@
         
     </iframe>
 
+    <iframe class="petportal" src="magic.html" frameborder="0"></iframe>
+
+    <div class="galki">
+        <div class="galka glk1"></div>
+        <div class="galka glk2"></div>
+        <div class="galka glk3"></div>
+        <div class="galka glk4"></div>
+        <div class="galka glk5"></div>
+        <div class="galka glk6"></div>
+        <div class="galka glk7"></div>
+        <div class="galka glk8"></div>
+        <div class="galka glk9"></div>
+        <div class="galka glk10"></div>
+    </div>
+
+    <div class="myicon">
+        <div class="mi8 mi"></div>
+        <div class="mi9 mi"></div>
+        <div class="mi1 mi"></div>
+        <div class="mi2 mi"></div>
+        <div class="mi3 mi"></div>
+        <div class="mi4 mi"></div>
+        <div class="mi5 mi"></div>
+        <div class="mi6 mi"></div>
+        <div class="mi7 mi"></div>
+        
+        <h1>last updates</h1>
+    </div>
+
+    <div id="gadjet" class="gadjet">
+        <h1>System information: <br>
+            Chat: ver 1.1; <br>
+            - open/close: ava click. <br>
+            Billboard: ver 1.0; <br>
+            - click to rotate <br>
+            - double click to exit. <br>
+            Master tools: demo mode;
+        </h1>
+        
+    </div>
+
+    <!-- <iframe class="asexuare" src=""></iframe> -->
+
+<script> 
+        $('.gadjet').on("click", function() {
+          $("#gadjet").toggleClass('gdjton'); 
+        });
+</script>
+
+<!-- <script>
+    $(document).ready(function(){
+    $('#z2').on("click", function() {
+    $('.petportal').addClass('ppoff');
+    });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+    $('#z6').on("click", function() {
+    $('.petportal').addClass('ppoff');
+    });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+    $('#show').on("click", function() {
+    $('.petportal').addClass('ppoff');
+    });
+    });
+</script>
     <script>
     $(document).ready(function(){
     $('.opener').on("click", function() {
-    // $('.mediaclose').addClass('on2');
     $('.chatiframe').toggleClass('chaton');
     $('.blur').removeClass('poston2');
     $('.blur').removeClass('poston');
     $('.smart2').removeClass('active8');
-    // $('.scene').addClass('sceneback');
-    // $('.wall3').toggleClass('dance');    
     });
     });
     </script>
@@ -741,20 +590,18 @@
     <script>
         $(document).ready(function(){
         $('.manifest').on("mouseenter mouseleave", function() {
-        // $('.mediaclose').addClass('on2');
         $('.manifest').toggleClass('active9');  
         });
         });
-        </script>
+        </script> -->
 
+        
     <script>
         document.querySelector('article').addEventListener('click', myClick);
         
         
         function myClick() {
-            //console.log('work');
-            // get input
-            // input - value
+
             let a = document.querySelector('.i-1').value;
             console.log(a);
             document.querySelector('.out2').innerHTML  += "<br> -- " + a + " -- received<br>";
@@ -818,12 +665,16 @@
     });
 </script>
 
+
+
 <!-- <script>
     $('.button-startsex button' ).click(function() {
       $('.wallsex' ).empty();
     });
     </script> -->
 
+
+    
 <script> 
     $('#z2').on("click", function() {
       $("#np").addClass('npon'); 
@@ -896,7 +747,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     $('.personpage').addClass('ppon');
     $('.smart').removeClass('active5');
     $('.post').removeClass('on');
-    // $('.blur').removeClass('poston');
+
     $('.smart2').removeClass('active8');
     $('.favorite').removeClass('active2');
     $('.poseselect').removeClass('active400');
@@ -906,7 +757,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     $('.face').removeClass('active5');
     $('.card').removeClass('active6');
     $('.opener').removeClass('openerfoto');
-    // $('.menu').removeClass('menuon');
+
     });
     });
 </script>
@@ -915,7 +766,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     <script>
     $(document).ready(function(){
     $('.s').on("click", function() {
-    // $('.smart').toggleClass('active5');
+
     $('.blur').toggleClass('poston');
     $('.post').toggleClass('on');
     $('.name').toggleClass('nameoff');
@@ -925,6 +776,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     $('.personpage').removeClass('ppon');
     $('.favorite').removeClass('active2');
     $('.chatiframe').removeClass('chaton');
+    $('.petportal').toggleClass('ppoff');
     
     });
     });
@@ -948,10 +800,8 @@ $('.sub1').height($('.sub1').width()/0.75);
     $('.blur').removeClass('poston');
     $('.blur').removeClass('poston2');
     $('.personpage').removeClass('ppon');
+    $('.petportal').toggleClass('ppoff');
     
-    // $('.menu').removeClass('menuon');
-    
-
     });
     });
 </script>
@@ -978,6 +828,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     $('.blur').removeClass('poston2');
     $('.post').removeClass('on');
     $('.chatiframe').removeClass('chaton');
+    $('.petportal').toggleClass('ppoff');
     });
     });
 </script>
@@ -1042,59 +893,6 @@ $('.sub1').height($('.sub1').width()/0.75);
     });
 </script>
 
-</script>
-
-    <script>
-        function blockopen() {
-       var block = document.getElementById("block");
-       block.classList.add("active900");
-    }
-    </script>
-    <script>
-        function artopen() {
-            var art = document.getElementById("art");
-       art.classList.add("arton");
-    }
-    </script>
-    <script>
-        function lifeopen() {
-            var life = document.getElementById("life");
-       life.classList.add("lifeon");
-    }
-    </script>
-    <script>
-        function carieropen() {
-       var carier = document.getElementById("carier");
-       carier.classList.add("carieron");
-    }
-    </script>
-
-    <script>
-    function blockclose() {
-       var block = document.getElementById("block");
-       block.classList.remove("active900");
-       var art = document.getElementById("art");
-       art.classList.remove("arton");
-       var carier = document.getElementById("carier");
-       carier.classList.remove("carieron");
-       var life = document.getElementById("life");
-       life.classList.remove("lifeon");
-    }
-    </script>
-
-    <script>
-        function eventsopen() {
-       var element = document.getElementById("events");
-       element.classList.add("active901");
-    }
-    </script>
-
-    <script>
-    function eventsclose() {
-       var element = document.getElementById("events");
-       element.classList.remove("active901");
-    }
-    </script>
 
     </script>
 
@@ -1105,192 +903,6 @@ $('.sub1').height($('.sub1').width()/0.75);
     });
     });
     </script>
-
-
-<!-- <script>
-document.querySelector('article').addEventListener('click', myClick);
-
-
-function myClick() {
-
-    let a = document.querySelector('.textarea').value;
-    console.log(a);
-    document.querySelector('.out').innerHTML += a;
-    document.querySelector('.out2').innerHTML += a;
-    
-}
-</script> -->
-
-
-    <script>
-    var myaudio = $("#myaudio")[0];
-    $("#x")
-       .mouseenter(function() {
-          myaudio.play();
-       });
-       $("#x2")
-       .mouseenter(function() {
-          myaudio.play();
-       });
-       $("#x3")
-       .mouseenter(function() {
-          myaudio.play();
-       });
-       var myaudio2 = $("#myaudio2")[0];
-        $("#gl a")
-           .mouseenter(function() {
-              myaudio2.play();
-           });
-    </script>
-
-
-
-    <script>
-        var x = document.getElementById("myTrack"); 
-        
-        function playAudio() { 
-          x.play(); 
-        } 
-        
-        function pauseAudio() { 
-          x.pause(); 
-        } 
-    </script>
-
-
-    <script>
-    function blocker2() {
-       var element = document.getElementById("blocker2");
-                element.classList.remove("activeblock3");
-       element.classList.add("activeblock2");
-    }
-    </script>
-    <script>
-        function blocker3() {
-           var element = document.getElementById("blocker2");
-           element.classList.add("activeblock3");
-        }
-    </script>
-    
-
-<script>
-        function opa() 
-        {
-           var element = document.getElementById("pictures");
-           element.classList.add("opa");
-        }
-</script>
-<script>
-    function sceneright() 
-    {
-       var element = document.getElementById("scene");
-       element.classList.add("sceneright");
-    }
-    function sceneleft() 
-    {
-       var element = document.getElementById("scene");
-       element.classList.add("sceneleft");
-    }
-    function sceneleft2() 
-    {
-       var element = document.getElementById("scene");
-       element.classList.add("sceneleft2");
-    }
-    function scenemove() 
-    {
-       var element = document.getElementById("scene");
-       element.classList.add("scenemove");
-    }
-    function scenesky() 
-    {
-       var element = document.getElementById("scene");
-       element.classList.add("scenesky");
-    }
-    function scenedefault() {
-                var element = document.getElementById("scene");
-                element.classList.remove("sceneright");
-                element.classList.remove("sceneleft");
-                element.classList.remove("sceneleft2");
-                element.classList.remove("scenemove");
-                element.classList.remove("scenesky");
-                element.classList.remove("scenemusic");
-                var element2 = document.getElementById("smart");
-                element2.classList.remove("active5");
-                var element3 = document.getElementById("smart2");
-                element3.classList.remove("active8");
-                var element4 = document.getElementById("wall3");
-                element4.classList.remove("dance");
-                var element5 = document.getElementById("pictures");
-                element5.classList.remove("picturesmusic");
-                var element5 = document.getElementById("pictures");
-                element5.classList.remove("opa");
-                $('.wallsex' ).empty();
-
-    }
-</script>
-<script>
-    function blurright() 
-    {
-       var element = document.getElementById("blurscene");
-       element.classList.add("sceneright");
-    }
-    function blurleft() 
-    {
-       var element = document.getElementById("blurscene");
-       element.classList.add("sceneleft");
-    }
-    function blurleft2() 
-    {
-       var element = document.getElementById("blur");
-       element.classList.add("sceneleft2");
-    }
-    function blurmove() 
-    {
-       var element = document.getElementById("blur");
-       element.classList.add("scenemove");
-    }
-    function blursky() 
-    {
-       var element = document.getElementById("blur");
-       element.classList.add("scenesky");
-    }
-    function blurdefault() {
-                var element = document.getElementById("blurscene");
-                element.classList.remove("sceneright");
-                element.classList.remove("sceneleft");
-                element.classList.remove("sceneleft2");
-                element.classList.remove("scenemove");
-                element.classList.remove("scenesky");
-                element.classList.remove("scenemusic");
-                var element2 = document.getElementById("smart");
-                element2.classList.remove("active5");
-                var element3 = document.getElementById("smart2");
-                element3.classList.remove("active8");
-                var element4 = document.getElementById("wall3");
-                element4.classList.remove("dance");
-                var element5 = document.getElementById("pictures");
-                element5.classList.remove("picturesmusic");
-                var element5 = document.getElementById("pictures");
-                element5.classList.remove("opa");
-
-    }
-</script>
-
-<script>
-    function menuoff() 
-    {
-       var element = document.getElementById("menu");
-       element.classList.add("menuon");
-    }
-</script>
-
-<script>
-    function menuon() 
-    {
-       var element = document.getElementById("menu");
-       element.classList.remove("menuon");
-    }
-</script>
 
 
 <script>
@@ -1314,211 +926,19 @@ function myClick() {
 </script>
 
 <script>
-    function backpro() {
-                var element2 = document.getElementById("workpg");
-                element2.classList.remove("workon");
-                element2.classList.add("workoff");
-    }
-</script>
-
-<script>
-    function texton() {
-                var element = document.getElementById("textbox2");
-                element.classList.add("textboxon");
-    }
-</script>
-<script>
-    function textoff() {
-
-                var element = document.getElementById("textbox2");
-                element.classList.remove("textboxon");
-    }
-</script>
-
-
-
-<script>
-    function modestandart() {
-       var element = document.getElementById("modestandart");
-                element.classList.add("active4004");
-                var element2 = document.getElementById("modedope");
-                element2.classList.add("off");
-    }
-    </script>
-<script>
-    function modedope() {
-       var element2 = document.getElementById("modedope");
-                element2.classList.remove("off");
-                var element = document.getElementById("modestandart");
-                element.classList.remove("active4004");
-    }
-</script>
-
-<script>
-    function btnoff() {
-    var elem = document.getElementById("link");
-    elem.classList.add("btnoff");
-    var elem2 = document.getElementById("nice");
-    elem2.classList.add("btnoff");
-    var elem3 = document.getElementById("show");
-    elem3.classList.add("btnoff");
-
-    }
-</script>
-<script>
-    function btnon() {
-    var elem = document.getElementById("link");
-    elem.classList.remove("btnoff");
-    var elem2 = document.getElementById("nice");
-    elem2.classList.remove("btnoff");
-    var elem3 = document.getElementById("show");
-    elem3.classList.remove("btnoff");
-
-    }
-</script>
-
-<!-- <script>
-    function btn2on() {
-    var elem = document.getElementById("linkoff");
-    elem.classList.addClass("btn2on");
-
-    }
-</script> -->
-
-<script>
-    const sidepage = document.querySelector('.sidepage');
-    const electroshield3 = document.querySelector('.electroshield3');
-    const cardtoggle4 = document.querySelector('.iside');
-    cardtoggle4.onclick = function(){
-        sidepage.classList.toggle('active4');
-        electroshield3.classList.toggle('active888');
-    }
-</script>
-
-
-    <script>
-        function skyblock() {
-    sky();
-    texton();
-    scenesky();
-    // btn2on();
-}
-    </script>
-    <script>
-        function backblock() {
-    back();
-    backpro();
-    textoff();
-    scenedefault();
-    menuon();
-    btnon();
-}
-    </script>
-
-<script>
-    function startreveal() {
-    start();
-    scenedefault();
-    blurdefault();
+        var x = document.getElementById("myTrack"); 
     
-}
+    function playAudio() { 
+      x.play(); 
+    } 
+    
+    function pauseAudio() { 
+      x.pause(); 
+    } 
 </script>
-
-<script>
-    function rotatereveal() {
-    rotate();
-    sceneleft();
-    blurleft();
-    opa();
-} 
-</script>
-
-<script>
-    function rotate2reveal() {
-    rotate2();
-    rotatepro();
-    sceneright();
-    // blurright();
-    menuoff();
-    btnoff(); 
-    workon();
-    opa();
-
-} 
-</script>
-
-<script>
-    function startsexreveal() {
-    start();
-    scenedefault();
-    blurdefault();
-} 
-</script>
-
-<script>
-    function movereveal() {
-    move();
-    scenemove();
-    opa();
-} 
-</script>
-
-<script>
-    function carierreveal2() {
-    carier();
-} 
-</script>
-<script>
-    function lifereveal2() {
-    life();
-} 
-</script>
-<script>
-    function artreveal2() {
-    art();
-} 
-</script>
-
-
-<script>
-    function tostandart() {
-        MOUSEUP();
-        modedope();
-        setup();
-        wall3off();
-    }
-</script>
-
-<script>
-    function todope() {
-        setdown();
-        modestandart();
-        wall3on();
-
-    }
-</script>
-
-<script>
-    function wall3on() {
-       document.getElementById("wall3").style.display ='block';
-    }
-    function wall3off() {
-       document.getElementById("wall3").style.display ='none';
-    }
- </script>
-
-
-<script>
-    function closeall() {
-    lifedown();
-    carierdown();
-    artdown();
-    closemenu();
-} 
-</script>
-
 
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+
 <script type="text/javascript">
   (function() {
     VK.Widgets.Playlist("vk_playlist_-2000990070_13990070", -2000990070, 13990070,'ec37d7c31b9742e591', {width: 500});
