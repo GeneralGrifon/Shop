@@ -30,7 +30,7 @@
  
 </head>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script> -->
-<body id="body" class="body">
+<body id="body" class="body" onmouseenter="DOPEMODE2()">
     <div id="page-preloader" class="preloader">
         <div class="loader">
             
@@ -38,7 +38,7 @@
         <div id="load_perc">loading...</div>
     </div>
 
-    <div class="space">
+    <div id="space" class="space">
 
         <div id="select" class="selector">
            
@@ -197,35 +197,22 @@
                 <div class="face"></div>
                 </div>
 
-                <!-- <div class="relative">
-                    <div class="r1"></div>
-                    <div class="r2"></div>
-                    <div class="r3"></div>
-                    <div class="r4"></div>
-                    <div class="r5"></div>
-                    <div class="r6"></div>
-                </div> -->
-                <!-- <div class="personpage">
-                    <h2>Nice Persons</h2>
-                    <h1 class="ppp1" href="https://www.instagram.com/kharitonova_a12/"><img src="persons/настя.png" frameborder="0" scrolling="no" id="pp1" class="ppp"></img></h1>
-                    <h1 class="ppp2" href="https://vk.com/nesterovpromo"><img src="persons/tery.jpg" frameborder="0" scrolling="no" id="pp2" class="ppp"></img></a>
-                    <h1 class="ppp3" href="https://vk.com/id4876589"><img src="persons/gantke.png" frameborder="0" scrolling="no" id="pp3" class="ppp"></img></a>
-                    <h1 class="ppp4" href="https://www.instagram.com/kseniakisavna/"><img src="persons/она.jpg" frameborder="0" scrolling="no" id="pp4" class="ppp"></img></a>
-                    <div id="pv" class="personview">                 
-                    </div>
-                </div> -->
-
-                
-
-                <div id="workpg" class="workpage">
-
-                </div>
+                <div id="workpg" class="workpage"></div>
                 
                 <div id="np" class="newsportal">
-                    <!-- <h1>Music</h1>
-                    <h2>Social</h2>                     -->
+                    <div id="mn" class="musicnews">
+                        
+                    </div>
+                    <div id="sn" class="socialnews">
+                        
+                    </div>
+                    <h1 class="mn" >music news</h1>
+                    <h2 class="sn" >social news</h2>
+
                 </div>
 
+                <!-- <div id="ep" class="eventportal">
+                </div> -->
                 <div id="wp" class="workportal"></div>
 
                 <div id="menu" class="menu">
@@ -515,6 +502,8 @@
         
     </div>
 
+
+
     
 
     <!-- <iframe class="asexuare" src=""></iframe> -->
@@ -624,8 +613,25 @@
 </script>
 
 <script> 
-    $('.newsportal').on("click", function() {
-      $("#np").load("socialnews.html"); 
+    $('.eventportal').on("click", function() {
+      $("#ep").load("event1.html"); 
+    });
+</script>
+
+<script> 
+    $('.mn').on("click", function() {
+      $("#mn").load("socialnews.html");
+      $("#mn").addClass('full');
+      $("#sn").removeClass('full');    
+    });
+</script>
+
+<script> 
+    $('.sn').on("click", function() {
+      $("#sn").load("event1.html");
+      $("#sn").addClass('full');
+      $("#mn").removeClass('full');   
+        
     });
 </script>
 
@@ -660,8 +666,11 @@
 
 <script>
     $('.button-startleft' ).click(function() {
-      $('.newsportal' ).empty();
+      $('.socialnews' ).empty();
+      $('.musicnews' ).empty();
       $('#np').removeClass('npon');
+      $('#sn').removeClass('full');
+      $('#mn').removeClass('full');
     });
     </script>
 
