@@ -16,12 +16,12 @@ function move()
 function sky() {
 
 
-    const carier = document.getElementById('carier');
-        carier.style.display='none';
-        const life = document.getElementById('life');
-        life.style.display='none';
-        const art = document.getElementById('art');
-        art.style.display='none';
+    // const carier = document.getElementById('carier');
+    //     carier.style.display='none';
+    //     const life = document.getElementById('life');
+    //     life.style.display='none';
+    //     const art = document.getElementById('art');
+    //     art.style.display='none';
         const btn2 = document.getElementById('linkoff');
         btn2.style.opacity='1';
 
