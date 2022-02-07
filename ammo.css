@@ -4145,7 +4145,7 @@ svg
 }
 .newsportal.npon
 {
-    display: block;
+    display: flex;
 }
 .newspage
 {
@@ -4186,4 +4186,134 @@ svg
 {
     
     padding-left: 10px;
+}
+
+/* .eventportal
+{
+    position: absolute;
+    transform: rotateY(0deg) translateZ(40px); 
+    width: 20%;
+    height: 50%;
+    top: 310px;
+    right: 510px;
+    background-color: #ffffff21;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid rgba(255, 255, 255, 0.37);
+} */
+
+/* .eventportal::-webkit-scrollbar
+{
+    width: 15px;
+}
+.eventportal::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    width: 10px;
+    background: transparent;
+}
+.eventportal::-webkit-scrollbar-thumb
+{
+    width: 10px;
+    background: rgba(179, 179, 179, 0.493);
+    border-radius: 10px;
+} */
+.musicnews
+{
+    position: relative;
+    width: 0%;
+    height: 100%;
+    background-color: #00a7da00;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.musicnews.full
+{
+    width: 100%;
+}
+.mn
+{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 2rem;
+    bottom: 2%;
+    left: 4%;
+    background-color: rgba(0, 0, 0, 0.452);
+    outline: 1px solid rgba(255, 255, 255, 0.274);
+    padding-left: 4%;
+    padding-right: 4%;
+    backdrop-filter: blur(10px);
+}
+.sn
+{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 2rem;
+    
+    /* padding-top: 2%; */
+    right: 5%;
+    bottom: 2%;
+    background-color: rgba(0, 0, 0, 0.431);
+    outline: 1px solid rgba(255, 255, 255, 0.274);
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+.socialnews
+{
+    position: relative;
+    width: 0%;
+    height: 100%;
+    background-color: #ffae0000;
+    top: 0;
+    right: 0;
+    transition: 0.5s;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.socialnews.full
+{
+    width: 100%;
+}
+.socialnews::-webkit-scrollbar
+{
+    width: 15px;
+}
+.socialnews::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    width: 10px;
+    background: transparent;
+}
+.socialnews::-webkit-scrollbar-thumb
+{
+    width: 10px;
+    background: rgba(179, 179, 179, 0.493);
+    border-radius: 10px;
+}
+.musicnews::-webkit-scrollbar
+{
+    width: 15px;
+}
+.musicnews::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    width: 10px;
+    background: transparent;
+}
+.musicnews::-webkit-scrollbar-thumb
+{
+    width: 10px;
+    background: rgba(179, 179, 179, 0.493);
+    border-radius: 10px;
 }
