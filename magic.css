@@ -212,6 +212,7 @@ h2
     /* mix-blend-mode: screen; */
 
 }
+
 .mirror .active
 {
     outline: 5px solid rgb(234, 244, 255);
@@ -226,15 +227,28 @@ h2
     /* left: 5%; */
     transform: rotateX(90deg) rotateY(60deg);
     /* background-color: rgba(0, 0, 255, 0.603); */
-    background-image: url(shells/TV.gif);
+    background-image: url(/shells/TV.gif);
     /* mix-blend-mode: screen; */
 }
+
 .mirror:hover
 {
     /* background-size: 10%; */
         box-shadow: 0 0 2px white,
     0 0 10px rgb(255, 255, 255),
     0 0 40px white;
+}
+.spell:hover .mrrr1
+{
+    transform: translateX(-40px) rotateX(90deg) rotateY(60deg);;
+}
+.spell:hover .mrrr2
+{
+    transform: rotateX(90deg) rotateY(-60deg) translateZ(-40px);
+}
+.spell:hover .mrrr3
+{
+    transform: rotateX(90deg) rotateY(0deg) translateZ(40px);
 }
 .mrrr2
 {
@@ -244,7 +258,7 @@ h2
     /* right: 5%; */
     transform-origin: 100% 0;
     transform: rotateX(90deg) rotateY(-60deg);
-    background-image: url(shells/mrrr2.gif);
+    background-image: url(/shells/mrrr2.gif);
     /* background-color: rgba(111, 0, 255, 0.616); */
     /* mix-blend-mode: screen; */
 }
@@ -255,7 +269,7 @@ h2
     /* transform: translateY(-100px); */
     transform-origin: 0% 0;
     transform: rotateX(90deg) rotateY(0deg);
-    background-image: url(shells/mrrr3.gif);
+    background-image: url(/shells/mrrr3.gif);
     background-position: 50%;
     /* background-color: rgba(251, 255, 0, 0.589); */
 
