@@ -23,10 +23,13 @@ body
     position: absolute;
     outline: #003cff solid 3px;
     transform: translateZ(400px);
-    /* transition: 0.7s linear; */
+    transition: 0.3s linear;
     transform-style: preserve-3d;
 }
-
+.selector.close
+{
+    transform: translateZ(700px) translateY(-100px);
+}
 .space
 {
     top: 0;
@@ -53,11 +56,14 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(-90px);
+    transform: translateY(-90px) rotateY(0deg) rotateX(0deg) translateZ(0px);
     /* background-color: #00ff621a; */
     /* outline: 3px solid white; */
 }
-
+.scene.normal
+{
+    transform: translateY(-90px) rotateY(0deg) rotateX(0deg) translateZ(0px);
+}
 .floor
 {
     transform: translateZ(-400px) rotateX(90deg) rotateZ(0deg); 
@@ -1618,7 +1624,7 @@ body
 .chatiframe
 {
     transition: 0.3s;
-    width: 50%;
+    width: 45%;
     height: 0%;
     position: absolute;
     top: 0%;
@@ -1631,8 +1637,8 @@ body
 .chatiframe.chaton
 {
     /* display: block; */
-    height: 65%;
-    width: 50%;
+    height: 60%;
+    width: 45%;
     
 }
 
