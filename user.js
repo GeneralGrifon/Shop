@@ -518,14 +518,31 @@ function menuoff()
     }
 
 
-// function DOPEMODE2() {
-//             var o = $(".scene");
+function DOPEMODE2() {
+            var o = $(".scene");
+            var s = $(".selector");
 
-//     $("#card").on("mousemove", function (t) {
-//         var e = -($(window).innerWidth() / 2 - t.pageX) / 20,
-//             n = ($(window).innerHeight() / 2 - t.pageY) / 20;
-//         o.attr("style", "transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-webkit-transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-moz-transform: rotateY(" + e + "deg) rotateX(" + n + "deg)")
+    $("#face1").on("mousemove", function (t) {
+        var e = -($(window).innerWidth() / 2 - t.pageX) / 5,
+            n = ($(window).innerHeight() / 2 - t.pageY) / 20;
+        o.attr("style", "transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-webkit-transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-moz-transform: rotateY(" + e + "deg) rotateX(" + n + "deg)")
+        o.addClass('scenefast')
+        s.addClass('close')
 
-//     })   
-// }
+
+    })   
+}
+
+function MOUSEUP() {
+        $("#body").unbind('mousemove');
+        var o = $(".scene");
+        var s = $(".selector");
+        o.removeAttr("style", "transform: rotateY(0deg) rotateX(0deg);-webkit-transform: rotateY(0deg) rotateX(0deg);-moz-transform: rotateY(0deg) rotateX(0deg); transform: translateZ(0px); transform: translateY(-90px)")
+        o.removeClass('scenefast')
+        // o.addClass('normal')
+        s.removeClass('close')
+
+        
+        
+    }
 
