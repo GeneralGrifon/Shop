@@ -23,7 +23,7 @@ body
     position: absolute;
     outline: #003cff solid 3px;
     transform: translateZ(400px);
-    transition: 0.3s linear;
+    transition: 0.5s linear;
     transform-style: preserve-3d;
 }
 .selector.close
