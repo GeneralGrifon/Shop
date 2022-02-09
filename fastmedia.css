@@ -1087,6 +1087,7 @@ body
 .name
 {
 
+    cursor: pointer;
     width: 500px;
     height: 150px;
     /* letter-spacing: 10px; */
