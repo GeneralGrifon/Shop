@@ -39,7 +39,7 @@ function back() {
                 const btn2 = document.getElementById('linkoff');
                 btn2.style.opacity='0';
 }
-{/* <script type="text/javascript">
+/* <script type="text/javascript">
     function carier() {
             const selector = document.getElementById('select');
             selector.style.transform='translate3d(0px, 0px, 400px)';
@@ -83,10 +83,10 @@ function back() {
         const textbox2 = document.getElementById('textbox2');
         textbox2.style.display='none';  
         }
-</script> */}
+</script> */
 
 
-{/* <script type="text/javascript">
+/* <script type="text/javascript">
 function down() {
             const selector = document.getElementById('select');
             selector.style.transform='translate3d(0px, -800px, -300px) rotateX(15deg) translateX(-900px)';
@@ -121,7 +121,7 @@ function artdown() {
         art.style.display='none';
 
     }
-</script> */}
+</script> */
 
 
 function rotate() {
