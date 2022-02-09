@@ -59,7 +59,7 @@
     
                 </div>
                 <button id="link" onclick="skyblock()"">
-                    <img src="shells/zametki.png" alt=""></button>
+                    <img src="/shells/zametki.png" alt=""></button>
                 <div class="workpage">
                 </div>
 
@@ -358,24 +358,7 @@
     <!-- <audio id="shield" src="shield-6ч.mp3"></audio>
     <audio id="shield2" src="shield-6ч.mp3"></audio> -->
 
-    <!-- <div id="carier" class="carier">
-        <img id="carierclose" class="carierclose" src="shells/closeST.png" alt="" onclick=" blockclose()">
     
-        <div id="carierdiv" class="content">
-            <img id="c1" class="car" src="carier/1.jpg" alt="фота1">
-            <img id="c2" class="car" src="carier/3.jpg" alt="">
-            <img id="c3" class="car" src="carier/2.jpg" alt="">
-            <img id="c4" class="car" src="carier/4.jpg" alt="">
-            <img id="c5" class="car" src="carier/5.jpg" alt="">
-            <img id="c6" class="car" src="carier/6.jpg" alt="фота1">
-            <img id="c7" class="car" src="carier/7.jpg" alt="">
-
-            <img id="c9" class="car" src="carier/9.jpg" alt="">
-            <img id="c10" class="car" src="carier/10.jpg" alt="">
-            
-        </div>  
-     
-    </div> -->
     <!-- <div id="life" class="life">
         <img id="lifeclose" class="lifeclose" src="shells/closeST.png" alt="" onclick=" blockclose()">
        
@@ -463,6 +446,11 @@
 
     <iframe class="petportal" src="magic.html" frameborder="0"></iframe>
 
+    <div  class="regalportal">
+        <div id="rp" class="rp"></div>
+        <img class="rpclose" src="shells/closeST.png" alt="">
+    </div>
+
     <div class="galki">
         <div class="galka glk1"></div>
         <div class="galka glk2"></div>
@@ -495,7 +483,8 @@
             Chat: ver 1.1; <br>
             - open/close: ava click. <br>
             Billboard: ver 1.0; <br>
-            - onmousedown to rotate <br>
+            - click to rotate <br>
+            - double click to exit. <br>
             Master tools: demo mode;
         </h1>
         
@@ -506,7 +495,12 @@
     
 
     <!-- <iframe class="asexuare" src=""></iframe> -->
-
+<script>
+    $('.rpclose' ).click(function() {
+      $('.rp' ).empty();s
+      $('.regalportal').removeClass('regalon');
+    });
+</script>
 <script> 
         $('.gadjet').on("click", function() {
           $("#gadjet").toggleClass('gdjton'); 
@@ -605,6 +599,12 @@
     });
 </script>
 
+<!-- <script> 
+    $('.regalportal').on("click", function() {
+      $("#rp").load("carier.html"); 
+    });
+</script> -->
+
 <script> 
         $('.workportal').on("click", function() {
           $("#wp").load("worknews.html"); 
@@ -639,17 +639,7 @@
       $("#wallsex").load("video.html"); 
     });
 </script>
-
-
-
-<!-- <script>
-    $('.button-startsex button' ).click(function() {
-      $('.wallsex' ).empty();
-    });
-    </script> -->
-
-
-    
+  
 <script> 
     $('#z2').on("click", function() {
       $("#np").addClass('npon'); 
@@ -725,7 +715,6 @@ $('.sub1').height($('.sub1').width()/0.75);
     $('.personpage').addClass('ppon');
     $('.smart').removeClass('active5');
     $('.post').removeClass('on');
-
     $('.smart2').removeClass('active8');
     $('.favorite').removeClass('active2');
     $('.poseselect').removeClass('active400');
@@ -745,7 +734,6 @@ $('.sub1').height($('.sub1').width()/0.75);
     <script>
     $(document).ready(function(){
     $('.s').on("click", function() {
-
     $('.blur').toggleClass('poston');
     $('.post').toggleClass('on');
     $('.name').toggleClass('nameoff');
