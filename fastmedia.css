@@ -13,6 +13,7 @@ body
     overflow: hidden;
     transition:  0.4s;
     cursor: url(shells/cursour33.png), auto;
+    /* overflow: scroll; */
 }
 
 .selector
@@ -244,8 +245,32 @@ body
     background: radial-gradient(#111111, #000000);
     
 }
-
-
+.wall1 .wallregal
+{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 10%;
+    right: 0;
+    /* z-index: -10; */
+    /* outline: 1px solid rgba(255, 255, 255, 0.164); */
+    /* background-color: #003cff; */
+}
+.wall1 .rpclose
+{
+    position: absolute;
+    top: 4%;
+    left: 1%;
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+    cursor: pointer;
+    display: none;
+}
+.rpclose.rpon
+{
+    display: block;
+}
 .wall.wall1
 {
     /* TOP!!!!!!!!! */
@@ -255,9 +280,9 @@ body
     justify-content: center;
     align-items: center;
 }
-.wall.wall1 img
+.wall.wall1 .show
 {
-    width: 40%;
+    width: 10%;
     mix-blend-mode: screen;
     opacity: 0;
     transition: 0.6s;
@@ -265,7 +290,7 @@ body
     filter: hue-rotate(30deg);
     transition-delay: 0.5s;
 }
-.wall1:hover img
+.wall1:hover .show
 {
     opacity: 1;
 }
@@ -318,7 +343,6 @@ body
 }
 .wall.wall3
 {
-
     /* BACK!!!! */
     /* transform: translate3d(-500px, -750px, 500px) rotateY(180deg); */
     transform: translate3d(0px, 0px, 600px) rotateY(180deg);
@@ -326,9 +350,8 @@ body
     background-position: 50%;
     backface-visibility: hidden;
     display: block;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: 2s;
-
 }
 .wall3 h1
 {
@@ -344,11 +367,11 @@ body
 .wall.wall4
 {
     /* ЛЕВО */
-    background: radial-gradient(#1f1f1f, #000000);
+    /* background: radial-gradient(#1f1f1f, #000000); */
     transform: translate3d(-500px, 0px, 100px) rotateY(90deg) rotateZ(0deg);
     transition: 0.2s;
-
 }
+
 .wall.wall4 .wallcontent4
 {
 
@@ -1071,10 +1094,12 @@ body
     right: 108%;
     height: 95%;
     transform: translateZ(143px);
+    /* background-color: #003cff; */
     cursor: pointer;
     /* outline: 1px solid rgb(0, 38, 255); */
     user-select: none;
     transition: 0.5s;
+    /* z-index: 1000; */
 
 }
 .avatar
@@ -1271,6 +1296,7 @@ body
         height: 50%;
     }
 
+
     
 
 }
@@ -1458,10 +1484,10 @@ body
     cursor: pointer;
     transition: 0.5s;
 }
-.favorite:hover .fav
+/* .favorite:hover .fav
 {
     animation: animate 10s infinite linear;
-}
+} */
 
 #vk_playlist_-2000990070_13990070
         {
