@@ -22,7 +22,7 @@ $(document).ready(function(){
     });
 
 $(document).ready(function(){
-    $('.opener').on("click", function() {
+    $('#option2').on("click", function() {
     $('.chatiframe').toggleClass('chaton');
     $('.blur').removeClass('poston2');
     $('.blur').removeClass('poston');
