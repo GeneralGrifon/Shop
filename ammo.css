@@ -1552,9 +1552,9 @@ textarea::-webkit-scrollbar-thumb
     width: 11%;
     position: absolute;
     perspective: 1400px;
-    top: -200px;
-    left: 0%;
-    transform: rotateX(-40deg) translateZ(-500px);
+    top: -300px;
+    left: 5%;
+    transform: rotateX(-40deg) translateZ(-350px);
     transition: 0.5s;
     visibility: hidden;
     animation: textboxoff 1.5s linear forwards;
