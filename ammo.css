@@ -2550,35 +2550,20 @@ textarea::-webkit-scrollbar-thumb
 {
     transform-style: preserve-3d;
     top: 3%;
-    /* left: 0%; */
     position: relative;
     transform: translate3d(100px, 0px, 85px) rotateY(-90deg);
-    /* background-color: #ff00ea00; */
-     /* outline: 1px solid rgb(0, 98, 255); */
+    background-color: #ff00ea00;
+     outline: 1px solid rgb(0, 98, 255);
     width: 50%;
     height: 55%;
     cursor: pointer;
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    /* overflow-y: hidden; */
-    animation: portalflick 0.1s linear infinite
+    filter: opacity(1);
+    
 }
-@keyframes  portalflick
-{
-    0%
-    {
-        outline: 0.1px solid rgb(0, 98, 255);
-        opacity: 0.9;
 
-    }
-    100%
-    {
-        outline: 2.5px solid rgb(0, 98, 255);
-        opacity: 1;
-
-    }
-}
 #wp
 {
     display: none;
@@ -3872,8 +3857,8 @@ svg
     border-radius: 9px; 
     display: none;
     cursor: pointer;
-    overflow-x: hidden;
-    overflow-y: scroll;
+/*     overflow-x: hidden;
+    overflow-y: scroll; */
 }
 .newsportal::-webkit-scrollbar
 {
@@ -3998,7 +3983,7 @@ svg
     outline: 1px solid rgba(255, 255, 255, 0.274);
     padding-left: 4%;
     padding-right: 4%;
-    backdrop-filter: blur(10px);
+/*     backdrop-filter: blur(10px); */
 }
 .sn
 {
@@ -4015,7 +4000,7 @@ svg
     padding-left: 4%;
     padding-right: 4%;
     text-align: center;
-    backdrop-filter: blur(10px);
+/*     backdrop-filter: blur(10px); */
 }
 .socialnews
 {
