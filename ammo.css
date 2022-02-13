@@ -296,6 +296,12 @@
     /* transform: rotateY(90deg) translateX(-500px) translateZ(-100px); */
     
 }
+.scene.sceneregal
+{
+    transform: translateZ(190px) translateY(0px);
+    transition: 0.5s;
+
+}
 .scene.sceneright
 {
     transition: 2s;
