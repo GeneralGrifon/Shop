@@ -630,11 +630,79 @@
     
 
     <!-- <iframe class="asexuare" src=""></iframe> -->
-<script>
-    $('.rpclose' ).click(function() {
-      $('.rp' ).empty();s
-      $('.regalportal').removeClass('regalon');
+
+<script>$(function() {
+    $('#reverse').addClass('revon');
+    const fig=document.getElementById('reverse');
+    $('#opener').on("click", function() {
+    $('#forward').removeClass('foron');
+    $('#reverse').addClass('revon');
+    $('#projector').addClass('prjon');
+    fig.src=fig.getAttribute('src');  
+    $('#ava').hide();
+    $('#reason').addClass('ron');
+    $('#opener').addClass('dis');
+    $('#511').addClass('init');
+    $('#511').removeClass('init2');
+    $('#projector').removeClass('prjon2');
     });
+  });
+</script>
+   
+<script>$(function() {
+
+    $('#option1').on("click", function() {
+        $("#wallregal").load("carier.html"); 
+          $('#scene').addClass('sceneregal');
+          $('#name').addClass('nameoff');
+          $('.user').addClass('uoff');
+          $('.rpclose').addClass('rpon');
+          $('.petportal').addClass('ppoff');
+    //   $('#pictures').addClass('opa');
+
+    });
+  });
+</script>
+
+    <!-- <iframe class="asexuare" src=""></iframe> -->
+
+    <script>
+    
+        $('.rpclose' ).click(function() {
+        $('.wallregal' ).empty();
+        $('.user').removeClass('uoff');
+        $('.regalportal').removeClass('regalon');
+        $('#name').removeClass('nameoff');
+        $('#scene').removeClass('sceneregal');
+        $('.rpclose').removeClass('rpon');
+
+        });
+    
+    </script>
+
+<script>
+
+    const gif=document.getElementById('forward');
+
+    $('.option3' ).click(function() {
+    gif.src=gif.getAttribute('src');
+    $('#reverse').removeClass('revon');
+    $('#forward').addClass('foron');
+    $('#reason').removeClass('ron');
+    $('#opener').removeClass('dis');
+    $('.wallregal' ).empty();
+    $('.user').removeClass('uoff');
+    $('.regalportal').removeClass('regalon');
+    $('#scene').removeClass('sceneregal');
+    $('#511').removeClass('init');
+    $('#511').addClass('init2');
+    $('.petportal').removeClass('ppoff');
+    $('.rpclose').removeClass('rpon');
+    $('#projector').addClass('prjon2');
+    $('#projector').removeClass('prjon');
+
+    });
+
 </script>
 <script> 
         $('.gadjet').on("click", function() {
