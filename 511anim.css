@@ -1,0 +1,564 @@
+
+@keyframes init
+{
+    0%
+    {
+        stroke: #b9d4ff;
+        fill: #0263ff6e;
+        transform: scale(0);
+        stroke-width: 2px;
+    }
+    11%
+    {
+        transform: scale(1);
+        stroke: rgb(207, 225, 255);
+        filter: url(#glow2);
+        stroke-width: 2px;
+        fill: #0263ff6e;
+    }
+    40%
+    {
+        transform: scale(0);
+        stroke: rgb(207, 225, 255);
+
+    }
+    100%
+    {
+        transform: scale(0);
+        /* transform: scale(0); */
+        stroke: #002fff;
+        fill: #0228ff00;
+    }
+
+}
+
+@keyframes init2
+{
+    0%
+    {
+        stroke: rgb(207, 225, 255);
+        fill: #0263ff00;
+        transform: scale(0);
+        stroke-width: 1px;
+    }
+    15%
+    {
+        
+        transform: scale(1);
+        stroke: rgb(207, 225, 255);
+        filter: url(#glow2);
+        stroke-width: 2px;
+        fill: #0263ff6e;
+        
+    }
+    17%
+    {
+        transform: scale(1);
+    }
+    55%
+    {
+        stroke: rgb(207, 225, 255);
+        fill: #0263ff6e;
+        transform: scale(1);
+        /* stroke-width: 1px; */
+    }
+    90%
+    {
+        stroke: rgb(0, 94, 255);
+
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+
+}
+/* @keyframes init2
+{
+    0%
+    {
+        stroke: #0263ff00;
+        fill: #0263ff00;
+        transform: scale(0);
+        stroke-width: 1px;
+    }
+    10%
+    {
+        transform: scale(1);
+        filter: url(#glow2);
+        stroke: rgb(255, 255, 255);
+        stroke-width: 2px;
+        fill: #0263ff6e;
+        
+    }
+    11%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        stroke: #0263ff00;
+        fill: #0263ff00;
+        transform: scale(0);
+        stroke-width: 1px;
+    }
+    100%
+    {
+        transform: scale(0);
+    }
+
+} */
+/* .grid511:hover polygon
+{
+    transform: scale(1);
+} */
+/* 
+#plg1, #plg2, #plg3, #plg4, #plg5 
+{
+    fill: rgba(0, 255, 255, 0.719);
+}
+#plg6, #plg7, #plg8, #plg9, #plg10 
+{
+    fill: rgba(0, 153, 255, 0.842);
+}
+#plg11, #plg12, #plg13, #plg14, #plg15 
+{
+    fill: rgba(0, 255, 255, 0.719);
+}
+#plg16, #plg17, #plg18, #plg19, #plg20 
+{
+    fill: rgb(0, 81, 255);
+}
+#plg21, #plg22, #plg23, #plg24, #plg25 
+{
+    fill: rgb(0, 255, 191);
+}
+#plg26, #plg27, #plg28, #plg29, #plg30 
+{
+    fill: rgb(0, 162, 255);
+}
+#plg31, #plg32, #plg33, #plg34, #plg35 
+{
+    fill: rgb(195, 255, 0);
+}
+#plg36, #plg37, #plg38, #plg39, #plg40 
+{
+    fill: rgb(0, 255, 242);
+}
+#plg41, #plg42, #plg43, #plg44, #plg45 
+{
+    fill: rgb(0, 47, 255);
+}
+#plg46, #plg47, #plg48, #plg49, #plg50 
+{
+    fill: rgb(0, 225, 255);
+}
+#plg51, #plg52, #plg53
+{
+    fill: rgb(0, 225, 255);
+} */
+
+#plg1
+{
+    position: absolute;
+    transform-origin: 11% 9%;
+
+}
+#plg2
+{
+    transform-origin: 30% 13%;
+    /* transition-delay: 0.02s; */
+    animation-delay: 0.015s;
+
+}
+#plg3
+{
+    transform-origin: 45% 9%;
+    /* transition-delay: 0.04s; */
+    animation-delay: 0.03s;
+
+}
+#plg4
+{
+    position: absolute;
+    transform-origin: 65% 13%;
+    /* transition-delay: 0.06s; */
+    animation-delay: 0.045s;
+}
+#plg5
+{
+    position: absolute;
+    transform-origin: 85% 9%;
+    /* transition-delay: 0.08s; */
+    animation-delay: 0.06s;
+}
+
+/* ______________________________________ */
+
+#plg6
+{
+    position: absolute;
+    transform-origin: 11% 20%;
+    /* transition-delay: 0.1s; */
+    animation-delay: 0.075s;
+}
+ #plg7
+{
+    position: absolute;
+    transform-origin: 30% 23%;
+    /* transition-delay: 0.12s; */
+    animation-delay: 0.09s;
+}
+#plg8
+{
+    position: absolute;
+    transform-origin: 45% 20%;
+    /* transition-delay: 0.14s; */
+    animation-delay: 0.105s;
+} #plg9
+{
+    position: absolute;
+    transform-origin: 65% 23%;
+    /* transition-delay: 0.16s; */
+    animation-delay: 0.12s;
+}
+#plg10
+{
+    position: absolute;
+    transform-origin: 85% 20%;
+    /* transition-delay: 0.18s; */
+    animation-delay: 0.135s;
+}
+
+
+/* ________________________________ */
+
+#plg11
+{
+    position: absolute;
+    /* transform: rotateX(90deg); */
+
+    transform-origin: 11% 28%;
+    /* transition-delay: 0.2s; */
+    animation-delay: 0.15s;
+
+}
+#plg12
+{
+    position: absolute;
+
+    transform-origin: 30% 33%;
+    /* transition-delay: 0.22s; */
+    animation-delay:  0.175s;
+}
+#plg13
+{
+    position: absolute;
+ 
+    transform-origin: 45% 28%;
+    /* transition-delay: 0.24s; */
+    animation-delay: 0.19s;
+}
+#plg14
+{
+    position: absolute;
+
+    transform-origin: 65% 33%;
+    /* transition-delay: 0.26s; */
+    animation-delay: 0.205s;
+}
+#plg15
+{
+    position: absolute;
+
+    transform-origin: 85% 28%;
+    /* transition-delay: 0.28s; */
+    animation-delay: 0.22s;
+}
+/* ____________________________________ */
+ #plg16
+{
+    position: absolute;
+
+    transform-origin: 11% 35%;
+    /* transition-delay: 0.3s; */
+    animation-delay: 0.235s;
+}
+#plg17
+{
+    position: absolute;
+
+    transform-origin: 30% 37%;
+    /* transition-delay: 0.32s; */
+    animation-delay: 0.25s;
+}
+#plg18
+{
+    position: absolute;
+    transform-origin: 45% 35%;
+    /* transition-delay: 0.34s; */
+    animation-delay: 0.275s;
+ 
+}
+#plg19
+{
+    position: absolute;
+    transform-origin: 60% 37%;
+    /* transition-delay: 0.36s; */
+    animation-delay: 0.29s;
+
+}
+#plg20
+{
+    position: absolute;
+    transform-origin: 85% 35%;
+    /* transition-delay: 0.38s; */
+    animation-delay: 0.305s;
+
+}
+
+/* ______________________________________ */
+#plg21
+{
+    position: absolute;
+    transform-origin: 15% 41%;
+    /* transition-delay: 0.4s; */
+    animation-delay: 0.32s;
+}
+#plg22
+{
+    position: absolute;
+    transform-origin: 30% 45%;
+    /* transition-delay: 0.42s; */
+    animation-delay: 0.335s;
+}
+#plg23
+{
+    position: absolute;
+    transform-origin: 45% 41%;
+    /* transition-delay: 0.44s; */
+    animation-delay: 0.35s;
+}
+#plg24
+{
+    position: absolute;
+    transform-origin: 60% 45%;
+    /* transition-delay: 0.46s; */
+    animation-delay: 0.375s;
+}
+#plg25
+{
+    position: absolute;
+    transform-origin: 85% 41%;
+    /* transition-delay: 0.48s; */
+    animation-delay: 0.39s;
+}
+
+/* _______________________________________________ */
+#plg26
+{
+    position: absolute;
+    transform-origin: 10% 51%;
+    /* transition-delay: 0.5s; */
+    animation-delay: 0.405s;
+}
+#plg27
+{
+    position: absolute;
+    transform-origin: 30% 51%;
+    /* transition-delay: 0.52s; */
+    animation-delay: 0.42s;
+}
+#plg28
+{
+    position: absolute;
+    transform-origin: 45% 51%;
+    /* transition-delay: 0.54s; */
+    animation-delay: 0.435s;
+}
+#plg29
+{
+    position: absolute;
+    transform-origin: 60% 51%;
+    /* transition-delay: 0.56s; */
+    animation-delay: 0.45s;
+}
+#plg30
+{
+    position: absolute;
+    transform-origin: 85% 51%;
+    /* transition-delay: 0.58s; */
+    animation-delay: 0.475s;
+}
+
+/* ____________________________________________ */
+#plg31
+{
+    position: absolute;
+    transform-origin: 15% 61%;
+    /* transition-delay: 0.6s; */
+    animation-delay: 0.49s;
+}
+#plg32
+{
+    position: absolute;
+    transform-origin: 30% 61%;
+    /* transition-delay: 0.62s; */
+    animation-delay: 0.505s;
+}
+#plg33
+{
+    position: absolute;
+    transform-origin: 45% 61%;
+    /* transition-delay: 0.64s; */
+    animation-delay: 0.52s;
+}
+#plg34
+{
+    position: absolute;
+    transform-origin: 60% 61%;
+    /* transition-delay: 0.66s; */
+    animation-delay: 0.535s;
+}
+#plg35
+{
+    position: absolute;
+    transform-origin: 85% 61%;
+    /* transition-delay: 0.68s; */
+    animation-delay: 0.55s;
+}
+
+/* __________________________________________ */
+#plg36
+{
+    position: absolute;
+    transform-origin: 15% 66%;
+    /* transition-delay: 0.7s; */
+    animation-delay: 0.57s;
+}
+#plg37
+{
+    position: absolute;
+    transform-origin: 30% 66%;
+    /* transition-delay: 0.72s; */
+    animation-delay: 0.585s;
+}
+#plg38
+{
+    position: absolute;
+    transform-origin: 45% 66%;
+    /* transition-delay: 0.74s; */
+    animation-delay: 0.6s;
+} #plg39
+{
+    position: absolute;
+    transform-origin: 60% 66%;
+    /* transition-delay: 0.76s; */
+    animation-delay: 0.615s;
+}
+#plg40
+{
+    position: absolute;
+    transform-origin: 85% 66%;
+    /* transition-delay: 0.78s; */
+    animation-delay: 0.63s;
+}
+
+/* ____________________________________________ */
+
+#plg41
+{
+    position: absolute;
+    transform-origin: 15% 77%;
+    /* transition-delay: 0.8s; */
+    animation-delay: 0.645s;
+}
+#plg42
+{
+    position: absolute;
+    transform-origin: 30% 77%;
+    /* transition-delay: 0.82s; */
+    animation-delay: 0.66s;
+}
+#plg43
+{
+    position: absolute;
+    transform-origin: 45% 77%;
+    /* transition-delay: 0.84s; */
+    animation-delay: 0.675s;
+}
+#plg44
+{
+    position: absolute;
+    transform-origin: 60% 77%;
+    /* transition-delay: 0.86s; */
+    animation-delay: 0.69s;
+}
+#plg45
+{
+    position: absolute;
+    transform-origin: 85% 77%;
+    /* transition-delay: 0.88s; */
+    animation-delay: 0.705s;
+}
+
+/* ______________________________________ */
+
+#plg46
+{
+    position: absolute;
+    transform-origin: 15% 88%;
+    /* transition-delay: 0.9s; */
+    animation-delay: 0.72s;
+}
+#plg47
+{
+    position: absolute;
+    transform-origin: 30% 88%;
+    /* transition-delay: 0.92s; */
+    animation-delay: 0.735s;
+}
+#plg48
+{
+    position: absolute;
+    transform-origin: 45% 88%;
+    /* transition-delay: 0.94s; */
+    animation-delay: 0.75s;
+}
+#plg49
+{
+    position: absolute;
+    transform-origin: 60% 88%;
+    /* transition-delay: 0.96s; */
+    animation-delay: 0.775s;
+}
+#plg50
+{
+    position: absolute;
+    transform-origin: 80% 88%;
+    /* transition-delay: 0.98s; */
+    animation-delay: 0.79s;
+}
+
+/* ________________________________ */
+#plg51
+{
+    position: absolute;
+    transform-origin: 15% 95%;
+    /* transition-delay: 1s; */
+    animation-delay: 0.805s;
+}
+#plg52
+{
+    position: absolute;
+    transform-origin: 45% 95%;
+    /* transition-delay: 1.1s; */
+    animation-delay: 0.82s;
+}
+#plg53
+{
+    position: absolute;
+    transform-origin: 80% 100%;
+    /* transition-delay: 1.2s; */
+    animation-delay: 0.835s;
+}
