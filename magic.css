@@ -240,15 +240,15 @@ h2
 }
 .spell:hover .mrrr1
 {
-    transform: translateX(-10px) rotateX(90deg) rotateY(60deg);;
+    transform: translateX(-20px) rotateX(90deg) rotateY(60deg);;
 }
 .spell:hover .mrrr2
 {
-    transform: rotateX(90deg) rotateY(-60deg) translateZ(-10px);
+    transform: rotateX(90deg) rotateY(-60deg) translateZ(-20px);
 }
 .spell:hover .mrrr3
 {
-    transform: rotateX(90deg) rotateY(0deg) translateZ(10px);
+    transform: rotateX(90deg) rotateY(0deg) translateZ(20px);
 }
 .mrrr2
 {
