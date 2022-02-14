@@ -3743,15 +3743,16 @@ svg
     top: 22%;
     width: 50%;
     height: 50%;
-    outline: 1px rgb(0, 68, 255) solid;
+    outline: 2px rgb(0, 68, 255) solid;
     background-color: rgba(255, 255, 255, 0.048);
     transform: rotateY(90deg) translateZ(-330px) translateX(-100px);
     border-radius: 9px; 
     display: none;
     cursor: pointer;
-/*     overflow-x: hidden;
+    /* overflow-x: hidden;
     overflow-y: scroll; */
 }
+
 .newsportal::-webkit-scrollbar
 {
     width: 15px;
@@ -3788,9 +3789,9 @@ svg
 .newsocket
 {
     outline: 1px solid blanchedalmond;
-    margin: 3%;
+    margin: 2%;
     right: 0;
-    width: 42%;
+    width: 45%;
     height: 70%;
     display: block;
 }
@@ -3858,6 +3859,7 @@ svg
     transition: 0.5s;
     overflow-y: scroll;
     overflow-x: hidden;
+    filter: opacity(1);
 }
 .musicnews.full
 {
@@ -3875,7 +3877,7 @@ svg
     outline: 1px solid rgba(255, 255, 255, 0.274);
     padding-left: 4%;
     padding-right: 4%;
-/*     backdrop-filter: blur(10px); */
+    /* backdrop-filter: blur(10px); */
 }
 .sn
 {
@@ -3892,7 +3894,7 @@ svg
     padding-left: 4%;
     padding-right: 4%;
     text-align: center;
-/*     backdrop-filter: blur(10px); */
+    /* backdrop-filter: blur(10px); */
 }
 .socialnews
 {
@@ -3905,6 +3907,7 @@ svg
     transition: 0.5s;
     overflow-y: scroll;
     overflow-x: hidden;
+    filter: opacity(1);
 }
 .socialnews.full
 {
