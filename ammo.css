@@ -4313,3 +4313,34 @@ svg
     }
 
 }
+
+
+.removeclass
+{
+    bottom: -0%;
+    right: 0;
+    width: 70px;
+    position: absolute;
+    filter: invert(1);
+    cursor: pointer;
+    z-index: 100;
+}
+.personpage .removeclass
+{
+    top: -3%;
+    width: 7%;
+}
+.chatiframe .removeclass
+{
+    bottom: 0%;
+}
+.removeclass:hover
+{
+    animation: rpclose 2s linear infinite;
+}
+.fotozzz .removeclass
+{
+    bottom: 100%;
+    width: 20%;
+    right: -20%;
+}
