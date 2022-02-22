@@ -3872,7 +3872,7 @@ svg
     color: white;
     font-size: 2rem;
     bottom: 2%;
-    left: 4%;
+    left: 25%;
     background-color: rgba(0, 0, 0, 0.452);
     outline: 1px solid rgba(255, 255, 255, 0.274);
     padding-left: 4%;
@@ -3887,7 +3887,7 @@ svg
     font-size: 2rem;
     
     /* padding-top: 2%; */
-    right: 5%;
+    right: 8%;
     bottom: 2%;
     background-color: rgba(0, 0, 0, 0.431);
     outline: 1px solid rgba(255, 255, 255, 0.274);
