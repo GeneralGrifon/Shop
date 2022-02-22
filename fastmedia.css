@@ -294,6 +294,11 @@ body
 {
     opacity: 1;
 }
+.show.showoff
+{
+    display: none;
+}
+
 .wall.wall1.dance
 {
     background: url(https://i.gifer.com/4RNk.gif); 
