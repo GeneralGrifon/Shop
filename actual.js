@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('#option2').on("click", function() {
-    $('.chatiframe').toggleClass('chaton');
+    $('.chatiframe').addClass('chaton');
     $('.blur').removeClass('poston2');
     $('.blur').removeClass('poston');
     $('.smart2').removeClass('active8');
