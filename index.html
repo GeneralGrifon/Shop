@@ -920,9 +920,10 @@ $('.sub1').height($('.sub1').width()/0.75);
 <script>
     $(document).ready(function(){
     $('.fav').on("click", function() {
-    $('.favorite').toggleClass('active2');
+    $('.favorite').addClass('active2');
     $('.smart2').removeClass('active8');
     $('.blur').removeClass('poston');
+    $('.blur').removeClass('poston2');
     $('.smart').removeClass('active5');
     $('.personpage').removeClass('ppon');
     $('.menu').removeClass('menuon');
@@ -931,9 +932,32 @@ $('.sub1').height($('.sub1').width()/0.75);
 </script>
 
 <script>
+    $('.removeclass' ).click(function() {
+        $('.petportal').removeClass('ppoff');
+        $('.blur').removeClass('poston2');
+        $('.blur').removeClass('poston');
+        $('.post').removeClass('on');
+        $('.name').removeClass('nameoff');
+        $('.menu').removeClass('menuon');
+        $('.poseselect').removeClass('active400');
+        $('.faceselect').removeClass('active401');
+        $('.cardselect').removeClass('active402');
+        $('.pose').removeClass('active7');
+        $('.face').removeClass('active5');
+        $('.card').removeClass('active6');
+        $('.blocker1').removeClass('activeblock1');
+        $('.blocker2').removeClass('activeblock2');
+        $('.opener').removeClass('openerfoto');
+        $('.smart2').removeClass('active8');
+        $('.chatiframe').removeClass('chaton');
+
+    });
+    </script>
+
+<script>
     $(document).ready(function(){
     $('#z4').on("click", function() {
-    $('.blur').toggleClass('poston2');
+    $('.blur').addClass('poston2');
     $('.blur').removeClass('poston');
     $('.personpage').addClass('ppon');
     $('.smart').removeClass('active5');
@@ -947,7 +971,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     $('.face').removeClass('active5');
     $('.card').removeClass('active6');
     $('.opener').removeClass('openerfoto');
-    $('.petportal').toggleClass('ppoff');
+    $('.petportal').addClass('ppoff');
 
     });
     });
@@ -957,16 +981,16 @@ $('.sub1').height($('.sub1').width()/0.75);
     <script>
     $(document).ready(function(){
     $('.s').on("click", function() {
-    $('.blur').toggleClass('poston');
-    $('.post').toggleClass('on');
-    $('.name').toggleClass('nameoff');
-    $('.menu').toggleClass('menuon');
+    $('.blur').addClass('poston');
+    $('.post').addClass('on');
+    $('.name').addClass('nameoff');
+    $('.menu').addClass('menuon');
     $('.blur').removeClass('poston2');
     $('.smart2').removeClass('active8');
     $('.personpage').removeClass('ppon');
     $('.favorite').removeClass('active2');
     $('.chatiframe').removeClass('chaton');
-    $('.petportal').toggleClass('ppoff');
+    $('.petportal').addClass('ppoff');
     
     });
     });
@@ -975,22 +999,22 @@ $('.sub1').height($('.sub1').width()/0.75);
 <script>
     $(document).ready(function(){
     $('.button-gifon').on("click", function() {
-    $('.poseselect').toggleClass('active400');
-    $('.faceselect').toggleClass('active401');
-    $('.cardselect').toggleClass('active402');
-    $('.pose').toggleClass('active7');
-    $('.face').toggleClass('active5');
-    $('.card').toggleClass('active6');
-    $('.blocker1').toggleClass('activeblock1');
-    $('.blocker2').toggleClass('activeblock2');
-    $('.opener').toggleClass('openerfoto');
+    $('.poseselect').addClass('active400');
+    $('.faceselect').addClass('active401');
+    $('.cardselect').addClass('active402');
+    $('.pose').addClass('active7');
+    $('.face').addClass('active5');
+    $('.card').addClass('active6');
+    $('.blocker1').addClass('activeblock1');
+    $('.blocker2').addClass('activeblock2');
+    $('.opener').addClass('openerfoto');
     $('.favorite').removeClass('active2');
     $('.smart2').removeClass('active8');
     $('.smart').removeClass('active5');
     $('.blur').removeClass('poston');
     $('.blur').removeClass('poston2');
     $('.personpage').removeClass('ppon');
-    $('.petportal').toggleClass('ppoff');
+    $('.petportal').addClass('ppoff');
     
     });
     });
@@ -1000,7 +1024,7 @@ $('.sub1').height($('.sub1').width()/0.75);
 <script>
     $(document).ready(function(){
     $('.music').on("click", function() {
-    $('.smart2').toggleClass('active8');
+    $('.smart2').addClass('active8');
     $('.smart').removeClass('active5');
     $('.blur').removeClass('poston');
     $('.personpage').removeClass('ppon');
@@ -1018,7 +1042,7 @@ $('.sub1').height($('.sub1').width()/0.75);
     $('.blur').removeClass('poston2');
     $('.post').removeClass('on');
     $('.chatiframe').removeClass('chaton');
-    $('.petportal').toggleClass('ppoff');
+    $('.petportal').addClass('ppoff');
     });
     });
 </script>
