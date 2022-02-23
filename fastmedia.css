@@ -1652,7 +1652,6 @@ body
     height: 100%;
     width: 100%;
 }
-
 .chatiframe
 {
     transition: 0.3s;
@@ -1672,6 +1671,13 @@ body
     height: 60%;
     width: 45%;
     
+}
+.chatiframe iframe
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* outline: 1px white solid; */
 }
 
 /* .chatportal
