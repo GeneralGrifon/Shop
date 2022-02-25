@@ -3055,21 +3055,18 @@ textarea::-webkit-scrollbar-thumb
     /* transform-style: preserve-3d; */
     position: absolute;
     transition: 0.1s;
-    top: 0%;
+    top: -16%;
     left: 15%;
     width: 45%;
-    height: 75%;
+    height: 100%;
     background-color: #00000042;
-    
     outline: 0px solid white;
     border-radius: 7px;
-    
     flex-direction: column;
     padding: 0px;
     overflow: scroll;
     overflow-x: hidden;
     display: none;
-
     /* backdrop-filter: blur(10px); */
 }
 
