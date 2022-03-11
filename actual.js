@@ -29,15 +29,15 @@ $(document).ready(function(){
     $('.smart2').removeClass('active8');
     });
     });
-$(document).ready(function(){
-        $('.name').on("click", function() {
-        $('.regalportal').addClass('regalon');
-        $("#rp").load("carier.html"); 
-        $('.blur').removeClass('poston2');
-        $('.blur').removeClass('poston');
-        $('.smart2').removeClass('active8');
-        });
-        });
+// $(document).ready(function(){
+//         $('.name').on("click", function() {
+//         $('.regalportal').addClass('regalon');
+//         $("#rp").load("carier.html"); 
+//         $('.blur').removeClass('poston2');
+//         $('.blur').removeClass('poston');
+//         $('.smart2').removeClass('active8');
+//         });
+//         });
 
 
 
