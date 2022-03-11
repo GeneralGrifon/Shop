@@ -395,17 +395,17 @@ h2
     0%
     {
         /* transform: rotateY(-180deg)  rotateX(90deg); */
-        transform: rotateZ(-180deg) translateZ(-140px);
+        transform: rotateZ(-180deg) translateZ(340px) rotateY(180deg);
     }
     50%
     {
         
-        transform: rotateZ(0deg) translateZ(-180px);
+        transform: rotateZ(0deg) translateZ(380px) rotateY(180deg);
     }
     100%
     {
         
         /* transform: rotateY(180deg)  rotateX(90deg); */
-        transform: rotateZ(180deg) translateZ(-140px);
+        transform: rotateZ(180deg) translateZ(340px) rotateY(180deg);
     }
-} 
+}  
