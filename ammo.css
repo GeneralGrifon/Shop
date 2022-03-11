@@ -4330,6 +4330,7 @@ svg
 .chatiframe .removeclass
 {
     bottom: 0%;
+    right: 2%
 }
 .removeclass:hover
 {
