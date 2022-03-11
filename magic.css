@@ -257,7 +257,7 @@ h2
     background-position: 50%;
     /* right: 5%; */
     transform-origin: 100% 0;
-    transform: rotateX(90deg) rotateY(-60deg) rotate(90deg);
+    transform: rotateX(180deg) rotateY(-60deg);
     background-image: url(https://thumbs.gfycat.com/ClassicVerifiableBlackpanther-size_restricted.gif);
     /* background-color: rgba(111, 0, 255, 0.616); */
     /* mix-blend-mode: screen; */
@@ -268,7 +268,7 @@ h2
     /* bottom: 100%; */
     /* transform: translateY(-100px); */
     transform-origin: 0% 0;
-    transform: rotateX(90deg) rotateY(0deg) rotate(90deg);
+    transform: rotateX(180deg) rotateY(0deg);
     background-image: url(https://media4.giphy.com/media/bASySzJH6bsxG/giphy.gif);
     background-position: 50%;
     /* background-color: rgba(251, 255, 0, 0.589); */
