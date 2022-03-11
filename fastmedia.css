@@ -1330,7 +1330,7 @@ body
     .pictures
     {
         margin-left: 350px;
-        transform: scale(0.9) translateZ(-100px) translateX(-80px);
+        transform: scale(0.88) translateZ(-100px) translateX(-130px);
         
     }
     .opener
@@ -1354,7 +1354,6 @@ body
     {
         display: none;
     }
-
 
 }
 
