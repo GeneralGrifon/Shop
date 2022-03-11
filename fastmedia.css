@@ -1330,8 +1330,12 @@ body
     .pictures
     {
         margin-left: 350px;
-        transform: scale(0.9) translateZ(-100px);
+        transform: scale(0.9) translateZ(-100px) translateX(-80px);
         
+    }
+    .opener
+    {
+        right: 130px;
     }
     .buttons
     {
@@ -1342,6 +1346,15 @@ body
     {
         background-color: rgb(255, 230, 0);
     }
+    .gadjet
+    {
+        display: none;
+    }
+    .galka
+    {
+        display: none;
+    }
+
 
 }
 
