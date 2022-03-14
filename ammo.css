@@ -4408,3 +4408,131 @@ svg
     background: rgba(22, 22, 22, 0.493);
     border-radius: 10px;
 }
+
+
+@media screen and (max-width: 800px)
+{
+    
+    .workportal
+    {
+        transform-style: preserve-3d;
+        top: 5%;
+        position: relative;
+        transform: translate3d(100px, 0px, 0px) rotateY(-90deg);
+        background-color: #ff00ea00;
+        outline: 1px solid rgb(0, 98, 255);
+        width: 300%;
+        height: 60%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        filter: opacity(1);
+    }
+
+    .newsportal
+    {
+        transform-style: preserve-3d;
+        position: absolute;
+        top: 22%;
+        width: 85%;
+        height: 60%;
+        outline: 2px rgb(0, 68, 255) solid;
+        background-color: rgba(255, 0, 0, 0);
+        transform: rotateY(90deg) translateZ(-330px) translateX(-5px);
+        border-radius: 9px; 
+        display: none;
+        cursor: pointer;
+        filter: brightness();
+    
+    }
+    .myicon
+    {
+        display: none;
+    }
+    .scene .smart.active5
+    {
+        transform: translate3d(100px, 200px, 90px) rotateX(0deg) scale(1);
+    }
+    .blurscene .post
+    {
+        transform: translateX(20px);
+        height: 160%;
+        width: 80%;
+    }
+    .smart2.active8
+    {
+        transform: translate3d(0px, 75px, 200px) rotateY(-20deg) rotateX(5deg) scale(0.45);
+        visibility: visible;
+  
+    }
+    .personpage
+    {
+
+        position: absolute;
+        transition: 0.1s;
+        top: -30%;
+        left: 2%;
+        width: 90%;
+        height: 100%;
+        background-color: #00000042;
+        outline: 0px solid white;
+        border-radius: 7px;
+        flex-direction: column;
+        padding: 0px;
+        overflow: scroll;
+        overflow-x: hidden;
+        display: none;
+    }
+    .poseselect
+    {
+        width: 40%;
+        padding-top: 40%;
+        top: 45%;
+        right: -10%;
+    }
+    .faceselect
+    {
+        width: 100px;
+        width: 40%;
+        padding-top: 40%;
+        top: 45%;
+        right: -10%;
+    }
+
+    .cardselect
+    {
+        width: 40%;
+        padding-top: 40%;
+        top: 45%;
+        right: -10%;
+    }
+
+    .poseselect.active400
+    {
+
+        top: 30%;
+        right: 35%;
+        transform: rotateY(0deg);
+        z-index: 1;
+
+    }
+    .faceselect.active401
+    {
+        top: 50%;
+        right: 30%;
+        transform: rotateY(0deg);
+
+    }
+    .cardselect.active402
+    {
+        /* z-index: 1; */
+        top: 70%;
+        right: 25%;
+        transform: rotateY(0deg);
+
+    }
+
+    
+
+}
