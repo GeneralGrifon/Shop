@@ -1306,56 +1306,6 @@ body
 
 }
 
-@media screen and (max-width: 900px)
-{
-    .pictures
-    {
-        left: 0;
-        margin-left: 400px;
-        
-
-    }
-    .menu
-    {
-        background-color: orange;
-    }
-    
-}
-@media screen and (max-width: 800px)
-{
-    .scene
-    {
-        background-color: #003cff4b;
-    }
-    .pictures
-    {
-        margin-left: 350px;
-        transform: scale(0.88) translateZ(-100px) translateX(-130px);
-        
-    }
-    .opener
-    {
-        right: 130px;
-    }
-    .buttons
-    {
-
-        left: 29%;
-    }
-    .menu
-    {
-        background-color: rgb(255, 230, 0);
-    }
-    .gadjet
-    {
-        display: none;
-    }
-    .galka
-    {
-        display: none;
-    }
-
-}
 
 
 .opener.openerfoto
@@ -1755,4 +1705,163 @@ body
     {
         transform: rotate(360deg);
     }
+}
+
+
+@media screen and (max-width: 1100px)
+{
+    .name
+    {
+        font-size: 5rem;
+        right: 530px;
+        background: none;
+        width: 300px;
+        /* outline: none; */
+        backdrop-filter: none;
+    }
+    .pictures
+    {
+        /* transform: translateZ(-200px)cale(0.9); */
+        left: 55%;
+        bottom: 16vh;
+        transform-style: preserve-3d;
+    }
+    .menu
+    {
+        background-color: red;
+    }
+    
+
+    #link
+    {
+        left: 38%;
+    transform: translateY(50px) translateX(-85px) translateZ(300px);
+    /* display: none; */
+    }
+
+    #nice
+    {
+        left: 30%;
+    transform: translateY(50px) translateX(-40px) translateZ(300px) scale(0.9);
+    /* display: none; */
+
+    }
+    #link:hover
+    {
+        left: 38%;
+    transform: translateY(50px) translateX(-85px) translateZ(320px) scale(0.9);
+    /* display: none; */
+    }
+
+    #nice:hover
+    {
+        left: 30%;
+    transform: translateY(50px) translateX(-40px) translateZ(320px) scale(0.9);
+    /* display: none; */
+
+    }
+
+    .button-startleft
+{
+
+    transform: translate3d(-190px, 0px, 700px) rotateY(-270deg) scale(0.8);
+
+}
+    .button-startleft:hover
+{
+
+    transform: translate3d(-90px, 0px, 700px) rotateY(-270deg) scale(0.8) rotateY(20deg);
+}
+
+    .blurscene .post
+    {
+    transform: translateX(0px);
+    width: 80%;
+    }
+    .chatspace.chaton
+    {
+        width: 50%;
+        height: 50%;
+    }
+    
+
+}
+
+@media screen and (max-width: 900px)
+{
+    .pictures
+    {
+        left: 0;
+        margin-left: 400px;
+        
+
+    }
+    .menu
+    {
+        background-color: orange;
+    }
+    
+}
+@media screen and (max-width: 800px)
+{
+    .scene
+    {
+        background-color: #00ff1500;
+    }
+    .pictures
+    {
+        margin-left: 350px;
+        transform: scale(0.88) translateZ(-100px) translateX(-130px);
+        
+    }
+    .opener
+    {
+        right: 130px;
+    }
+    .buttons
+    {
+
+        left: 29%;
+    }
+    .menu
+    {
+        background-color: rgb(255, 230, 0);
+    }
+    .gadjet
+    {
+        display: none;
+    }
+    .galka
+    {
+        display: none;
+    }
+    .myicon
+    {
+        display: none;
+    }
+    .button-startleft
+    {
+        transform: translate3d(-300px, 70px, 390px) rotateY(-270deg) scale(0.65);
+    }
+    .button-startleft:hover
+    {
+        transform: translate3d(-300px, 70px, 390px) rotateY(-250deg) scale(0.65);
+    }
+    .button3
+    {
+        /* РАБОТА НАЗАД */
+        transform: translate3d(0px, 50px, 220px) rotateY(-90deg) scale(0.5);
+    }
+
+    .chatiframe.chaton
+    {
+        top: 1%;
+        left: 1%;
+        /* display: block; */
+        height: 90%;
+        width: 95%;
+        outline: 1px solid rgba(255, 255, 255, 0.52);
+    
+    }
+    
 }
