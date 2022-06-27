@@ -13,7 +13,7 @@
 <body>
     <div class="space">
         <video class="vid" autoplay muted loop>
-            <source src="https://www.youtube.com/watch?v=lPWjDQERMCE">
+            <source src="/bg.mp4" type="video/mp4">
         </video>
         <div class="place">
             
@@ -43,14 +43,16 @@
               </defs>
                 </svg>
                 <div class="message">
-                    <i>Идеальная жопа в кофейне </i>  <br> <br>
+                    <!-- <i>Идеальная жопа в кофейне </i>  <br> <br>
                     Короче в кофейне работает бабца <br>
                     Жопа - идеальный орех <br>
                     Смотрю и думаю <em>кaкого хера она не в моем клипе?</em>  <br>
                     Общается со мной короче у ну так.. <br>
                     без энтузиазма особого <br>
-		    Ну ладно посмотрим что будет через месяц..)) <br>
+                    Отъебать бы её как следует <br>
                     Заглянул на кофе и мотивация на день обеспечена <br>
+                    Я очень надеюсь хватит у меня сил написать текст <br>
+                    Ибо трек намечается огнище <br> -->
                 </div>
                 <div class="merchendise">
                     <img src="/майка.png" alt="">
@@ -145,6 +147,54 @@
             </div>
 
 
+            <!-- <div id="m" class="icon m">
+                <img src="/mess.png" alt="">
+                <audio id="menu">
+                    <source src="/menu.ogg"/>
+                </audio>
+            </div>
+
+            <div class="icon r">
+                <img src="/merch2.png" alt="">
+                <audio id="menu2">
+                    <source src="/menu.ogg"/>
+                </audio>
+            </div>
+
+            <div class="icon d">
+                <img src="/diamond.png" alt="">
+                <audio id="menu3">
+                    <source src="/menu.ogg"/>
+                </audio>
+            </div>
+
+            <div class="icon p">
+                <img src="/star.png" alt="">
+                <audio id="menu4">
+                    <source src="/menu.ogg"/>
+                </audio>
+            </div>
+
+            <div id="t" class="icon t">
+                <img src="/twerk.png" alt="">
+                <audio id="menu5">
+                    <source src="/menu.ogg"/>
+                </audio>
+            </div>
+
+            <div id="n" class="icon n">
+                <img src="/newsz.png" alt="">
+                <audio id="menu6">
+                    <source src="/menu.ogg"/>
+                </audio>
+            </div>
+
+            <div id="f" class="icon f">
+                <img src="/find.png" alt="">
+                <audio id="menu7">
+                    <source src="/menu.ogg"/>
+                </audio>
+            </div> -->
 
             
         <!-- <div class="icon w"></div> -->
@@ -158,14 +208,14 @@
                 </div>
 
                 <div class="tyty t1"> 
-                    <h1 class="push">Reprodudictate</h1>
+                    <h1 class="push">MetaBitch</h1>
                     <div id="play1" class="play">
                         <img src="/play.png" alt="">
                     </div>
                     <div id="stop1" class="stop">
                         <img src="/stop4.png" alt="">
                     </div>
-                    <audio class="audio" id="audio1" src="/!по красоте2/Djune.mp3"></audio>
+                    <audio class="audio" id="audio1" src="/!по красоте2/modern rock master.mp3"></audio>
                 </div>
                 <div class="song_image">
                     <img src="https://i.pinimg.com/originals/b4/28/80/b428808d2da203a88ebebc498e00d33e.jpg" alt="">
@@ -174,7 +224,7 @@
                     <h1>He is Hard</h1>
                     <div id="play2" class="play"></div>
                     <div id="stop2" class="stop"></div>
-                    <audio class="audio" id="audio2" src="/!по красоте2/he is hard3.mp3"></audio>
+                    <audio class="audio" id="audio2" src="/!по красоте/he is hard3.mp3"></audio>
                     
                 </div>
                 <div class="tyty t3"> 
@@ -214,6 +264,8 @@
                     <div id="close" class="close"></div>
                 </div>
             </div>
+
+
             <div class="name">Sashk Only
                 <img class="ava" src="https://sun9-10.userapi.com/s/v1/if2/ghWntXmJLS18w5Qyt9NOMbMWxYWGx9Ab5RyNmM7B1b2w_utWEd5QEILcG-WvnI9isDRiXlubslIX_G-H9oShkL9Y.jpg?size=773x939&quality=96&type=album" alt="">
                 <div class="legend">
@@ -232,16 +284,21 @@
                 </div>
             </div>
 
+            <div class="headphones">
+                <img src="/hf.png" alt="">
+            </div>
+
             <!-- <div class="motivation"></div> -->
         </div>
     </div>
 
-    <script> 
+    <!-- <script> 
         $('.motivation').on("click", function() {
         $('.motivation').toggleClass('full');
         $(".motivation").load("bitches.html"); 
         });
-    </script>
+    </script> -->
+
     <!-- <script>
         
         $("#play").on("click", function() {
@@ -279,9 +336,9 @@
         audio7.play();
         });
     </script>
-    <script>
+    <!-- <script>
         
-    </script>
+    </script> -->
     
     <script>
         var music = document.getElementById('audio1');
@@ -299,9 +356,9 @@
     <script>
         $(function() {
 
-        $('#t').on("mouseenter", function() {
-            $(".twerk").load("worknews.html"); 
-        });
+        // $('#t').on("mouseenter", function() {
+        //     $(".twerk").load("worknews.html"); 
+        // });
         $('#t').on("mouseleave", function() {
             // $(".twerk").empty("magic.html"); 
         });
@@ -329,38 +386,100 @@
         $('.icon').toggleClass('on');
         $('.user').toggleClass('full');
 
+        $('.headphones').toggleClass('full');
+
+        $('.nudes').removeClass('full');
+        $('.twerk').removeClass('full');
+        $('.price').removeClass('full');
+        $('.diamond').removeClass('full');
+        $('.merchendise').removeClass('full');
+        $('.message').removeClass('full');
+        $('.find').removeClass('full');
+
         // $(".twerk").empty("worknews.html"); 
         });
-        $('.m').on("mouseenter mouseleave", function() {
+    </script>
+
+    <script>
+        $('.m').on("click", function() {
         $('.message').toggleClass('full');
+
+        $('.nudes').removeClass('full');
+        $('.twerk').removeClass('full');
+        $('.price').removeClass('full');
+        $('.diamond').removeClass('full');
+        $('.merchendise').removeClass('full');
+        $('.find').removeClass('full');
         });
         $('.r').on("click", function() {
         $('.merchendise').toggleClass('full');
+
+        $('.nudes').removeClass('full');
+        $('.twerk').removeClass('full');
+        $('.price').removeClass('full');
+        $('.diamond').removeClass('full');
+        $('.find').removeClass('full');
+        $('.message').removeClass('full');
         });
         $('.d').on("click", function() {
         $('.diamond').toggleClass('full');
+
+        $('.nudes').removeClass('full');
+        $('.twerk').removeClass('full');
+        $('.price').removeClass('full');
+        $('.find').removeClass('full');
+        $('.merchendise').removeClass('full');
+        $('.message').removeClass('full');
         });
         $('.p').on("click", function() {
         $('.price').toggleClass('full');
+
+        $('.nudes').removeClass('full');
+        $('.twerk').removeClass('full');
+        $('.find').removeClass('full');
+        $('.diamond').removeClass('full');
+        $('.merchendise').removeClass('full');
+        $('.message').removeClass('full');
         });
         $('.t').on("click", function() {
         $('.twerk').toggleClass('full');
+
+        $('.nudes').removeClass('full');
+        $('.find').removeClass('full');
+        $('.price').removeClass('full');
+        $('.diamond').removeClass('full');
+        $('.merchendise').removeClass('full');
+        $('.message').removeClass('full');
         });
         $('.n').on("click", function() {
         $('.nudes').toggleClass('full');
+
+        $('.find').removeClass('full');
+        $('.twerk').removeClass('full');
+        $('.price').removeClass('full');
+        $('.diamond').removeClass('full');
+        $('.merchendise').removeClass('full');
+        $('.message').removeClass('full');
         });
-        $('.f').on("mouseenter mouseleave", function() {
+        $('.f').on("click", function() {
         $('.find').toggleClass('full');
+
+        $('.nudes').removeClass('full');
+        $('.twerk').removeClass('full');
+        $('.price').removeClass('full');
+        $('.diamond').removeClass('full');
+        $('.merchendise').removeClass('full');
+        $('.message').removeClass('full');
         });
     </script>
-    <script> 
+    <!-- <script> 
         $('.push').on("click", function() {
         $('.secret').addClass('on');
         });
         $('.close').on("click", function() {
         $('.secret').removeClass('on');
         });
-    </script>
+    </script> -->
     <script> 
         $('.name').on("click", function() {
         $('.name').toggleClass('full');
@@ -430,6 +549,12 @@
     //     audio.currentTime = 0;
 	// });
     </script>
+
+<script> 
+    $('.headphones').on("click", function() {
+    $('.booty').toggleClass('full');
+    });
+</script>
     
     
 
