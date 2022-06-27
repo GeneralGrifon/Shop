@@ -528,7 +528,7 @@
     .song_image
     {
         position: relative;
-        width: 90%; height: 75%; top: 5%; left: 4%; 
+        width: 90%; height: 73%; top: 5%; left: 4%; 
     }
     .song_image img
     {
@@ -541,7 +541,7 @@
     .tyty
     {
         position: relative;
-        width: 90%;  height: 10%; top: 4%; margin-left: 4%;  margin-bottom: 3%;
+        width: 90%;  height: 12%; top: 4%; margin-left: 4%;  margin-bottom: 3%;
     }
     .tyty h1
     {
@@ -551,14 +551,14 @@
     }
     .play
     {
-        width: 45px;
+        width: 40px; left: 5px;
         top: 6px; 
     }
 
     .stop
     {
-        top: 6px; left: 50px;
-        width: 45px;
+        top: 6px; left: 55px;
+        width: 40px;
     }
     .headphones
     {
