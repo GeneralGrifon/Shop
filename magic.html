@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="magic.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <script></script> -->
+    <title>Document</title>
+</head>
+<body id="body">
+    <div id="efir" class="efir">
+      
+        <div id="strata" class="strata">
+
+          <div id="spell" class="spell">
+            <div class="mirror mrrr1">
+
+            </div>
+            <div class="mirror mrrr2">
+
+            </div>
+            <div class="mirror mrrr3">
+
+            </div>
+
+            
+        </div>
+          
+
+        </div>
+
+    </div>
+    <div class="data">
+        <h2>INFO:</h2>
+        <h1 class="inf i1">Клиторальный стимулятор Mickey от бренда Pink Rabbit с длинными кроличьими ушками создан для ласк клитора, а также для экспериментов с другими эрогенными зонами.
+        </h1>
+        <h1 class="inf i2">Узорные непрозрачные чулки от бренда Lapin Rose сделаны с добавлением лайкры.
+             У них есть гладкая резинка с рюшами, которая будет удерживать их на месте.
+              Сзади чулки украшает декоративная шнуровка черного цвета, благодаря которой 
+              Ваш образ будет более эффектным и дерзким.
+               Чулки с таким интересным дизайном можно носить с мини-юбками,
+                шортами или платьями для придания своему образу сексуальности.
+                 Также ими можно дополнить ролевой или маскарадный костюм.
+        </h1>
+        <h1 class="inf i3">Эта реалистичная секс-кукла, выполненная в полный рост, практически неотличима от настоящей девушки благодаря своим пропорциям, манящим изгибам тела, весу и невероятно нежному материалу. Слегка приоткрытые пухлые губки, аккуратный нос и легкий макияж делают ее лицо очень выразительным. С ней будет возможно исполнить все свои самые тайные фантазии, а она, в свою очередь, никогда не откажет. Куклу можно наряжать в самые откровенные наряды и менять цвет волос при помощи париков, создавая из нее идеальную для себя любовницу, согласную на все.
+        </h1>
+    </div>
+
+<script>
+    $(document).ready(function(){
+    $('.mrrr1').on("mouseenter mouseleave", function() {
+    $('.i1').toggleClass('on');  
+    });
+    });
+    </script>
+    
+<script>
+        $(document).ready(function(){
+        $('.mrrr2').on("mouseenter mouseleave", function() {
+        $('.i2').toggleClass('on');  
+        });
+        });
+        </script>
+<script>
+    $(document).ready(function(){
+    $('.mrrr3').on("mouseenter mouseleave", function() {
+    $('.i3').toggleClass('on');  
+    });
+    });
+    </script>
+
+
+
+
+<script>
+  
+$(document).ready(function() {
+  
+  var winW = $(window).width();
+  var winH = $(window).height();
+  var $demo = $(".strata");
+  var $rerun = $(".rerun");
+  var rotation = {
+    x: 90,
+    z: 0
+  };
+  var prevValues = {
+    x: 0,
+    y: 0
+  };
+  var rotationActive = false;
+  var startAnimTime = 5400;
+  var timeout = setTimeout(function() {
+    $demo.addClass("ready");
+  }, 4400);
+  
+  $(document).on("mousedown", function(e) {
+    var startX = e.pageX;
+    var startY = e.pageY;
+    
+    $(document).on("mousemove", function(e) {
+      var deltaX;
+      var deltaY;
+      if (!rotationActive) {
+        deltaX = startX - e.pageX;
+        deltaY = startY - e.pageY;
+        rotationActive = true;
+      } else {
+        deltaX = prevValues.x - e.pageX;
+        deltaY = prevValues.y - e.pageY;
+      }
+      prevValues.x = e.pageX;
+      prevValues.y = e.pageY;
+      
+      var degX = deltaX * 200 / 360;
+      var degY = deltaY * 200 / 360;
+      
+      rotation.x += degY;
+      rotation.z += degX;
+      
+      $demo.css("transform", "rotateX("+rotation.x+"deg) rotateZ("+rotation.z+"deg)");
+    });
+    
+    $(document).on("mouseup", function(e) {
+      $(document).off("mousemove");
+      $(document).off("mouseup");
+      rotationActive = false;
+      prevValues.x = 0;
+      prevValues.y = 0;
+    });
+  });
+  
+
+
+  $(document).on("click", ".demo__panelKeys-key", function() {
+    $(this).removeClass("pressed");
+    $(this).css("top");
+    $(this).addClass("pressed");
+  });
+  
+  $(document).on("click", ".rerun", function() {
+    window.clearTimeout(timeout);
+    $(".demo__panelKeys-key").removeClass("pressed");
+    $demo.hide().removeClass("ready");
+    $demo.css("top");
+    $demo.show();
+    
+    timeout = setTimeout(function() {
+      $demo.addClass("ready");
+    }, 4400);
+  });
+  
+  $(window).on("resize", function() {
+    winW = $(window).width();
+    winH = $(window).height();
+  });
+  
+});
+</script>
+
+</body>
+</html>
