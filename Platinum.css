@@ -1,0 +1,525 @@
+.space
+{
+    position: absolute;
+    background-color: black;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    overflow: hidden; 
+    perspective: 1800px;
+}
+.place
+{
+    position: absolute; transform-style: preserve-3d;
+    width: 98%; height: 98%;
+    top: 1%; left: 1%;
+    display: flex;
+    background-color: rgba(0, 200, 255, 0); border-radius: 4px;
+    /* outline: 2px rgba(255, 255, 255, 0.307) solid; */
+}
+.name
+{
+    position: absolute; transition: 0.6s; overflow: hidden; cursor: pointer; z-index: 4;
+    width: 90%; height: 17%;
+    top: 2%; left: 2%;
+    outline: 2px rgba(255, 255, 255, 0.233) solid; 
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 8rem;
+    text-align: center;
+    font-family: 'Enchanted Land';
+    /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff1e00, 0 0 40px #ff1e00, 0 0 50px #ff1e00, 0 0 60px #ff1e00, 0 0 70px #ff1e00; */
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff7b00, 0 0 40px #ff7b00, 0 0 50px #ff1e00, 0 0 60px #ff1e00, 0 0 70px #ff1e00;
+    letter-spacing: 5px;
+    backdrop-filter: blur(12px);  user-select: none;
+    /* border-radius: 200px 4px 300px 4px; */
+    border-radius: 4px;
+
+}
+.name.full
+{
+    height: 93%;
+    background-color: rgba(0, 0, 0, 0.567);
+}
+.ava
+{
+    position: absolute; width: 28%; left: 3%; top: 20%; opacity: 0; transition: 0.5s;
+    
+}
+.ava.full
+{
+    opacity: 1;
+}
+.legend
+{
+    position: absolute; display: none; overflow: hidden;
+    width: 60%; height: 70%; outline: 1px solid rgba(255, 255, 255, 0.099); top: 20%; right: 7%;
+}
+.legend.full
+{
+    display: block;
+}
+.legend h1
+{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family:monospace;
+    text-shadow: none;
+    letter-spacing: 5px;
+}
+.avatar
+{
+    /* display: none; */
+    position: relative; 
+    width: 15%; height: 70%;
+    top: 22%; left: 2.2%;
+    background-color: rgba(255, 255, 0, 0);
+    outline: 2px rgba(255, 255, 255, 0.307) solid;
+    /* filter: url(glow); */
+    backdrop-filter: blur(12px);
+    border-radius: 4px; user-select: none; transition: 0.666s; overflow: hidden;
+    
+}
+.avatar:hover, .booty:hover
+{
+    box-shadow:  0 0 15px rgba(255, 100, 33, 0.703);
+}
+.avatar.full
+{
+    width: 40%;
+}
+.avatar img
+{
+    position: absolute; transition: 0.6s; cursor: pointer;
+    height: 100%;
+}
+.avatar img:hover
+{
+    filter: url(#glow);
+}
+
+.booty
+{
+    position: relative;
+    
+    /* background-color: rgba(0, 0, 0, 0.348); */
+    outline:  2px rgba(255, 255, 255, 0.217) solid;
+    top: 22%; left: 5%;
+    display: block;
+    width: 50%; height: 70%;
+    backdrop-filter: blur(12px);
+    border-radius: 4px  4px 4px 4px;
+    overflow: hidden; transition: 0.5s;
+}
+.booty.flip
+{
+    transform: rotateY(180deg);
+}
+.view
+{
+    position: absolute; z-index: 2; transition: 0.666s;
+    width: 100%; right: -100%;
+}
+.cover.flip
+{
+    transform: rotateY(180deg);
+
+}
+.view.full
+{
+    right: -20%;
+}
+.view img
+{
+    width: 100%;
+    
+}
+.tyty
+{
+    position: relative;
+    width: 90%;
+    height: 10%;
+    /* background-color: rgba(0, 0, 0, 0.414); */
+    outline: 2px rgba(255, 255, 255, 0.307) solid;
+    margin-top: 4%; margin-left: 1%; 
+    font-family: monospace;
+    /* vertical-align: middle; */
+    border-radius: 4px;
+}
+.tyty h1
+{
+    position: inherit; 
+    top: 22%;
+    text-align: center; font-size: 1.5vw; color: white; transition: 0.7s; user-select: none; cursor: pointer; outline: 1px solid rgba(255, 0, 0, 0); width: 33%; left: 35%;
+
+}
+.tyty:hover
+{
+    /* background-color: rgba(225, 154, 0, 0.217); */
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff1e00, 0 0 40px #ff1e00, 0 0 50px #ff1e00, 0 0 60px #ff1e00, 0 0 70px #ff1e00;
+    /* box-shadow: 0 0 7px #fff, 0 0 10px #ff1e00, 0 0 30px #ff1e00b4;  */
+}
+.song_image
+{
+    position: relative;
+    width: 90%; height: 70%; outline: 1px solid rgba(255, 255, 255, 0.498); top: 5%; left: 1%; border-radius: 4px; overflow: hidden;
+}
+.song_image img
+{
+    position: relative; width: 140%; left: -18%; top: -12%;
+}
+
+.play
+{
+    position: absolute;
+    top: 2%;
+    /* outline: 1px solid rgb(0, 213, 255); border-radius: 50%; */
+    /* box-shadow: 0 0 5px black, 0 0 10px rgb(0, 187, 255), 0 0 15px rgb(0, 255, 229); */
+    /* background-color: yellow; */
+    /* background-image: url(/play.png); */
+    height: 90%; width: 7%;
+    cursor: pointer;
+    /* background-size: cover; */
+    filter: invert(1);
+}
+.play img
+{
+    position: relative; width: 100%;
+}
+.stop img
+{
+    position: relative; width: 100%;
+}
+.stop
+{
+    position: absolute;
+    top: 2%; left: 9%;
+    /* background-image: url(/stop2.png); */
+    height: 90%; width: 7%;
+    cursor: pointer;
+    /* background-size: cover; */
+    filter: invert(1);
+
+}
+
+.secret
+{
+    position: absolute;
+    /* display: none; */
+    width: 50%; height: 70%; transition: 0.7s; z-index: 3;
+    background-color: #0000006c; backdrop-filter: blur(12px); outline: 1px solid white; color: white; 
+    font-size: 3rem;
+    top: 22%; right: -60%;
+}
+.secret.on
+{
+    right: 15%;
+    /* display: block; */
+}
+.l
+{
+    position: relative; display: block;
+    width: 94%; height: 90%; top: 0%; left: 3%;
+    background-color: #ff1e0000; user-select: none; font-family:monospace
+}
+.l h1
+{
+    position: relative; font-size: 2.5rem;
+    text-shadow:
+    0 0 7px white, 
+    0 0 15px red,
+    0 0 25px red;
+}
+.l h2
+{
+    position: absolute; font-size: 2rem; bottom: 4%;
+}
+.l img
+{
+    position: absolute; width: 40%; height: auto; right: 0%; top: 5%;
+}
+.close
+{
+    position: absolute; width: 5%; height: 7%;
+    background-size: cover; filter: invert(1); cursor: pointer;
+    background-image: url(https://www.pinclipart.com/picdir/middle/138-1385364_free-arrows-icons-back-icon-svg-free-clipart.png);
+}
+.vid
+{
+    position: absolute;
+    height: 125%; top: 0%; left: -5%; 
+    /* transform: translateZ(-500px); */
+    transition: 1s;
+}
+.message
+{
+    position: absolute; bottom: 0; right: 0; background-color: #000000c1; outline: 1px solid white; width: 70%; height: 0%; 
+    color: white; padding-left: 5%; padding-top: 5%; font-size: 1.6vw; overflow: hidden; opacity: 0; transition: 0.666s;
+}
+.message i
+{
+    /* text-shadow: 0 0 5px white, 0 0 10px rgb(255, 21, 0); */
+    text-shadow: 0 0 5px #fff, 0 0 10px rgb(255, 179, 0), 0 0 20px #ff1e00, 0 0 30px #ff1e00; 
+}
+.message.full
+{
+    height: 84%; opacity: 1;
+    /* display: block; */
+}
+
+.merchendise
+{
+    position: absolute;
+    width: 70%; height: 0%; background-color: #000000c9; opacity: 0; bottom: 0%; right: 0; overflow: hidden; transition: 0.666s; outline: 1px solid white;
+}
+.merchendise.full
+{
+    opacity: 1; height: 90%;
+}
+.merchendise img
+{
+    width: 100%; height: auto; bottom: 0;
+}
+.diamond
+{
+    position: absolute; display: block;
+    width: 70%; height: 0%; background-color: #000000c9; opacity: 0; bottom: 0%; right: 0; overflow-y: scroll; transition: 0.666s; outline: 1px solid white;
+}
+.diamond.full
+{
+    opacity: 1; height: 90%;
+} 
+.diamond img
+{
+    position: relative;
+    /* height: 20%; */
+    width: 100%; height: auto; bottom: 0;
+}
+.price.full, .twerk.full, .nudes.full, .find.full
+{
+    opacity: 1; height: 90%;
+}
+.price
+{
+    position: absolute;
+    width: 70%; height: 0%; background-color: #000000c9; opacity: 0; bottom: 0%; right: 0; overflow: hidden; transition: 0.666s; outline: 1px solid white;
+}
+/* .price img
+{
+    width: 100%; height: auto; bottom: 0;
+} */
+.price iframe
+{
+    position: relative; width: 100%; height: 100%; z-index: 2;
+}
+.twerk
+{
+    position: absolute;
+    width: 70%; height: 0%; background-color: #000000c9; opacity: 0; bottom: 0%; right: 0; overflow: hidden; transition: 0.666s; outline: 1px solid white;
+}
+.nudes
+{
+    position: absolute;
+    width: 70%; height: 0%; background-color: #000000c9; opacity: 0; bottom: 0%; right: 0; overflow: hidden; transition: 0.666s; outline: 1px solid white;
+}
+.find
+{
+    position: absolute;
+    width: 70%; height: 0%; background-color: #000000c9; opacity: 0; bottom: 0%; right: 0; overflow: hidden; transition: 0.666s; outline: 1px solid white;
+}
+.user
+{
+    /* display: inline-block; */
+    display: flex; border-radius: 4px;
+    position: absolute; background-color: rgba(255, 255, 0, 0); width: 0%; height: 7%; top: 0; z-index: 12; overflow: hidden; top: 22%; left: 17.2%; transition: 0.666s;
+}
+.user.full
+{
+    width: 25%;
+}
+
+.icon
+{
+    position: relative;
+    /* position: absolute; */
+    width: 14%; height: auto; background-color: #00bbff00; top: 15%; left: 0%; z-index: 1;  display: none; 
+}
+.icon.on
+{
+    display: block;
+}
+.icon img
+{
+    width: 80%; filter: invert(1); cursor: pointer;
+}
+.r
+{
+   background-color: #ff1e0000; ;
+
+}
+.r img
+{
+    width: 80%;
+}
+.d
+{
+   background-color: #ff1e0000; 
+
+}
+.r img
+{
+    width: 80%;
+}
+.p
+{
+    background-color: #ff1e0000;
+}
+.p img
+{
+    width: 80%;
+}
+.t
+{
+    background-color: #ff1e0000; 
+}
+.t img
+{
+    width: 80%;
+}
+.n
+{
+    background-color: #ff1e0000; 
+}
+.f
+{
+    background-color: #ff1e0000;
+}
+.f img
+{
+    width: 80%;
+}
+.b img
+{
+    width: 80%;
+}
+
+.progress_bar
+{
+    position: relative; cursor: pointer;
+    height: 1%; width: 90%; 
+    
+    background-color: rgba(255, 255, 255, 0); outline: 2px solid rgba(255, 255, 255, 0.176); border-radius: 10px; top: 3%;
+    margin-bottom: 5%; left: 1%;
+}
+.progressed
+{
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 10px yellow, 0 0 15px red, 0 0 20px red;
+    height: 100%; width: 0%;
+    background-color: #ffffff;
+    transition: all 0.2s;
+}
+
+.motivation
+{
+    transition: 0.5s; opacity: 1;
+    position: absolute; width: 98%; height: 98%; top: 2%; right: -95%; outline: 1px solid rgba(255, 255, 255, 0.314); z-index: 5; background-color: rgba(205, 104, 50, 0.09);
+}
+.motivation.full
+{
+    width: 98%; height: 98%; right: 1%;
+    opacity: 1;
+}
+
+.diamond::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  .diamond::-webkit-scrollbar-track {
+    background-color: #e4e4e400;
+    border-radius: 100px;
+  }
+  
+  .diamond::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+    background-color: #ffee03f8;
+  }
+@media (max-width: 1000px)
+{
+    .place
+    {
+    
+        outline: 2px solid rgb(0, 244, 0);
+    
+    }
+    .name
+    {
+        font-size: 19vw;
+    }
+    .booty
+    {
+        left: 5%;
+        width: 60%;
+    }
+    .tyty h1
+    {
+        font-size: 3vw;
+    }
+    .avatar
+    {
+        width: 50%;
+        height: 70%;
+        z-index: 1;
+    }
+    .avatar img
+    {
+        height: 85%;
+    }
+    .avatar.full
+    {
+        width: 400%;
+    }
+    .play
+    {
+        height: 50%;
+    }
+    .stop
+    {
+        height: 50%;
+
+    }
+    .message
+    {
+        position: absolute; top: 0; right: 0; background-color: #000000c1; width: 70%; height: 98%; 
+        color: white; padding-left: 2%; padding-top: 2%; font-size: 4.5vw; overflow: hidden; display: none;
+    }
+    .l h2
+    {
+        font-size: 5vw;
+
+    }
+    .secret.on
+    {
+        right: 0%; width: 90%; z-index: 3;
+    }
+    
+}
+@font-face
+{
+  font-family: 'Enchanted Land';
+  src: url('enchanted_land/Enchanted\ Land.otf'); 
+}
+@font-face
+{
+  font-family: 'great-vibes';
+  src: url('great-vibes/GreatVibes-Regular.ttf'); 
+}
+@font-face
+{
+  font-family: 'Century';
+  src: url('Century/Century_Gothic.ttf'); 
+}
+
