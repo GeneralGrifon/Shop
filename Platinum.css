@@ -7,10 +7,10 @@
     overflow: hidden; 
     perspective: 1800px;
 }
-.space img
+/* .space img
 {
     position: absolute; top: 0; left: 0; width: 100%; height: auto;
-}
+} */
 .place
 {
     position: absolute; transform-style: preserve-3d;
