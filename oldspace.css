@@ -20,7 +20,8 @@
 .mediaclose
 {
     position: absolute;
-    top: 50px;
+    bottom: 0;
+    /* top: 50px; */
     /* left: 0; */
     right: 5%;
     width: 80px;
@@ -33,11 +34,11 @@
 {
     display: block;
 }
-.mediaclose.on2
+/* .mediaclose.on2
 {
     filter: invert(1);
     display: block;
-}
+} */
 
 .worknews
 {
@@ -49,7 +50,7 @@
     height: 100%;
     overflow-X: hidden;
     overflow-y: scroll;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.831);
     /* outline: 1px solid rgb(0, 255, 0); */
 }
 .clients
@@ -57,11 +58,11 @@
     transform-style: preserve-3d;
     top: 10px;
     left: 0;
-    margin-top: 5%;
+    margin-top: 8%;
     margin-left: 2%;
     margin-right: 3%;
     width: 98%;
-    height: 55%;
+    /* height: 55%; */ height: auto;
     /* outline: 1px solid rgb(255, 255, 255); */
     background-color: rgba(255, 184, 30, 0);
 
@@ -71,6 +72,7 @@
 }
 .mixed
 {
+    /* position: relative; */
     /* padding: ; */
     display: flex;
     flex-wrap: wrap;
@@ -78,8 +80,9 @@
     transform-style: preserve-3d;
     /* top: 0px; */
     width: 97%;
-    height: 33%;
-    margin-top: 6%;
+    height: auto;
+    /* height: 33%; */
+    margin-top: 10%;
     margin-left: 2%;
     outline: 1px solid rgba(255, 255, 255, 0.863);
     background-color: #003cff00;
@@ -100,8 +103,9 @@
 }
 .mixed h1
 {
-    position: absolute;
-    top: -50px;
+    position: relative;
+    /* position: absolute; */
+    top: 0px;
     float: left;
     color: white;
     font-size: 1.4rem;
@@ -110,8 +114,9 @@
 }
 .mixed h2
 {
-    position: absolute;
-    top: 0px; left: 0%;
+    position: relative;
+    /* position: absolute; */
+    top: -40px; left: 0%;
     float: left;
     color: white;
     font-size: 1.2rem;
@@ -352,15 +357,15 @@
 .pdiframe iframe
 {
     position: relative;
-    margin-left: 4%;
-    margin-top: 3%;
+    margin-left: 1%;
+    margin-top: 1%;
 }
 
 .youtube iframe
 {
     position: relative;
-    margin-left: 4%;
-    margin-top: 3%;
+    left: 0%;
+    margin-top: 1%;
 }
 
 
