@@ -22,7 +22,7 @@
 }
 .name
 {
-    position: absolute; transition: 0.6s; overflow: hidden; cursor: pointer; z-index: 4;
+    position: absolute; transition: 0.6s; overflow: hidden; cursor: pointer; z-index: 100;
     width: 95%; height: 17%;
     top: 2%; left: 2%;
     outline: 2px rgba(255, 255, 255, 0.233) solid; 
