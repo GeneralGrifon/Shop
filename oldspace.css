@@ -1,0 +1,707 @@
+
+/* TEXTBOX_________________ */
+.mediafield
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.685);
+    display: none;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+}
+.mediafield.mfon
+{
+    display: block;
+
+}
+.mediaclose
+{
+    position: absolute;
+    bottom: 0;
+    /* top: 50px; */
+    /* left: 0; */
+    right: 5%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    display: none;
+
+}
+.mediaclose.on
+{
+    display: block;
+}
+/* .mediaclose.on2
+{
+    filter: invert(1);
+    display: block;
+} */
+
+.worknews
+{
+
+    user-select: none;
+    display: block; top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-X: hidden;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.831);
+    /* outline: 1px solid rgb(0, 255, 0); */
+}
+.clients
+{
+    transform-style: preserve-3d;
+    top: 10px;
+    left: 0;
+    margin-top: 8%;
+    margin-left: 2%;
+    margin-right: 3%;
+    width: 98%;
+    /* height: 55%; */ height: auto;
+    /* outline: 1px solid rgb(255, 255, 255); */
+    background-color: rgba(255, 184, 30, 0);
+
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mixed
+{
+    /* position: relative; */
+    /* padding: ; */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    transform-style: preserve-3d;
+    /* top: 0px; */
+    width: 97%;
+    height: auto;
+    /* height: 33%; */
+    margin-top: 10%;
+    margin-left: 2%;
+    outline: 1px solid rgba(255, 255, 255, 0.863);
+    background-color: #003cff00;
+    border-radius: 7px;
+    /* margin-left: 15px; */
+}
+.clients h1
+{
+    position: absolute;
+    /* position: relative; */
+    top: -40px;
+    float: left;
+    /* left: -100px; */
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.mixed h1
+{
+    position: relative;
+    /* position: absolute; */
+    top: 0px;
+    float: left;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.mixed h2
+{
+    position: relative;
+    /* position: absolute; */
+    top: -40px; left: 0%;
+    float: left;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cover::after
+{
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background-color: aqua;
+    top: 0;
+    left: 0;
+}
+.workportal
+{
+    transform-style: preserve-3d;
+    top: 20%;
+    position: relative;
+    transform: translate3d(100px, 0px, 100px) rotateY(-90deg);
+    width: 58%;
+    height: 60%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    animation: portalflick 0.1s linear infinite
+}
+@keyframes  portalflick
+{
+    0%
+    {
+        outline: 0.1px solid rgb(0, 98, 255);
+        opacity: 0.9;
+
+    }
+    100%
+    {
+        outline: 2.5px solid rgb(0, 98, 255);
+        opacity: 1;
+
+    }
+}
+#wp
+{
+    display: none;
+}
+#wp.wpon
+{
+    display: block;
+}
+#workpg
+{
+    transform: rotateY(90deg);
+    width: 0%;
+    height: 0%;
+    background-color: rgb(78, 46, 255);
+    animation: workoff 1.5s linear forwards;
+}
+
+.worknews::-webkit-scrollbar
+{
+    width: 15px;
+}
+.worknews::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    width: 10px;
+    background: transparent;
+}
+.worknews::-webkit-scrollbar-thumb
+{
+    width: 10px;
+    background: rgba(179, 179, 179, 0.493);
+    border-radius: 10px;
+}
+#workpg.workon
+{
+    animation: workon 1.5s linear forwards;
+}
+@keyframes workon
+{
+    0%
+    {
+        visibility: hidden;
+    }
+    99%
+    {
+        visibility: hidden;
+    }
+    100%
+    {
+        visibility: visible;
+    }
+    
+}
+#workpg.workoff
+{
+    animation: workoff 1.5s linear forwards;
+}
+@keyframes workoff
+{
+    0%
+    {
+        visibility: visible;
+    }
+    99%
+    {
+        visibility: visible;
+    }
+    100%
+    {
+        visibility: hidden;
+    }
+    
+}
+
+
+.workpage iframe
+{
+    position: absolute;
+    border: solid 1px white;
+    margin-left: 2%;
+    margin-top: 2%;
+    transform: scale(1);
+    border-radius: 10px;
+}
+#w1
+{
+    top: 0px;
+    left: 0px;
+    /* display: none; */
+}
+#w2
+{
+    top: 0px;
+    left: 150px;
+    /* display: none; */
+}
+#w3
+{
+    top: 140px;
+    left: 0px;
+    /* display: none; */
+}
+#w4
+{
+    top: 140px;
+    left: 150px;
+    /* display: none; */
+}
+#w5
+{
+    top: 280px;
+    left: 0px;
+    /* display: none; */
+}
+#w6
+{
+    top: 280px;
+    left: 150px;
+    /* display: none; */
+}
+/* MIXED _________________ */
+.pdcd
+{
+    left: 0;
+    /* right: 0; */
+    top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    background-color: rgba(255, 255, 255, 0.527);
+    /* backdrop-filter: blur(10px); */
+    outline: 1px solid white;
+    display: none;
+}
+.productcard1
+{
+    display: block;
+    /* display: none; */
+}
+.productcard1.cardon
+{
+    display: block;
+}
+.productcard1 button
+{
+
+    bottom: -200px;
+    right: -20px;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(0, 110, 255);
+    color: black;
+    cursor: pointer;
+}
+.if1
+{
+    position: absolute;
+    /* display: none; */
+}
+.if1.ifon
+{
+    display: block;
+}
+.if2
+{
+    position: absolute;
+    /* display: none; */
+}
+.if2.ifon
+{
+    display: block;
+}
+.if3
+{
+    position: absolute;
+    /* display: none; */
+}
+.if3.ifon
+{
+    display: block;
+}
+.if4
+{
+    position: absolute;
+    /* display: none; */
+}
+.if4.ifon
+{
+    display: block;
+}
+
+.pdiframe iframe
+{
+    position: relative;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.youtube iframe
+{
+    position: relative;
+    left: 0%;
+    margin-top: 1%;
+}
+
+
+.pdiframe img
+{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 60px;
+    cursor: pointer;
+
+}
+.youtube img
+{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 60px;
+    cursor: pointer;
+
+}
+.mixcover
+{
+
+    margin: 2%;
+    /* position: absolute; */
+    position: relative;
+    width: 130px;
+    height: 130px;
+    /* margin-top: 2%; */
+    /* margin-left: 2%; */
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+   text-align: center;
+   border-radius: 10px;
+   /* padding-right: 20px; */
+}
+
+.mixcover:hover 
+{
+    background-color: rgba(255, 255, 255, 0.671);
+    height: 130px;
+    /* height: 100px; */
+    /* top: 100%; */
+    /* padding-top: 100%; */
+}
+.mixcover h1
+{
+    top: 8%;
+    position: absolute;
+    font-size: 0.9rem;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.mixcover:hover h1
+{
+    opacity: 1;
+}
+.mixcover a
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0;
+    top: 0px;
+    position: relative;
+    color: white;
+    background-color: rgb(0, 153, 255);
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    cursor: pointer;
+    /* border-radius: 10px; */
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.mixcover:hover a
+{
+    opacity: 1;
+    top: 80px;
+    
+}
+.mixcover a:hover
+{
+    background-color: rgb(30, 255, 0);
+}
+.mix
+{
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    outline: solid 1px white;
+    border-radius: 10px;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+    z-index: -1;
+}
+.clt
+{
+
+    position: absolute;
+    outline: solid 1px white;
+    border-radius: 10px;
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    width: 130px;
+    height: 130px;
+    z-index: -1;
+
+}
+.mix1
+{
+    background-image: url($/DeathMetalInterface_13fda5a1-c2e3-42f9-8d01-8bab9b9bb705.png);
+    background-position: 30%;
+}
+.mix2
+{
+    background-image: url($/modern2.jpg);
+    background-position: 50%;
+}
+.mix3
+{
+    background-image: url($/no.png);
+    background-position: 5%;
+}
+.mix4
+{
+    background-image: url($/cass.jpg);
+
+    background-position: 5%;
+}
+.mix5
+{
+    background-image: url($/song2.png);
+    background-position: 5%;
+}
+.mix6
+{
+    background-image: url($/voc1.png);
+    background-position: 40%;
+}
+.clt1
+{
+    background-image: url($/sd.jpg);
+}
+.clt2
+{
+    background-image: url($/dec.jpg);
+    background-position: 45%;
+}
+.clt3
+{
+    background-image: url($/cv.jpg);
+    background-position: 45%;
+}
+.clt4
+{
+    background-image: url($/sp.jpg);
+    background-position: 45%;
+}
+.clt5
+{
+    background-image: url($/hf.jpg);
+    background-position: 45%;
+}
+.clt6
+{
+    background-image: url($/at.jpg);
+    background-position: 45%;
+}
+
+
+#cover6 h1
+{
+    margin-top: -5%;
+    margin-left: 10%;
+}
+.h1
+{
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* display: none; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+.h2
+{
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* display: none; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+.h3
+{
+    position: absolute;
+    font-size: 1.2rem;
+    /* display: none; */
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 4%;
+    margin-top: -1%;
+}
+.h4
+{
+    position: absolute;
+    font-size: 1.2rem;
+    /* display: none; */
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+.h1.hon
+{
+    display: block;
+}
+.h2.hon
+{
+    display: block;
+}
+.h3.hon
+{
+    display: block;
+}
+.h4.hon
+{
+    display: block;
+}
+.productcard1 a
+{
+    position: absolute;
+    top: 40%;
+    left: 444px;
+    /* float: left; */
+    /* left: 460px; */
+    /* position: relative; */
+    /* width: 20%; */
+    /* height: 20%; */
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    background-color: rgba(0, 140, 255, 0.685);
+    outline: solid 1px rgb(0, 174, 255);
+    padding-left : 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    /* border-radius: 8px; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.youtube
+{
+    left: 0;
+    top: 0px;
+    position: absolute;
+    width: 40%;
+    height: 1000px;
+    background-color: rgba(255, 255, 255, 0.527);
+    backdrop-filter: blur(10px);
+    outline: 1px solid white;
+    display: none;
+}
+.youtube.youtubeon
+{
+    display: block;
+}
+
+.yt1
+{
+    position: absolute;
+    display: none;
+}
+.yt1.yton
+{
+    display: block;
+}
+.yt2
+{
+    position: absolute;
+    display: none;
+}
+.yt2.yton
+{
+    display: block;
+}
+.yt3
+{
+    position: absolute;
+    display: none;
+}
+.yt3.yton
+{
+    display: block;
+}
+.yt4
+{
+    position: absolute;
+    display: none;
+}
+.yt4.yton
+{
+    display: block;
+}
+.yt5
+{
+    position: absolute;
+    display: none;
+}
+.yt5.yton
+{
+    display: block;
+}
+.yt6
+{
+    position: absolute;
+    display: none;
+}
+.yt6.yton
+{
+    display: block;
+}
+/* WORKPG_________________ */
+
