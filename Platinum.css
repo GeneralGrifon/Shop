@@ -39,7 +39,7 @@
 .name.full
 {
     height: 93%;
-    background-color: rgba(0, 0, 0, 0.567);
+    background-color: rgba(0, 0, 0, 0.795);
 }
 .ava
 {
@@ -330,7 +330,7 @@
 .find
 {
     position: absolute;
-    width: 80%; height: 0%; background-color: #000000c9; opacity: 0; bottom: 0%; right: 0; overflow: hidden; transition: 0.666s; outline: 1px solid white;
+    width: 80%; height: 0%; background-color: #000000c9; opacity: 0; bottom: 0%; right: 0; overflow-y: scroll; transition: 0.666s; outline: 1px solid white;
 }
 .user
 {
@@ -485,6 +485,39 @@
   }
 
 
+  .legend::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .legend::-webkit-scrollbar-track {
+    background-color: #e4e4e400;
+    border-radius: 100px;
+  }
+  
+  .legend::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border: 1px solid white;
+    background-clip: content-box;
+    background-color: #000000f8;
+  }
+
+  .find::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .find::-webkit-scrollbar-track {
+    background-color: #e4e4e400;
+    border-radius: 100px;
+  }
+  
+  .find::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border: 1px solid white;
+    background-clip: content-box;
+    background-color: #6d6d6df8;
+  }
+
+
 @media (max-width: 1000px)
 {
     /* .place
@@ -513,8 +546,8 @@
     }
     .avatar
     {
-        width: 270px;
-        height: 70%;
+        width: 60%;
+        height: 76%;
         z-index: 1;
     }
 
@@ -571,19 +604,19 @@
     .tyty h1
     {
         position: inherit; 
-        top: 25%;
+        top: 29%;
         text-align: center; font-size: 2.6vh; left: 35%;
     }
     .play
     {
-        width: 40px; left: 5px;
-        top: 6px; 
+        width: 30px; left: 5px;
+        top: 25%; 
     }
 
     .stop
     {
-        top: 6px; left: 55px;
-        width: 40px;
+        top: 25%; left: 50px;
+        width: 30px;
     }
     .headphones
     {
@@ -600,9 +633,30 @@
         width: 220%;
     }
     .twerk.full, .nudes.full, .find.full, .diamond.full, .merchendise.full
-{
-    opacity: 1; height: 85%; width: 91%;
-}
+    {
+        opacity: 1; height: 85%; width: 91%;
+    }
+    .progress_bar
+    {
+        height: 2%;  
+    }
+    .ava
+    {
+        display: none;
+    }
+    .legend
+    {
+    position: absolute; display: none; overflow: hidden; overflow-y: scroll;
+    width: 90%; height: 70%; outline: 1px solid rgba(255, 255, 255, 0.099); top: 20%; right: 4%;
+    }
+    .legend.full
+    {
+        display: block;
+    }
+    .legend h1
+    {
+    font-size: 1rem;
+    }      
     
 
 }
