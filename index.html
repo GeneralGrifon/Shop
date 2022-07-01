@@ -9,12 +9,19 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- https://zvukipro.com/1045-zvuki-vybora-knopki-v-menju.html -->
     <title>Document</title>
+    <style>
+        .bg
+        {
+            position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;
+        }
+    </style>
 </head>
 <body>
     <div class="space">
-        <video id="vid" class="vid" muted loop>
-            <source src="/bgggg.mp4" type="video/mp4">
-        </video>
+        <div class="bg"></div>
+        <!-- <video id="vid" class="vid" muted loop>
+            <source src="/bg.mp4" type="video/mp4">
+        </video> -->
         <div class="place">
             
             <div class="avatar">
@@ -43,19 +50,31 @@
               </defs>
                 </svg>
                 <div class="message">
-                    <i>Нешкола небарабанов </i>  <br> <br>
-			Скоро разъеб
-                    
+                    <i>Идеальная жопа в кофейне </i>  <br> <br>
+                    Рассказ достойный внимания)))
+
                 </div>
                 <div class="merchendise">
                     <img src="/майка.png" alt="">
                 </div>
                 <div class="diamond">
-
+                    <!-- <img src="https://i.pinimg.com/originals/e0/10/f6/e010f643308d9a98f85a1fd15ec94740.jpg" alt="">
+                    <img src="https://i.pinimg.com/originals/2a/1d/3a/2a1d3a48c4cefcf52e32e03b378538b5.jpg" alt="">
+                    <img src="https://i.pinimg.com/originals/3d/31/51/3d315143f5bc768c97d0a0442582bee2.jpg" alt="">
+                    <img src="https://i.pinimg.com/originals/c3/c9/22/c3c92297fe066242a3c1b4e1479857e8.jpg" alt="">
+                    <img src="https://i.pinimg.com/564x/d1/88/c5/d188c5526ed3bd83c5f4505bf43e9bbc.jpg" alt="">
+                    <img src="https://idea4tattoo.com/orig/0/67/670/6704/idea4tattoo.com_mary-jane-sexy-brunette-670475.jpg" alt="">
+                    <img src="https://i.pinimg.com/originals/db/ee/d9/dbeed92e4fac74ca6758fbe94bb1139c.jpg" alt="">
+                    <img src="https://i.pinimg.com/originals/7d/12/47/7d1247d5a7dcd2fb46f0032e23b023e1.jpg" alt="">
+                    <img src="https://i.pinimg.com/736x/3d/b1/28/3db12845dbb43b7166638331237f0830.jpg" alt="">
+                    <img src="https://i.pinimg.com/564x/a1/ae/3b/a1ae3b57c3d0926dfd50c3f2b5a8bb8c.jpg" alt=""> -->
                 </div>
 
                 <div class="price">
-
+                    <!-- <iframe title="Electric scooter Doohan iTango" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share 
+                    src="https://sketchfab.com/models/75eea0e2d243439ba9ad60f2fbbb97ff/embed"> 
+                    
+                </iframe>  -->
                 </div>
                 <!-- src="https://sketchfab.com/models/b6984472b13c48f3a4076455a44d537b/embed">  -->
                 <div class="twerk"></div>
@@ -106,7 +125,7 @@
                 </div>
     
                 <div id="t" class="icon t">
-                    <img src="/twerk2.png" alt="">
+                    <img src="/bz.png" alt="">
                     <audio id="menu5">
                         <source src="/menu.ogg"/>
                     </audio>
@@ -196,7 +215,7 @@
                     <div id="stop1" class="stop">
                         <img src="/stop4.png" alt="">
                     </div>
-                    <audio class="audio" id="audio1" src="/!по красоте2/modern rock master.mp3"></audio>
+                    <audio class="audio" id="audio1" src="/!по красоте/Platinum Snail - Kardash LUDWIG.wav"></audio>
                 </div>
                 <div class="song_image">
                     <img src="https://i.pinimg.com/originals/b4/28/80/b428808d2da203a88ebebc498e00d33e.jpg" alt="">
@@ -346,18 +365,21 @@
         $('#p').on("click", function() {
             $(".price").load("guns.html"); 
         });
-        $('#t').on("mouseleave", function() {
-            // $(".twerk").empty("magic.html"); 
-        });
+        // $('#t').on("mouseleave", function() {
+        //     $(".twerk").empty("magic.html"); 
+        // });
         $('#n').on("click", function() {
             $(".nudes").load("magic.html"); 
         });
+        // $('#f').on("click", function() {
+        //     $(".find").load("vk.html"); 
+        // });
         // $('.p').on("mouseleave ", function() {
         // $('.price').empty();
         // });
-        $('.n').on("mouseleave ", function() {
+        // $('.n').on("mouseleave ", function() {
         // $('.nudes').empty();
-        });
+        // });
         // $('.motivation').on("mouseleave ", function() {
         // $('.motivation').empty();
         // });
@@ -477,9 +499,10 @@
     <script>
         $("#play1").on("click", function() {
 		var audio = document.getElementById("audio1");
-        var vid = document.getElementById("vid");
-        vid.play();
+        // var vid = document.getElementById("vid");
+        // vid.play();
 		audio.play();
+        $(".bg").load("bg.html"); 
 	});
 
     // $("#play2").on("click", function() {
@@ -508,11 +531,12 @@
     <script>
         $("#stop1").on("click", function() {
 		var audio = document.getElementById("audio1");
-        var vid = document.getElementById("vid");
-        vid.pause();
+        // var vid = document.getElementById("vid");
+        // vid.pause();
 		audio.pause();
         audio.currentTime = 0;
-        vid.currentTime = 0;
+        $(".bg").empty(); 
+        // vid.currentTime = 0;
         // $('.cover').removeClass('full');
 
 	});
