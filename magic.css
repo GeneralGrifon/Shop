@@ -7,9 +7,9 @@ body
 .data h2
 {
     position: absolute;
-    top: -3%;
+    top: -12%;
     color: rgba(255, 255, 255, 0.589);
-    padding-left: 5%;
+    padding-left: 3%;
     font-family: 'Courier New', Courier, monospace;
 }
 .data
