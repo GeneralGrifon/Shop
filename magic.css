@@ -343,3 +343,46 @@ body
         transform: rotateZ(180deg) translateZ(240px) rotateY(180deg);
     }
 } 
+@media (max-width: 1000px)
+{
+    .strata
+{
+
+    /* background-color: rgba(183, 0, 255, 0.856); */
+
+    position: absolute;
+    left: 4%;
+    top: 30%;
+    /* padding-top: 500px; */
+    /* top: 10%; */
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    transform-origin: 50% 100%;
+}
+}
+@media (max-width: 1000px) and (max-height: 600px)
+{
+    .strata
+    {
+    
+        /* background-color: rgba(183, 0, 255, 0.856); */
+    
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        /* padding-top: 500px; */
+        /* top: 10%; */
+        height: 60%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s;
+        transform-origin: 50% 100%;
+    }
+
+}
