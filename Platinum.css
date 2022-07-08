@@ -39,7 +39,7 @@
 .name.full
 {
     height: 97%;
-    background-color: rgba(0, 0, 0, 0.92); backdrop-filter: none;
+    background-color: rgba(0, 0, 0, 0.92); backdrop-filter: none; transition: 0s;
 }
 .ava
 {
