@@ -470,7 +470,7 @@
 .eye 
 {
     position: absolute;
-    width: 40px; height: 40px; left: 0; opacity: 50%; margin-left: 1%;
+    width: 30px; height: 35px; left: 0;  opacity: 50%; margin-left: 1%;
 }
 .eye img
 {
