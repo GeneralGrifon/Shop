@@ -12,6 +12,10 @@ body
     padding-left: 3%;
     font-family: 'Courier New', Courier, monospace;
 }
+.data h1
+{
+    color: rgb(255, 255, 255); width: 100%;
+}
 .data
 {
     position: absolute;
