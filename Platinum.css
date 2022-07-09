@@ -68,6 +68,10 @@
     text-shadow: none;
     letter-spacing: 5px;
 }
+.legend a
+{
+    color: rgb(0, 255, 204);
+}
 .avatar
 {
     /* display: none; */
