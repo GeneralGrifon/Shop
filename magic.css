@@ -24,7 +24,7 @@ body
     height: 32%;
     width: 96%;
     outline: 1px solid rgba(255, 255, 255, 0.342) ;
-    overflow-y: scroll;
+    overflow-y: scroll; overflow-x: hidden;
     /* background-color: rgb(251, 255, 0); */
 }
 .data::-webkit-scrollbar {
