@@ -26,29 +26,7 @@
             
             <div class="avatar">
                 <img src="/sasha2.png" alt="">
-                <svg class="svgclass" version="1.1" id="l1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 79 91" style="enable-background:new 0 0 79 91;" xml:space="preserve">
-            <defs>
-                <filter id="glow" filterUnits="userSpaceOnUse"
-                        x="-50%" y="-50%" width="750%" height="750%">
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur20"/>
-                  <feMerge result="blur-merged"><feMergeNode in="blur10"/>
-                    <feMergeNode in="blur20"/>
-                  </feMerge>
-                  <feColorMatrix result="red-blur" in="blur-merged" type="matrix"
-                                 values="0.5 0 0 0 0
-                                         0.5 0 0 0 0
-                                         0.5 0 0 0 0
-                                         0 0 0 0.5 0" />
-                  <feMerge>
-                    <feMergeNode in="red-blur"/>  
-                    <feMergeNode in="blur5"/>
-                        
-                    <feMergeNode in="SourceGraphic"/> 
-                  </feMerge>
-                </filter>
-              </defs>
-                </svg>
+                
                 <div class="message">
                     <i>Идеальная жопа в кофейне </i>  <br> <br>
                     Рассказ достойный внимания))) <br>
@@ -92,6 +70,10 @@
                     VK.Widgets.Post("vk_post_14520933_9792", 14520933, 9792, 'b6ysN4bBD1itvZUT8HBizxK5V4k');
                     }());
                     </script>
+                </div>
+		    
+		<div class="eye">
+                    <img src="/user/eye.png" alt="">
                 </div>
 
                 
@@ -411,6 +393,7 @@
         $('.message').removeClass('full');
         $('.icon').toggleClass('on');
         $('.user').toggleClass('full');
+	$('.eye').toggleClass('off');
 
         $('.headphones').toggleClass('full');
 
