@@ -172,7 +172,7 @@
 }
 .song_image img
 {
-    position: relative; height: 120%; left: 0%; top: -12%; transition: 0.5s;
+    position: relative; width: 150%; left: -20%; top: 0%; transition: 0.5s;
 }
 .song_image h1
 {
@@ -605,7 +605,8 @@
     }
     .song_image img
     {
-        position: relative; height: 120%; left: -35%; top: -12%;
+        position: relative; width: auto; height: 120%; left: -50%; top: 0%; 
+        
     }
     .progress_bar
     {
