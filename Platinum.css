@@ -480,6 +480,14 @@
 {
     opacity: 0;
 }
+.inf
+{
+    position: absolute; width: 30px; height: 30px; background-color: #ff1e0000; top: 0; left: 0; margin: 5px; opacity: 50%;
+}
+.inf img
+{
+    position: absolute; width: 100%; height: auto; left: 0;
+}
 
 /* .diamond::-webkit-scrollbar {
     width: 20px;
