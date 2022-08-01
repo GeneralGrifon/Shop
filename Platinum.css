@@ -545,6 +545,23 @@
     background-color: #6d6d6df8;
   }
 
+.demotrack
+{
+    position: absolute; width: 98%; height: 66%; background-color: rgba(0, 0, 0, 0.858); bottom: 2%; left: 1%; z-index: 200; outline: 2px solid gray; border-radius: 4px;
+    transition: 0.3s; overflow: hidden;
+    transform: scale(0.5); opacity: 0; z-index: -100;
+
+}
+.demotrack.full
+{
+    transform: scale(1);
+     opacity: 1; z-index: 1;
+}
+.demo
+{
+    top: 33.5%; z-index: 501;
+}
+
 
 @media (max-width: 1000px)
 {
