@@ -303,7 +303,7 @@ function simp_loadAudio(elem) {
 
 function simp_setAlbum(index) {
   simp_cover.innerHTML = simp_a_url[index].dataset.cover ? '<div style="background:url(' + simp_a_url[index].dataset.cover + ')
-// 	      no-repeat; background-size:cover; width:auto; height:100%;
+	      no-repeat; background-size:cover; width:auto; height:100%;
 	      "></div>'
 	      : '<i class="fa fa-music fa-5x"></i>';
   simp_title.innerHTML = simp_source[index].querySelector('.simp-source').innerHTML;
