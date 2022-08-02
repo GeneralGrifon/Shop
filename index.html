@@ -295,6 +295,10 @@
             </div>
 
             <div class="demotrack"></div>
+		
+		<div class="game">
+
+            </div>
 
             <!-- <div class="motivation"></div> -->
         </div>
@@ -599,6 +603,17 @@
     $('.demo').on("click", function() {
     $('.demotrack').toggleClass('full');
     $(".demotrack").load("player2.html"); 
+    $('.game').removeClass('full');
+    $(".game").empty();  
+    });
+</script>
+
+<script> 
+    $('.gm').on("click", function() {
+    $('.game').toggleClass('full');
+    $(".game").load("index.html");
+    $('.demotrack').removeClass('full');
+    $(".demotrack").empty();  
     });
 </script>
 	
