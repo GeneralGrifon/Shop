@@ -607,11 +607,11 @@
     .booty
     {
         z-index: 20;
-        position: absolute; width: 90%; left: 115%; top: 33%; height: 65%; width: 80%; backdrop-filter: none; background-color: rgba(0, 0, 0, 0.855);
+        position: absolute; width: 90%; left: 115%; top: 22%; height: 78%; width: 80%; backdrop-filter: none; background-color: rgba(0, 0, 0, 0.855);
     }
     .booty.full
     {
-        left: 15%; top: 33%; 
+        left: 1%; top: 21%; 
     }
     .avatar
     {
@@ -679,11 +679,12 @@
     .tyty h1
     {
 
-        font-size: 2.6vh; left: 15%; top: 10%;
+        font-size: 2.6vh; left: 0%; top: 10%;
     }
     .headphones
     {
         display: block;
+        width: 10%; height: auto; 
     }
     .vid
     {
@@ -717,7 +718,6 @@
     {
         font-size: 1rem;
     }
-    
     .demotrack
 {
     position: absolute; width: 80%; height: 66%; background-color: rgba(0, 0, 0, 0.858); bottom: 2%; left: 1%; z-index: 200; outline: 2px solid gray; border-radius: 4px;
@@ -754,7 +754,7 @@
     transform: scale(1);
      opacity: 1; z-index: 1;display: block;
      overflow-y: hidden;
-}  
+}      
     
 
 }
@@ -817,6 +817,10 @@
     {
         left: 27%; top: 18%; width: 62%; height: 80%; opacity: 1;
     }
+
+
+
+}
 
 
 
