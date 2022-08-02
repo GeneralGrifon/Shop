@@ -85,9 +85,13 @@
     border-radius: 4px; user-select: none; transition: 0.666s; overflow: hidden;
     
 }
-.avatar:hover, .booty:hover
+.avatar:hover, .booty:hover, .glow:hover  
 {
-    box-shadow:  0 0 15px rgba(255, 100, 33, 0.703);
+    outline: 2px rgba(255, 230, 192, 0.658) solid;
+    box-shadow:  
+    0 0 5px rgb(255, 84, 11),
+    /* 0 0 10px rgb(255, 84, 11), */
+    0 0 15px rgb(255, 100, 33);
 }
 .avatar.full
 {
