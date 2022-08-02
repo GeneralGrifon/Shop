@@ -108,10 +108,10 @@
     position: relative;
     
     /* background-color: rgba(0, 0, 0, 0.348); */
-    outline:  2px rgba(255, 255, 255, 0.217) solid;
+    outline:  3px rgba(255, 255, 255, 0.341) solid;
     top: 22%; left: 5%;
     display: block;
-    width: 50%; height: 70%;
+    width: 37%; height: 70%;
     backdrop-filter: blur(12px);
     border-radius: 4px  4px 4px 4px;
     overflow: hidden; transition: 0.5s;
@@ -445,8 +445,10 @@
 
 .headphones
 {
-    position: absolute; outline: 2px solid rgba(0, 0, 0, 0.261); border-radius: 5px; padding: 1%;
-    width: 10%; height: auto; background-color: rgba(224, 3, 3, 0); right: 3%; top: 22%; filter: invert(1); cursor: pointer; display: none;
+    position: absolute; outline: 2px solid rgba(255, 255, 255, 0.261); border-radius: 5px; padding: 1%;
+    width: 3%; height: auto; 
+    background-color: rgba(224, 3, 3, 0); right: 3%; top: 22%;  cursor: pointer; 
+    /* display: none; */
 }
 .headphones.full
     {
@@ -454,7 +456,7 @@
     }
 .headphones img
 {
-    width: 100%; 
+    width: 100%; filter: invert(1);
 }
 
 .eye 
