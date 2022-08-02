@@ -22,7 +22,7 @@
     position: absolute; transition: 0.6s; overflow: hidden; cursor: pointer; z-index: 100;
     width: 95%; height: 17%;
     top: 2%; left: 2%;
-    outline: 2px rgba(255, 255, 255, 0.233) solid; 
+    outline: 2px rgba(255, 255, 255, 0.492) solid; 
     background-color: rgba(0, 0, 0, 0);
     color: white;
     font-size: 14vh;
@@ -79,10 +79,11 @@
     width: 300px; height: 70%;
     top: 22%; left: 2.2%;
     background-color: rgba(255, 255, 0, 0);
-    outline: 2px rgba(255, 255, 255, 0.307) solid;
+    outline: 2px rgba(255, 255, 255, 0.428) solid;
     /* filter: url(glow); */
     backdrop-filter: blur(12px);
     border-radius: 4px; user-select: none; transition: 0.666s; overflow: hidden;
+    box-shadow:  0 0 10px rgba(255, 255, 255, 0.533);
     
 }
 .avatar:hover, .booty:hover, .glow:hover  
@@ -155,12 +156,14 @@
     font-family: monospace;
     /* vertical-align: middle; */
     border-radius: 4px;
+    overflow: hidden;
 }
 .tyty h1
 {
     position: inherit; 
     /* top: 22%; */
-    text-align: center; font-size: 3vh; color: white; transition: 0.7s; user-select: none; cursor: pointer; outline: 1px solid rgba(255, 0, 0, 0); width: 55%; left: 10%;
+    text-align: center; font-size: 3vh; color: white; transition: 0.7s; user-select: none; cursor: pointer; outline: 1px solid rgba(255, 0, 0, 0);
+     width: 55%; left: 10%;
 
 }
 .tyty:hover
@@ -190,8 +193,8 @@
 .play
 {
     position: relative;
-    top: 4%; left: 1%;
-    height: 90%; width: auto;
+    top: 15%; left: 1%;
+    height: 70%; width: auto;
     cursor: pointer;
     /* background-color: rgb(255, 255, 0); */
     /* background-size: cover; */
@@ -208,10 +211,10 @@
 .stop
 {
     position: relative;
-    left: 2%;top: 4%;
+    left: 4%;top: 15%;
     /* background-color: rgba(0, 255, 200, 0); */
     /* background-image: url(/stop2.png); */
-    height: 90%; width: auto;
+    height: 70%; width: auto;
     cursor: pointer;
     /* background-size: cover; */
     filter: invert(1);
@@ -268,7 +271,6 @@
 }
 
 
-
 .message
 {
     position: absolute; bottom: -90%; right: 0; background-color: #000000c1; outline: 1px solid white; width: 80%; height: 85%; 
@@ -288,7 +290,7 @@
 
 .merchendise img
 {
-    width: auto; height: 90%; bottom: 0;
+    width: 70%; height: auto; bottom: 0;
 }
 .diamond
 {
@@ -482,7 +484,51 @@
 }
 .inff img
 {
-    position: absolute; width: 100%; height: auto; left: 0;
+    position: absolute; width: 100%; height: auto; left: 0; 
+}
+.demotrack
+{
+    position: absolute; width: 25%; height: 66%; background-color: rgba(0, 0, 0, 0.858); 
+    bottom: 12%; left: 62%; z-index: 200; outline: 2px solid gray; border-radius: 4px;
+    transition: 0.3s; overflow: hidden;
+    transform: scale(0);
+     opacity: 0; 
+    transform-style: preserve-3d;
+
+}
+.demotrack.full
+{
+    transform: scale(1);
+     opacity: 1; z-index: 1;
+}
+.demo
+{
+    top: 33.5%; z-index: 99;
+}
+
+.game
+{
+    position: absolute; 
+    width: 25%; height: 66%;
+    bottom: 12%; left: 62%; 
+    background-color: rgb(0, 0, 0); 
+    z-index: 200; 
+    outline: 2px solid gray; border-radius: 4px;
+    transition: 0.3s; 
+    transform: scale(0);
+    opacity: 0; 
+    overflow: hidden;
+    /* transform-style: preserve-3d; */
+}
+.game.full
+{
+    transform: scale(1);
+     opacity: 1; z-index: 1;
+     overflow-y: hidden;
+}
+.gm
+{
+    top: 45%; z-index: 99; 
 }
 
 /* .diamond::-webkit-scrollbar {
@@ -550,51 +596,6 @@
     background-clip: content-box;
     background-color: #6d6d6df8;
   }
-
-.demotrack
-{
-    position: absolute; width: 25%; height: 66%; background-color: rgba(0, 0, 0, 0.858); 
-    bottom: 12%; left: 62%; z-index: 200; outline: 2px solid gray; border-radius: 4px;
-    transition: 0.3s; overflow: hidden;
-    transform: scale(0);
-     opacity: 0; 
-    transform-style: preserve-3d;
-
-}
-.demotrack.full
-{
-    transform: scale(1);
-     opacity: 1; z-index: 1;
-}
-.demo
-{
-    top: 33.5%; z-index: 99;
-}
-
-.game
-{
-    position: absolute; 
-    width: 25%; height: 66%;
-    bottom: 12%; left: 62%; 
-    background-color: rgb(0, 0, 0); 
-    z-index: 200; 
-    outline: 2px solid gray; border-radius: 4px;
-    transition: 0.3s; 
-    transform: scale(0);
-    opacity: 0; 
-    overflow: hidden;
-    /* transform-style: preserve-3d; */
-}
-.game.full
-{
-    transform: scale(1);
-     opacity: 1; z-index: 1;
-     overflow-y: hidden;
-}
-.gm
-{
-    top: 45%; z-index: 99; 
-}
 
 
 @media (max-width: 1000px)
@@ -821,10 +822,6 @@
     {
         left: 27%; top: 18%; width: 62%; height: 80%; opacity: 1;
     }
-
-
-
-}
 
 
 
