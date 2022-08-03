@@ -119,7 +119,11 @@
     width: 37%; height: 70%;
     backdrop-filter: blur(12px);
     border-radius: 4px  4px 4px 4px;
-    overflow: hidden; transition: 0.5s;
+    overflow: hidden; transition: 0s;
+}
+.booty.full
+{
+    width: 50%;
 }
 .booty.flip
 {
@@ -611,12 +615,12 @@
     }
     .booty
     {
-        z-index: 20;
-        position: absolute; width: 90%; left: 115%; top: 22%; height: 78%; width: 80%; backdrop-filter: none; background-color: rgba(0, 0, 0, 0.855);
+        z-index: 20; transition: 0.5s;
+        position: absolute;  left: 115%; top: 22%; height: 78%; width: 80%; backdrop-filter: none; background-color: rgba(0, 0, 0, 0.855);
     }
     .booty.full
     {
-        left: 1%; top: 21%; 
+        left: 1%; top: 21%; width: 80%;
     }
     .avatar
     {
