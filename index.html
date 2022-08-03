@@ -559,6 +559,10 @@
 <script> 
     $('.hf').on("click", function() {
     $('.booty').toggleClass('full');
+    $('.game').removeClass('full');
+    $(".game").empty();
+    $('.demotrack').removeClass('full');
+    $(".demotrack").empty();    
     });
 </script>
 <script> 
@@ -573,6 +577,7 @@
     $(".demotrack").load("player2.html"); 
     $('.game').removeClass('full');
     $(".game").empty();  
+    $('.booty').removeClass('full');
     });
 </script>
 
@@ -582,6 +587,7 @@
     $(".game").load("game.html");
     $('.demotrack').removeClass('full');
     $(".demotrack").empty();  
+    $('.booty').removeClass('full');
     });
 </script>
 
