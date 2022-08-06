@@ -1,3 +1,7 @@
+.igame
+{
+  position: absolute; width: 1000px; height: 600px; overflow-x: hidden; overflow-y: hidden; left: -290px;
+}
 .bg 
 {
     position: absolute; width: 100%; 
