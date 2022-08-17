@@ -1,7 +1,3 @@
-.igame
-{
-  position: absolute; width: 1000px; height: 600px; overflow-x: hidden; overflow-y: hidden; left: -290px;
-}
 .bg 
 {
     position: absolute; width: 100%; 
@@ -201,19 +197,20 @@
     width: 90%; height: 70%; outline: 1px solid rgba(255, 255, 255, 0.498); top: 8%; left: 3%; border-radius: 4px; overflow: hidden;
     /* overflow-y: scroll; */
 }
+.image.full
+{
+    right: 100%;
+}
 .song_image img
 {
-    position: relative; width: 120%; left: 0%; top: -10%; transition: 0.5s;
+    position: relative; width: auto; height: 133%; right: 0%; top: -15%; transition: 0.5s; float: right; filter: contrast(1.5);
 }
 .song_image h1
 {
     font-size: 1.2rem; position: absolute; top: 3%; left: 3%; color: white;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 400;
 }
-.image.full
-{
-    left: 100%;
-}
+
 .play
 {
     position: relative;
@@ -297,7 +294,7 @@
 
 .message
 {
-    position: absolute; bottom: -90%; right: 0; background-color: #000000c1; outline: 1px solid white; width: 80%; height: 85%; 
+    position: absolute; bottom: -90%; right: 0; background-color: #000000c1; outline: 1px solid white; width: 80%; height: 80%; 
     color: white; padding-left: 5%; padding-top: 5%; font-size: 1.6vw; overflow-y: scroll; overflow-x: hidden; opacity: 0; transition: 0.666s;
 }
 .message i
@@ -309,17 +306,18 @@
 .merchendise
 {
     position: absolute;
-    width: 80%; height: 85%; background-color: #000000c9; opacity: 0; bottom: -90%; right: 0; overflow: hidden; transition: 0.666s; outline: 1px solid white;
+    width: 85%; height: 85%; background-color: #000000c9; opacity: 0; bottom: -90%; right: 0; 
+    overflow: hidden; transition: 0.666s; outline: 1px solid white;
 }
 
 .merchendise img
 {
-    width: 70%; height: auto; bottom: 0;
+    width: auto; height: 85%; bottom: 0; float: right; right: 15%;
 }
 .diamond
 {
     position: absolute; display: block;
-    width: 80%; height: 85%; opacity: 0; bottom: -90%; right: 0; overflow:hidden; transition: 0.666s; outline: 1px solid white;
+    width: 85%; height: 85%; opacity: 0; bottom: -90%; right: 0; overflow:hidden; transition: 0.666s; outline: 1px solid white;
 }
 .diamond.full
 {
@@ -351,12 +349,12 @@
 .twerk
 {
     position: absolute;
-    width: 80%; height: 85%; background-color: #000000c9; opacity: 0; bottom: -90%; right: 0; overflow: hidden; transition: 0.666s; outline: 1px solid white;
+    width: 85%; height: 85%; background-color: #000000c9; opacity: 0; bottom: -90%; right: 0; overflow: hidden; transition: 0.666s; outline: 1px solid white;
 }
 .nudes
 {
     position: absolute;
-    width: 80%; height: 85%; background-color: #000000c9; opacity: 0; bottom: -90%; right: 0; overflow: hidden; transition: 0.666s; outline: 1px solid white;
+    width: 85%; height: 85%; background-color: #000000c9; opacity: 0; bottom: -90%; right: 0; overflow: hidden; transition: 0.666s; outline: 1px solid white;
 }
 .find
 {
@@ -512,8 +510,8 @@
 }
 .demotrack
 {
-    position: absolute; width: 25%; height: 66%; background-color: rgba(0, 0, 0, 0.858); 
-    bottom: 12%; left: 62%; z-index: 200; outline: 2px solid gray; border-radius: 4px;
+    position: absolute; width: 25%; height: 70%; background-color: rgba(0, 0, 0, 0.858); 
+    bottom: 8%; left: 66%; z-index: 200; outline: 2px solid gray; border-radius: 4px;
     transition: 0.3s; overflow: hidden;
     transform: scale(0);
      opacity: 0; 
@@ -533,8 +531,8 @@
 .game
 {
     position: absolute; 
-    width: 25%; height: 66%;
-    bottom: 12%; left: 62%; 
+    width: 25%; height: 70%;
+    bottom: 8%; left: 66%; 
     background-color: rgb(0, 0, 0); 
     z-index: 200; 
     outline: 2px solid gray; border-radius: 4px;
@@ -554,22 +552,10 @@
 {
     top: 45%; z-index: 99; 
 }
-
-/* .diamond::-webkit-scrollbar {
-    width: 20px;
-  }
-  
-  .diamond::-webkit-scrollbar-track {
-    background-color: #e4e4e400;
-    border-radius: 100px;
-  }
-  
-  .diamond::-webkit-scrollbar-thumb {
-    border-radius: 100px;
-    border: 5px solid transparent;
-    background-clip: content-box;
-    background-color: #ffee03f8;
-  } */
+.igame
+{
+  position: absolute; width: 1000px; height: 600px; overflow-x: hidden; overflow-y: hidden; left: -290px;
+}
 
   .message::-webkit-scrollbar {
     width: 20px;
@@ -643,10 +629,10 @@
 @media (max-width: 1000px)
 {
     .bg 
-{
-    position: absolute; width: 100%; filter: hue-rotate(0deg);
-    background-image: url(https://i.pinimg.com/originals/e8/75/23/e8752348fc4f1ac0c3addc7e50053aaa.gif);
-}
+    {
+        position: absolute; width: 100%; filter: hue-rotate(0deg);
+        background-image: url(https://i.pinimg.com/originals/e8/75/23/e8752348fc4f1ac0c3addc7e50053aaa.gif);
+    }
     .name
     {
         font-size: 10vh;
@@ -665,15 +651,7 @@
     {
         left: 1%; top: 21%; width: 80%;
     }
-    .booty.full .image
-    {
-        height: 100%; width: auto; top: 0%;
-        transform: translateX(-200px);
-    }
-    .image.full
-    {
-        left: 180%;
-    }
+
     .avatar
     {
         width: 60%;
@@ -702,32 +680,19 @@
     .user
     {
 
-        background-color: rgba(255, 255, 0, 0); width: 0%; height: 7%; left: 32%; outline: 1px solid rgba(255, 255, 255, 0); 
+        background-color: rgba(255, 255, 0, 0); width: 0%; height: 7%; left: 35%; outline: 1px solid rgba(255, 255, 255, 0); 
     }
     .user.full
     {
-        width: 65%; height: 7%;
-    }
-    #r
-    {
-        display: none;
-        /* width: 0px; */
+        width: 60%; height: 7%;
     }
     .icon
     {
        width: 20%;
     }
 
-    .song_image
-    {
-        position: relative;
-        width: 90%; height: 71%; top: 10%; left: 4%; 
-    }
-    .song_image img
-    {
-        position: relative; width: auto; height: 100%; left: 0%; top: 0%; 
-        
-    }
+    
+
     .progress_bar
     {
         height: 2%; width: 90%; margin-bottom: 1%; left: 5%; top: 4.3%;
@@ -757,9 +722,25 @@
         /* height: 600px; */
         width: 220%;
     }
+    .twerk, .nudes, .find, .diamond, .merchendise
+    {
+        height: 88%; width: 95%;
+    }
     .twerk.full, .nudes.full, .find.full, .diamond.full, .merchendise.full
     {
-        opacity: 1; height: 85%; width: 91%;
+        opacity: 1; height: 88%; width: 95%;
+    }
+    .message
+    {
+        width: 90%; height: 85%; 
+    }
+    .message.full
+    {
+        height: 85%; width: 90%;
+    }
+    .merchendise img
+    {
+        width: auto; height: 85%; bottom: 0; float: right; right: 5%;
     }
 
     .ava
@@ -780,43 +761,58 @@
         font-size: 1rem;
     }
     .demotrack
-{
-    position: absolute; width: 80%; height: 66%; background-color: rgba(0, 0, 0, 0.858); bottom: 2%; left: 1%; z-index: 200; outline: 2px solid gray; border-radius: 4px;
-    transition: 0.3s; overflow: hidden;
-    transform: scale(0);
-     opacity: 0; 
-    transform-style: preserve-3d;
+    {
+        position: absolute; width: 80%; height: 66%; background-color: rgba(0, 0, 0, 0.858); bottom: 2%; left: 1%; z-index: 200; outline: 2px solid gray; border-radius: 4px;
+        transition: 0.3s; overflow: hidden;
+        transform: scale(0);
+        opacity: 0; 
+        transform-style: preserve-3d;
 
-}
-.demotrack.full
-{
-    transform: scale(1);
-     opacity: 1; z-index: 1;
-}
-.demo
-{
-    top: 33.5%; z-index: 99;
-}
-.game
-{
-    position: absolute; width: 80%; height: 66%;
-    background-color: rgb(0, 0, 0); 
-    bottom: 2%; left: 1%; z-index: 200; 
-    outline: 2px solid gray; border-radius: 4px;
-    transition: 0.3s; 
-    transform: scale(1);
-    display: none;
-    opacity: 0; 
-    overflow: hidden;
+    }
+    .demotrack.full
+    {
+        transform: scale(1);
+        opacity: 1; z-index: 1;
+    }
+    .demo
+    {
+        top: 33.5%; z-index: 99;
+    }
+    .game
+    {
+        position: absolute; width: 80%; height: 66%;
+        background-color: rgb(0, 0, 0); 
+        bottom: 2%; left: 1%; z-index: 200; 
+        outline: 2px solid gray; border-radius: 4px;
+        transition: 0.3s; 
+        transform: scale(1);
+        display: none;
+        opacity: 0; 
+        overflow: hidden;
     /* transform-style: preserve-3d; */
-}
-.game.full
-{
-    transform: scale(1);
-     opacity: 1; z-index: 1;display: block;
-     overflow-y: hidden;
-}      
-    
+    }
+    .game.full
+    {
+        transform: scale(1);
+        opacity: 1; z-index: 1;display: block;
+        overflow-y: hidden;
+    }
+
+    .song_image img
+    {
+        position: relative;  height: 100%; width: auto; top: 0%; right: -10%; 
+        transition: 0.5s; float: right; filter: contrast(1.5);
+    }
+    .image.full
+    {
+        right: 100%; 
+    }
+    .booty.full .image
+    {
+        height: 100%; width: auto; top: 0%; 
+    }
+
+     
 
 }
 @media (max-height: 400px) and (max-width: 1000px)
