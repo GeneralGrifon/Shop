@@ -368,7 +368,7 @@
     display: flex;
     /* display: inline-block; */
      border-radius: 4px;
-    position: absolute; background-color: rgba(255, 255, 0, 0); width: 0%; height: 7%; top: 0; z-index: 12;  top: 22%; left: 17.2%; transition: 0.666s;
+    position: absolute; background-color: rgba(255, 255, 0, 0); width: 0%; height: 7%; top: 0; z-index: 12;  top: 22%; left: 22%; transition: 0.666s;
 }
 .user.full
 {
