@@ -203,7 +203,7 @@
 }
 .song_image img
 {
-    position: relative; width: auto; height: 133%; right: 0%; top: -15%; transition: 0.5s; float: right; filter: contrast(1.5);
+    position: relative; width: auto; height: 133%; right: 0%; top: -15%; transition: 0.5s; float: right;
 }
 .song_image h1
 {
