@@ -131,10 +131,10 @@
 {
     width: 50%;
 }
-.booty.full .image
+/* .booty.full .image
 {
     height: auto; width: 100%; left:0; top: 0%;
-}
+} */
 .booty.flip
 {
     transform: rotateY(180deg);
