@@ -797,6 +797,10 @@
         opacity: 1; z-index: 1;display: block;
         overflow-y: hidden;
     }
+    .gm
+    {
+        display: none;
+    }
 
     .song_image img
     {
