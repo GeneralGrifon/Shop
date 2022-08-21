@@ -133,7 +133,7 @@
 }
 .booty.full .image
 {
-    height: auto; width: 100%; top: -25%;
+    height: auto; width: 100%; left:0; top: 0%;
 }
 .booty.flip
 {
@@ -203,7 +203,7 @@
 }
 .song_image img
 {
-    position: relative; width: auto; height: 140%; right: 0%; top: -15%; transition: 0.5s; float: right;
+    position: relative; width: auto; height: 133%; right: -20%; top: 0%; transition: 0.5s; float: right;
 }
 .song_image h1
 {
@@ -215,7 +215,7 @@
 {
     position: relative;
     top: 15%; left: 1%;
-    height: 70%; width: auto;
+    height: 65%; width: auto;
     cursor: pointer;
     /* background-color: rgb(255, 255, 0); */
     /* background-size: cover; */
@@ -235,7 +235,7 @@
     left: 4%;top: 15%;
     /* background-color: rgba(0, 255, 200, 0); */
     /* background-image: url(/stop2.png); */
-    height: 70%; width: auto;
+    height: 65%; width: auto;
     cursor: pointer;
     /* background-size: cover; */
     filter: invert(1);
@@ -705,7 +705,7 @@
     .tyty h1
     {
 
-        font-size: 2.6vh; left: 0%; top: 10%;
+        font-size: 2.2vh; left: 0%; top: 10%;
     }
     .headphones
     {
@@ -800,7 +800,7 @@
 
     .song_image img
     {
-        position: relative;  height: 100%; width: auto; top: 0%; right: -10%; 
+        position: relative;  height: 100%; width: auto; top: 0%; right: -50%; 
         transition: 0.5s; float: right; filter: contrast(1.5);
     }
     .image.full
