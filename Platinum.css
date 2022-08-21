@@ -801,7 +801,7 @@
     .song_image img
     {
         position: relative;  height: 100%; width: auto; top: 0%; right: -50%; 
-        transition: 0.5s; float: right; filter: contrast(1.5);
+        transition: 0.5s; float: right; 
     }
     .image.full
     {
