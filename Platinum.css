@@ -246,10 +246,11 @@
 {
     position: absolute;
     /* display: none; */
-    width: 50%; height: 70%; transition: 0.7s; z-index: 3;
-    background-color: #0000006c; backdrop-filter: blur(12px); outline: 1px solid white; color: white; 
+    width: 2%; height: 2%; transition: 0.7s; z-index: 3;
+    background-color: #0000006c;  outline: 1px solid white; color: white; 
     font-size: 3rem;
-    top: 22%; right: -60%;
+    top: 22%; right: -20%;
+    /* backdrop-filter: blur(12px); */
 }
 .secret.on
 {
