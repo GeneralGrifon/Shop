@@ -1,8 +1,8 @@
-.bg 
+.bg img
 {
     position: absolute; width: 100%; 
     /* background-image: url(https://i.pinimg.com/originals/a9/4a/ee/a94aee835e16cff4f14c83dac8ffbe10.gif); */
-    background-size: cover;
+    /* background-size: cover; */
 }
 .space
 {
