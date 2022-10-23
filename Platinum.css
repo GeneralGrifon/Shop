@@ -1,6 +1,7 @@
 .bg img
 {
     position: absolute; width: 100%; 
+    filter: brightness(0.2); 
     /* background-image: url(https://i.pinimg.com/originals/a9/4a/ee/a94aee835e16cff4f14c83dac8ffbe10.gif); */
     /* background-size: cover; */
 }
