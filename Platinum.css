@@ -181,7 +181,7 @@
     outline:  3px rgba(255, 255, 255, 0.341) solid;
     top: 12%; 
     /* left: 2%; */
-    left: 100%;
+    left: 22%;
     display: block;
     width: 37%; height: 70%;
     backdrop-filter: blur(12px);
@@ -771,6 +771,7 @@
     }
     .booty
     {
+        left: 100%
         z-index: 20; transition: 0.5s;
         position: absolute;  left: -85%; top: 21%; height: 78%; width: 80%; backdrop-filter: none; background-color: rgba(0, 0, 0, 0.855);
     }
