@@ -8,6 +8,11 @@
 </head>
 <style>
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+  /* body 
+  {
+    background-image: url(https://addons-media.operacdn.com/media/CACHE/images/themes/05/144705/1.0-rev1/images/0993404e-79e0-4052-923d-89236e7c102f/e4f4077f6d1f715a07786ff7692a8d1d.jpg);
+    background-size: cover; 
+  } */
 
 /* *,*:before,*:after{outline:0;-webkit-box-sizing:border-box;box-sizing:border-box;} */
 input,button{outline:none;}
@@ -17,36 +22,129 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
 .flex-align{-webkit-align-items:center;align-items:center;}
 .w-full{width:100%;}
 
+body 
+{
+  overflow: hidden;
+}
 /* HTML5 Audio Player with Playlist, source: https://codepen.io/sekedus/pen/ExxjZEz */
 #simp button,#simp input,#simp img{border:0;}
 #simp{
-      max-width:100%;
+      width:100%;
       font-size:14px;
       font-family:"Segoe UI", Tahoma, sans-serif;
       text-align:initial;
       line-height:initial;
-      background:#17212b00;
+      background:#e600ff00;
       color:#ddd;
       margin:0 auto;
       border-radius:6px;
       overflow:hidden;
-    }
-#simp .simp-album{padding:20px 25px 5px;  } 
-#simp .simp-album .simp-cover {margin-right:20px; outline: 1px solid rgb(255, 255, 255); width: 200px; height: 200px; border-radius: 4px; }
-
-#simp .simp-album .simp-cover img{max-width:80px;width:100%;margin:0;padding:0;display:block;}
-
-#simp .simp-album .simp-title{font-size:120%;font-weight:bold;}
-#simp .simp-album .simp-artist{font-size:90%;color:#6c7883;}
-
-#simp .simp-controls{padding:15px;
-      /* outline: 2px solid rgb(255, 140, 0); */
-      height: 222px;
       display: block;
+      
+      /* display: grid; */
+      /* grid-template-columns: 50% 50%; */
+      /* justify-content: flex-end; */
+      /* grid-template-rows: 300px 300px; */
+      /* grid-template-rows: 100px 200px; */
+    }
+
+/* #simp .leftblock 
+{
+  position: relative;
+  background-color: rgba(255, 0, 0, 0.39); width: 100%; height: 100%;
+}
+#simp .rightblock 
+{
+  position: relative;
+  background-color: rgba(0, 255, 47, 0.39); width: 100%; height: 100%;
+} */
+  
+#simp .simp-album{padding:20px 25px 5px;  
+background-color: rgba(0, 0, 0, 0.872);
+perspective: 1800px;
+position: absolute;
+/* position: relative; */
+display: block;
+justify-content: space-between;
+backdrop-filter: blur(10px);
+/* align-items: center; */
+width: 55%;
+height: 100%;
+right: 0%; top: 0%;
+} 
+#simp .simp-album .simp-cover {
+  position: relative;
+  margin: 0px;
+  /* float: left; */
+  margin-left: 10%; 
+  margin-top: 5%;
+  outline: 1px solid rgb(255, 255, 255); 
+  width: 60%; height: 600px;
+  /* padding-bottom: 40%;  */
+  border-radius: 4px;
+background-color: rgba(1, 228, 1, 0);
+/* float: right; */
+/* margin-right: 10%; */
+transform-style: preserve-3d;
+transform: rotateY(-30deg); transition: 0.333s;
+transform-origin: 50% 0;
+/* display: flex; */
+/* justify-content: center; */
+}
+#simp .simp-album .simp-cover:hover 
+{
+  transform: rotateY(0deg);
+  scale: 1.1;
+} 
+
+#simp .simp-album .simp-cover img{
+  /* max-width:80px; */
+  width:100%;margin:0;padding:0;display:block;
+  position: relative;
+  }
+
+#simp .simp-album .simp-title{font-size:120%;
+  font-weight:bold;
+  font-size: 4vh;
+  top: 0;
+  position: absolute;
+  display: none;
+
+
+}
+
+#simp .simp-album .simp-artist{font-size:90%;
+  color:#ffffff;
+  font-size: 4vh;
+  position: absolute; 
+  top: 0; margin-top: 1%;
+  text-shadow: 0 0px 5px rgb(255, 104, 3),
+              0 0 10px rgb(255, 104, 3),
+              0 0 15px rgb(255, 104, 3)
+
+    ;
+  
+  
+  ;}
+
+
+/* CONTROLS  */
+#simp .simp-controls{
+    padding:1%;
+      /* outline: 2px solid rgb(255, 140, 0); */
+      height: 200px;
+      display: block;
+      background-color: #00000072;
+      outline: 1px solid white;
+      margin: 1%;
+      width: 38%;
+      /* backdrop-filter: blur(20px); */
 
 } 
 
-#simp .simp-controls button{font-size:130%;width:40px;height:40px;background:none;color:rgba(255, 255, 255, 0.992);
+#simp .simp-controls button{font-size:130%;width:40px;height:40px;
+  background: none;
+  color:rgba(255, 255, 255, 0.992);
     padding:7px;cursor:pointer;border:0;border-radius:3px;
     outline: 2px solid rgba(255, 255, 255, 0.284); margin-right: 10px;
 }
@@ -56,6 +154,14 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
 
 #simp .simp-controls .simp-prev{width: 70px; margin-left: 10px;}
 #simp .simp-controls .simp-next{width: 70px;}
+
+#simp .fa-play 
+{
+  background-color: #006eff; 
+  scale: 1.2; 
+  /* margin-left: 10px;
+  margin-right: 60px; */
+}
 
 /* timeline */
 #simp .simp-controls .simp-tracker,#simp .simp-controls .simp-volume{flex:1;margin-left:10px;position:relative;width: 98%;}
@@ -68,7 +174,7 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
 #simp .simp-controls .simp-time,#simp .simp-controls .simp-others{margin-left:10px;}
 
 /* громкость */
-#simp .simp-controls .simp-volume{width:38%; margin: 0;}
+#simp .simp-controls .simp-volume{width:28%; margin: 0;}
 
 #simp .simp-controls .simp-volume .simp-mute{margin:10px;}
 #simp .simp-controls .simp-others .simp-active{background:#ffff0042;}
@@ -83,8 +189,7 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
 }
 
 
-#simp .simp-controls input[type=range]{-webkit-appearance:
-      none;background:transparent;
+#simp .simp-controls input[type=range]{-webkit-appearance: none;background:transparent;
       height:25px;
       margin-top: 10px;
       width:100%;
@@ -116,16 +221,43 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
 
 
 #simp .simp-footer{padding:10px 10px 12px;font-size:90%;text-align:center;opacity:.7;}
-#simp .simp-display{overflow:hidden;max-height:650px;transition:max-height .5s ease-in-out;}
+#simp .simp-display{overflow:hidden;height:auto; width: 100%;
+  background-color: #006eff00;
+  transition:max-height .5s ease-in-out;}
 #simp .simp-hide{max-height:0;}
-/* playlist */
-#simp ul{margin:5px 0 0;padding:0;list-style:none;max-height:245px;}
-#simp ul li{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;margin:0;padding:8px 20px;cursor:pointer;}
-#simp ul li:last-child{padding-bottom:13px;}
-#simp ul li:nth-child(odd){background:#0e1621;}
-#simp ul li:hover{background:#242f3d;}
-#simp ul li.simp-active{background:#ffffff50;color:#fff;}
+
+
+#simp .simp-playlist
+{
+  margin: 1%;
+  margin-top: 2%;
+  width: 40%;
+  background-color: rgba(255, 166, 0, 0);
+  backdrop-filter: blur(20px);
+}
+
+/* PLAYLIST */
+#simp ul{margin:5px 0 0;padding:0;list-style:none;
+  height:auto;
+  width: 100%;
+  padding-bottom: 10px;
+  /* margin-left: 10px; */
+   background-color: #84ff0000;
+   outline: 1px solid rgb(255, 255, 255);
+   
+  }
+#simp ul li{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;
+  margin:0;
+  padding:30px 20px;
+  cursor:pointer;
+  font-size: 2rem;}
+#simp ul li:last-child{padding-bottom:30px;}
+#simp ul li:nth-child(odd){background:#00fbff00;}
+#simp ul li:hover{background:#000000fe;}
+#simp ul li.simp-active{background:#00fff784;color:#fff;}
 #simp ul li .simp-desc{font-size:90%;opacity:.5;margin-left:5px;}
+
+
 /* playlist scrollbar */
 #simp ul{overflow-y:auto;overflow-x:hidden;scrollbar-color:#73797f #2f3841;}
 #simp ul::-webkit-scrollbar-track{background-color:#2f3841;}
@@ -154,25 +286,38 @@ a,a:hover,a:visited{color:#ddd;text-decoration:none;}
 </style>
 <body>
   <div class="simple-audio-player" id="simp" data-config='{"shide_top":false,"shide_btm":false,"auto_load":false}'>
+
+
     <div class="simp-playlist">
       <ul>
-        <li><span class="simp-source" data-src="/demo/JJJ3 2022 celan.mp3" data-cover="https://64.media.tumblr.com/852a5373d33712174f86b07c6b2a0810/4b4ae908bd4fbfba-a8/s540x810/17744aeb7919f2a502cb9bf009915cdb54029ac1.gifv"
+
+        <li><span class="simp-source" data-src="/!по красоте/Black And Booty.mp3" data-cover="https://64.media.tumblr.com/852a5373d33712174f86b07c6b2a0810/4b4ae908bd4fbfba-a8/s540x810/17744aeb7919f2a502cb9bf009915cdb54029ac1.gifv"
+          https://bestanimations.com/media/fantasy/153376371phoenix-illustrated-art-gif.gif
           <!-- https://c.tenor.com/ajSwgblbR4EAAAAC/twerk-pizza.gif -->
           <!-- https://cdn5-images.motherlessmedia.com/images/D0561BA.gif -->
-            SkyRunner</span><span class="simp-desc">Cloud Place(Night Mix)</span></li>
-	  
-        <li><span class="simp-source" data-src="/demo/EZ DEATH SELL pro3333.mp3" data-cover="https://i.pinimg.com/originals/2a/8b/85/2a8b8578b823cabd3580b8a4928ce4d8.gif"     
+          
+            SkyRunner</span><span class="simp-desc">Black And Booty</span></li>
+        <li><span class="simp-source" data-src="/!по красоте/jjj +2022 +.mp3" data-cover="https://i.pinimg.com/originals/2a/8b/85/2a8b8578b823cabd3580b8a4928ce4d8.gif">     
           <!-- https://fotosbor.com/files/2020/09/IMGGIF1601022846KAb8RJ/1601022846dfg4d2.gif -->
-            SkyRunner</span><span class="simp-desc">Ritual</span></li>
-	
-        <li><span class="simp-source" data-src="/demo/modern rock master.mp3" data-cover="https://cdnb.artstation.com/p/assets/images/images/048/065/589/large/thomas-briscoe-preacher-mastertimeline-comp-00000.jpg?1649124022"
-          <!-- https://cdn.pictocum.com/25277542.gif 
-<!-- 		https://i.gifer.com/origin/27/275e201408f92d0486d8b747a9242f8a.gif -->
-          SkyRunner</span><span class="simp-desc">Modern Preacher</span></li>
-
-       
+            SkyRunner</span><span class="simp-desc">CYfer</span></li>
+        <li><span class="simp-source" data-src="/!по красоте/Dangerous Love 2021.wav" data-cover="/DL2.gif">
+          
+          <!-- https://cdn.pictocum.com/25277542.gif -->
+          SkyRunner</span><span class="simp-desc">Dangerous Love</span></li>
+          <li><span class="simp-source" data-src="/!по красоте/Dangerous Love 2021.wav" data-cover="/shells/fire.gif">
+          
+            <!-- https://cdn.pictocum.com/25277542.gif -->
+            SkyRunner</span><span class="simp-desc">Dark Matter</span></li>
+            <li><span class="simp-source" data-src="/!по красоте/Dangerous Love 2021.wav" data-cover="/shells/TV.gif">
+          
+              <!-- https://cdn.pictocum.com/25277542.gif -->
+              SkyRunner</span><span class="simp-desc">Bastard in white</span></li>
+        
       </ul>
     </div>
+    <!-- <div class="leftblock"></div>
+    <div class="rightblock"></div> -->
+    
     <!-- <div class="simp-footer">Made with 💖 &amp; 🙌 by <a href="https://bit.ly/sekedus" target="_blank" title="Sekedus">Sekedus</a></div> -->
   </div>
   <script>
@@ -513,3 +658,21 @@ if (document.querySelector('#simp')) {
   </script>
 </body>
 </html>
+
+
+<!-- <li class="simp-active"><span class="simp-source" data-src="https://www.dropbox.com/s/k011ag91uktonbv/Angklung%20Preman%20Pensiun.mp3?dl=1">Angklung Preman Pensiun</span></li> -->
+        <!-- <li><span class="simp-source" data-src="https://www.dropbox.com/s/prgte33m86n9ce7/Canon%20Rock%20%28JerryC%29%20-%20funtwo.mp3?dl=1">Canon Rock (JerryC)</span><span class="simp-desc">by Funtwo</span></li> -->
+        <!-- <li><span class="simp-source" data-src="http://listento.ardanradio.com:1059/;">105.9 FM Ardan Radio</span><span class="simp-desc">Streaming Radio</span></li> -->
+        <!-- <li><span class="simp-source" data-src="https://archive.org/download/78_jailhouse-rock_elvis-presley-jerry-leiber-mike-stoller_gbia0080595b/Jailhouse%20Rock%20-%20Elvis%20Presley%20-%20Jerry%20Leiber-restored.mp3">Jailhouse Rock</span><span class="simp-desc">Elvis Presley</span></li> -->
+        <!-- <li><span class="simp-source" data-src="https://archive.org/download/J._Period_and_Michael_Jackson_-_Man_Or_The_Music-2010/17%20Smooth%20Criminal.mp3">Smooth Criminal</span><span class="simp-desc">Michael Jackson</span></li> -->
+        <!-- <li><span class="simp-source" data-src="https://archive.org/download/OldPop_256/VillagePeople-Y.m.c.a.mp3">Y.M.C.A</span><span class="simp-desc">Village People</span></li> -->
+        <!-- <li><span class="simp-source" data-src="https://archive.org/download/chuckberryjohnnyb.goode/Chuck%20Berry%20-%20Johnny%20B.%20Goode.mp3">Johnny B. Goode</span><span class="simp-desc">Chuck Berry</span></li> -->
+        <!-- <li><span class="simp-source" data-src="https://archive.org/download/AnimalsTheHouseOfTheRisingSun_201811/Animals%20-%20The%20House%20Of%20The%20Rising%20Sun.mp3">House of the Rising Sun</span><span class="simp-desc">The Animals</span></li> -->
+        <!-- <li><span class="simp-source" data-src="https://archive.org/download/DontStopMeNow_255/Queen-DontStopMeNow.mp3">Don't Stop Me Now</span><span class="simp-desc">Queen</span></li> -->
+        <!-- <li><span class="simp-source" data-src="https://archive.org/download/NeverGonnaGiveYouUpOriginal/Never%20Gonna%20Give%20You%20Up%20Original.mp3">Never Gonna Give You Up</span><span class="simp-desc">Rick Astley</span></li> -->
+        <!-- <li><span class="simp-source" data-src="https://archive.org/download/gunsnrosessweetchildomine_202003/Guns%20N%27%20Roses%20-%20Sweet%20Child%20%27O%20Mine.mp3">Sweet Child O' Mine</span><span class="simp-desc">Guns N' Roses</span></li> -->
+        <!-- <li><span class="simp-source" data-src="https://archive.org/download/01.TheFinalCountdown/01.%20The%20Final%20Countdown.mp3">The Final Countdown</span><span class="simp-desc">Europe</span></li> -->
+        <!-- <li><span class="simp-source" data-src="https://archive.org/download/1MyHeartWillGoOnLoveThemeFromTitanic/1%20-%20My%20Heart%20Will%20Go%20On%20%28Love%20Theme%20from%20_Titanic_%29.mp3">My Heart Will Go On</span><span class="simp-desc">Céline Dion</span></li> -->
+        <!-- <li><span class="simp-source" data-src="https://archive.org/download/tntvillage_323140/John%20Lennon%20-%20Imagine/01%20Imagine.mp3">Imagine</span><span class="simp-desc">John Lennon</span></li> -->
+        <!-- <li><span class="simp-source" data-src="https://archive.org/download/TheBeatles1970HeyJudeAppleRecords6e062.0434807HeyJude/The%20Beatles%20-%201970%20-%20Hey%20Jude%20%28Apple%20Records%3B%20%236e%20062.04348%29_07%20-%20Hey%20Jude.mp3">Hey Jude</span><span class="simp-desc">The Beatles</span></li> -->
+        <!-- <li><span class="simp-source" data-src="https://archive.org/download/TakeMeHomeCountryRoad/JohnDenver-TakeMeHomeCountryRoad.mp3">Take Me Home, Country Roads</span><span class="simp-desc">John Denver</span></li> -->
