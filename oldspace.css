@@ -2,7 +2,8 @@
 /* TEXTBOX_________________ */
 .mediafield
 {
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -19,16 +20,40 @@
 }
 .mediaclose
 {
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    /* position: absolute; */
+    bottom: 7%;
     /* top: 50px; */
     /* left: 0; */
-    right: 5%;
+    left: 1%;
     width: 80px;
     height: 80px;
+    background-color: rgb(76, 0, 255);
     cursor: pointer;
     display: none;
 
+}
+.mediaclose:hover img 
+{
+    animation: rotate 3s linear infinite;
+}
+@keyframes rotate 
+{
+    0%
+    {
+        rotate: 0;
+    }
+    100%
+    {
+        rotate: 360deg;
+    }
+}
+.mediaclose img 
+{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    filter: invert();
 }
 .mediaclose.on
 {
@@ -44,13 +69,14 @@
 {
 
     user-select: none;
-    display: block; top: 0;
+    display: block; 
+    top: 0;
     position: absolute;
-    width: 100%;
+    width: 98%;
     height: 100%;
     overflow-X: hidden;
     overflow-y: scroll;
-    background-color: rgba(0, 0, 0, 0.831);
+    background-color: rgba(209, 5, 5, 0);
     /* outline: 1px solid rgb(0, 255, 0); */
 }
 .clients
@@ -58,57 +84,109 @@
     transform-style: preserve-3d;
     top: 10px;
     left: 0;
-    margin-top: 8%;
+    margin-top: 3%;
     margin-left: 2%;
     margin-right: 3%;
-    width: 98%;
-    /* height: 55%; */ height: auto;
+    width: 96%;
+    /* height: 55%; */ 
+    height: auto;
     /* outline: 1px solid rgb(255, 255, 255); */
     background-color: rgba(255, 184, 30, 0);
 
     border-radius: 7px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    
+    /* flex-wrap: wrap; */
+}
+.ARTIST 
+{
+    position: relative;
+    width: 100%; height: auto;
+    /* background-color: green; */
+    /* outline: 2px solid rgb(179, 0, 255); */
+    outline: 2px solid rgb(142, 167, 255);
+    margin-bottom: 50px;
+    /* padding-bottom: 20px; */
+}
+.ARTIST .artname
+{
+    position: relative;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    background: linear-gradient(to right, rgb(82, 82, 82), black );
+    /* background-color: rgb(51, 51, 51); */
+    margin: 0; 
+    border-bottom: 1px solid rgb(255, 255, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+}
+.artistblock 
+{
+    position: relative; background-color: rgb(18, 18, 18);
+    /* outline: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+}
+.artistinfo 
+{
+     color: white;
+    border-left: 1px solid rgba(255, 255, 255, 0.16);
+    position: relative; background-color: rgb(0, 0, 0); width: 50%;
+    /* height: 100%; */
+}
+.artistinfo h1 
+{
+    font-size: 2.5vh; 
+    margin-top: 0;
+    padding: 10px;
+    padding-left: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-weight: 100;
+    /* overflow: hidden;  */
+    /* overflow-y: scroll; */
+}
+.clients h1 
+{
+    position: relative; color: white;
 }
 .mixed
 {
     /* position: relative; */
     /* padding: ; */
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     /* justify-content: center; */
     transform-style: preserve-3d;
     /* top: 0px; */
     width: 97%;
-    height: auto;
+    height: 30%;
+    /* height: auto; */
     /* height: 33%; */
-    margin-top: 10%;
+    margin-top: 2%;
+    margin-bottom: 5%;
     margin-left: 2%;
     /* margin-bottom: -10%; */
     outline: 1px solid rgba(255, 255, 255, 0.863);
     background-color: #003cff00;
     border-radius: 7px;
+    overflow: hidden;
     /* margin-left: 15px; */
 }
-.clients h1
-{
-    position: absolute;
-    /* position: relative; */
-    top: -40px;
-    left: 5%; 
-    /* left: -100px; */
-    color: white;
-    font-size: 1.4rem;
-    font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.mixed h1
+
+.pl
 {
     position: relative;
-    outline: 1px solid rgba(255, 255, 255, 0.192); width: 80%; padding-left: 5%;
+    /* outline: 1px solid rgba(255, 255, 255, 0.192);  */
+    width: 30%;
+    padding: 5px;
+     padding-left: 20px;
     /* position: absolute; */
+    /* width: 10%; */
+    /* background: linear-gradient (to right, rgb(55, 0, 255) 0%, black 90%);  */
+    background: linear-gradient( to right,  rgb(55, 0, 255) 0%, rgba(255, 0, 0, 0) 90%); 
     top: 0px;
-    left: 20px;
+    left: 0px;
     color: white;
     font-size: 1.4rem;
     font-weight: 400;
@@ -118,7 +196,7 @@
 {
     position: relative;
     /* position: absolute; */
-    top: -40px; 
+    top: 0; 
     left: 0%;
     color: white;
     font-size: 1.2rem;
@@ -139,7 +217,7 @@
 {
     transform-style: preserve-3d;
     top: 20%;
-    position: relative;
+    position: absolute;
     transform: translate3d(100px, 0px, 100px) rotateY(-90deg);
     width: 58%;
     height: 60%;
@@ -395,21 +473,24 @@
     margin: 2%; top: 10px;
     /* position: absolute; */
     position: relative;
-    width: 130px;
-    height: 130px;
+    width: 25%;
+    padding-bottom: 13%;
+    /* height: 200px; */
     /* margin-top: 2%; */
     /* margin-left: 2%; */
     background-color: rgba(255, 255, 255, 0);
     transition: 0.5s;
    text-align: center;
    border-radius: 10px;
+   z-index: 10;
    /* padding-right: 20px; */
 }
 
 .mixcover:hover 
 {
     background-color: rgba(255, 255, 255, 0.671);
-    height: 130px;
+    z-index: 10;
+    /* height: 130px; */
     /* height: 100px; */
     /* top: 100%; */
     /* padding-top: 100%; */
@@ -431,6 +512,9 @@
 .mixcover:hover h1
 {
     opacity: 1;
+    background-color: white;
+    padding: 10px;
+    /* outline: 1px solod black; */
 }
 .mixcover a
 {
@@ -482,8 +566,8 @@
     background-size: cover;
     top: 0px;
     left: 0px;
-    width: 130px;
-    height: 130px;
+    width: 100%;
+    height: 100%;
     z-index: -1;
 
 }
@@ -633,77 +717,26 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-
-.youtube
+@media (max-width: 1000px)
 {
-    left: 0;
-    top: 0px;
-    position: absolute;
-    width: 40%;
-    height: 1000px;
-    background-color: rgba(255, 255, 255, 0.527);
-    backdrop-filter: blur(10px);
-    outline: 1px solid white;
-    display: none;
-}
-.youtube.youtubeon
-{
-    display: block;
-}
-
-.yt1
-{
-    position: absolute;
-    display: none;
-}
-.yt1.yton
-{
-    display: block;
-}
-.yt2
-{
-    position: absolute;
-    display: none;
-}
-.yt2.yton
-{
-    display: block;
-}
-.yt3
-{
-    position: absolute;
-    display: none;
-}
-.yt3.yton
-{
-    display: block;
-}
-.yt4
-{
-    position: absolute;
-    display: none;
-}
-.yt4.yton
-{
-    display: block;
-}
-.yt5
-{
-    position: absolute;
-    display: none;
-}
-.yt5.yton
-{
-    display: block;
-}
-.yt6
-{
-    position: absolute;
-    display: none;
-}
-.yt6.yton
-{
-    display: block;
+    .mixed 
+    {
+        height: auto;
+        margin-bottom: 20%;
+    }
+    .artistblock 
+    {
+        display: block;
+    }
+    .artistinfo 
+    {
+        width: 98%;
+    }
+    .mixcover 
+    {
+        width: 90%;
+        padding-bottom: 40%;
+    }
 }
 /* WORKPG_________________ */
 
