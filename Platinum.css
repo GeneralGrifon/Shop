@@ -957,11 +957,41 @@
     color: rgb(255, 255, 255);
     background-color: rgb(6, 83, 0);
 }
+
+.postcontent zz
+{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.523),
+    0 0 7px rgb(0, 255, 132),
+    0 0 10px rgb(0, 174, 72),
+    0 0 15px rgb(0, 103, 43);
+    /* background-color: rgb(6, 83, 0); */
+}
+
+.postcontent fl
+{
+    text-shadow: 0 0 5px #fff, 0 0 10px rgb(255, 215, 120), 0 0 15px #7b00ff, 0 0 20px #8c27ff
+    , 0 0 20px rgb(128, 0, 255)
+    , 0 0 21px rgb(68, 0, 132)
+    , 0 0 21px rgb(29, 0, 56)
+    , 0 0 22px rgba(0, 0, 0, 0.969)
+    , 0 0 23px rgba(0, 0, 0, 0.969)
+    , 0 0 24px rgba(0, 0, 0, 0.969)
+    , 0 0 25px rgba(0, 0, 0, 0.969)
+    , 0 0 26px rgba(0, 0, 0, 0.969)
+    , 0 0 27px rgba(0, 0, 0, 0.969)
+    , 0 0 28px rgba(0, 0, 0, 0.969);
+    /* background-color: rgba(0, 0, 0, 0.48); */
+    padding: 20px;
+    /* font-style: italic; */
+    font-size: 3vh;
+}
 .postcontent l
 {
     text-shadow: 0 0 5px #fff, 0 0 10px rgb(255, 179, 0), 0 0 20px #ff1e00, 0 0 30px #ff1e00;
     font-style: italic;
 }
+
 .postcontent hd
 {
     font-family: got3;
