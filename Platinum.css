@@ -1063,6 +1063,10 @@ text-decoration-color:red;
 @media (max-width: 1000px)
 
 {
+    .videocontainer 
+    {
+        position: absolute; width: 96%; height: 69%; top: 9%; left: 2%; background-color: #0080ff00;
+    }
     .MusicPage iframe
     {
         width: 90%;
