@@ -1082,7 +1082,7 @@ text-decoration-color:red;
     }
     .name
     {
-        width: 71%;
+        width: 70%;
         left: 1%;
         font-size: 7vh; 
         padding-left: 50px;
@@ -1091,7 +1091,7 @@ text-decoration-color:red;
     .name.full
     {
         transition: 0s;
-        width: 73%;
+        width: 71%;
     }
     .homecontrols 
     {
