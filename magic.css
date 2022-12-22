@@ -250,7 +250,7 @@ body
     /* right: 5%; */
     transform-origin: 100% 0;
     transform: rotateX(90deg) rotateY(-60deg);
-    background-image: url(/shells/mh.gif);
+    background-image: url(shells/mh.gif);
     /* background-color: rgba(111, 0, 255, 0.616); */
     /* mix-blend-mode: screen; */
 }
@@ -261,7 +261,7 @@ body
     /* transform: translateY(-100px); */
     transform-origin: 0% 0%;
     transform: rotateX(-270deg) rotateY(0deg);
-    background-image: url(/shells/korn.gif);
+    background-image: url(shells/korn.gif);
     background-position: 50%;
     /* background-color: rgba(251, 255, 0, 0.589); */
 
