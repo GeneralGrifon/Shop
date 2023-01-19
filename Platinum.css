@@ -203,7 +203,8 @@
     outline: 2px rgba(255, 255, 255, 0.492) solid; 
     background-color: rgba(0, 0, 0, 0.498);
     display: flex;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     text-shadow: 
     0 0 10px #fff,
      0 0 20px #fff,
@@ -218,7 +219,7 @@
 .nametitle 
 {
     position: relative;
-    text-align: center;
+    background-color: red;
 }
 
 .name.full
