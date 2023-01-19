@@ -219,7 +219,7 @@
 .nametitle 
 {
     position: relative;
-    background-color: red;
+    background-color: transparent;
 }
 
 .name.full
