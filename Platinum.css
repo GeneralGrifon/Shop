@@ -1088,10 +1088,11 @@ text-decoration-color:red;
     }
     .name
     {
-        width: 70%;
+        width: 66%;
         left: 1%;
         font-size: 7vh; 
-        padding-left: 50px;
+        text-align: center;
+/*         padding-left: 50px; */
         z-index: 100; transition: 0s;
     }
     .name.full
