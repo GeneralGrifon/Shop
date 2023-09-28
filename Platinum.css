@@ -167,7 +167,7 @@
 }
 .videocontainer 
 {
-    position: absolute; width: 60%; height: 69%; top: 4%; left: 2%; background-color: #0080ff00;
+    position: relative; width: 60%; height: 69%; top: 4%; left: 2%; background-color: #0080ff00; margin-bottom: 20px;
 }
 .closeall 
 {
