@@ -125,7 +125,7 @@
 }
 .WorkPage iframe 
 {
-    position: relative; width: 90%; height: 95%; 
+    position: relative; width: 100%; height: 95%; 
     top: 0%; left: 0%; 
     /* background-color: rgba(3, 3, 0, 0.485); */
     border-top: 1px solid rgba(255, 255, 255, 0.605); 
@@ -1069,6 +1069,16 @@ text-decoration-color:red;
 @media (max-width: 1000px)
 
 {
+    .closeall 
+{
+    position: absolute; width: 30px; height: 30px; 
+    background-image: url(https://cdn-icons-png.flaticon.com/128/61/61155.png);
+    /* background-image: url(https://icons.iconarchive.com/icons/hopstarter/soft-scraps/256/Button-Close-icon.png); */
+    background-size: cover;
+    filter: invert();
+    /* background-color: #0080ff;  */
+    right: 2%; top: 2%; cursor: pointer;
+}
     .videocontainer 
     {
         position: absolute; width: 96%; height: 69%; top: 9%; left: 2%; background-color: #0080ff00;
@@ -1396,6 +1406,7 @@ text-decoration-color:red;
     {
         left: 27%; top: 18%; width: 62%; height: 80%; opacity: 1;
     }
+    
 
 
 
