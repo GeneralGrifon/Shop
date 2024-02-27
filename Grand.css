@@ -5,6 +5,19 @@
     display: block;
     
 }
+.garciaava 
+{
+    position: absolute; width: 100%; height: 90%;
+    display: flex; justify-content: center; align-items: center;
+}
+.garciaava img 
+{
+    position: relative; width: 25%;
+    border-radius: 100%;
+    border: 100%; border: 2px solid rgb(255, 241, 191);
+    filter: brightness(0.7);
+
+}
 
 h1 
     {
@@ -33,7 +46,7 @@ h1
         cursor: pointer;
     }
 
-    .table, .marmeladbox
+    .table, .marmeladbox, .redirect 
     {
         /* position: absolute;  */
         width: 98%; height: 0%; margin: 10px; background: #00273e00;
@@ -57,6 +70,7 @@ h1
       .info.active {
         display: flex;
         height: 50%;
+          background-color: black;
       }
     /* .marmeladbox.active 
     {
@@ -269,14 +283,19 @@ h1
         0 0 15px yellow;
     }
 
-    @media (max-width: 1000px) 
+   @media (max-width: 1000px) 
     {
+        .garciaava img  
+        {
+            width: 90%;
+        }
         .info.active 
         {
             display: block;
             height: 80%;
             overflow-y: scroll;
         }
+        
         .marmelad
         {
             position: relative; 
