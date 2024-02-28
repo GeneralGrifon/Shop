@@ -784,11 +784,11 @@ ______________________________________________ <br>
         <h1>★Я тебе не верю(кавер)★</h1>
         <img src="https://i.ytimg.com/vi/tRMTxNhKA9s/hqdefault.jpg" alt="">
         <div class="mcontrols">
-            <div class="playbutton" id="playb2" style="z-index: 11;
+            <div class="playbutton" id="playb6" style="z-index: 11;
         overflow: hidden;  ">
                 <img src="./grandgriffon/pb.png" alt="">
             </div>
-            <div class="stopbutton" id="stopb2" style="z-index: 11">
+            <div class="stopbutton" id="stopb6" style="z-index: 11">
                 <img src="./grandgriffon/sb.png" alt="">
             </div>
         </div>
@@ -926,6 +926,10 @@ ______________________________________________ <br>
         <source src="./grandgriffon/рок стар.mp3" type="audio/mpeg">
         Ваш браузер не поддерживает аудио элемент.
       </audio>
+	<audio id="track6">
+        <source src="./grandgriffon/лепс модерн2.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио элемент.
+      </audio>
 </div>
 
 <div id="info3" class="redirect info">
@@ -948,6 +952,20 @@ ______________________________________________ <br>
     </div>
 
     <script>
+
+	    var track6 = document.getElementById('track1');
+        var playDiv = document.getElementById('playb6');
+        var stopDiv = document.getElementById('stopb6');
+        
+        playDiv.addEventListener('click', function() {
+            track6.play();
+        });
+        
+        stopDiv.addEventListener('click', function() {
+            track6.pause();
+            track6.currentTime = 0;
+        });
+	    
         var track = document.getElementById('track1');
         var playDiv = document.getElementById('playb');
         var stopDiv = document.getElementById('stopb');
