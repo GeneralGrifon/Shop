@@ -124,8 +124,8 @@ h1
     }
     .candy_wrapper:hover 
     {
-        opacity: 1;
-        /* opacity: 0; */
+/*         opacity: 1; */
+        opacity: 0;
         /* top: 50%; */
     }
     .candy_wrapper img 
