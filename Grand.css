@@ -370,5 +370,49 @@ h1
       .info::-webkit-scrollbar-thumb {
         background: #ae00ff; /* Цвет ползунка */
       }
+      .marmeladpage
+{
+    position: absolute; width: 100%; height: 100%; top: 0; left: 0;
+    background: linear-gradient(to right, #757575, #afafaf);
+    overflow: hidden;
 
+}
+
+.marmeladpage img 
+{
+    position: relative;
+    width: 400px;
+}
+.marmeladpage p 
+{
+    position: relative; width: 380px;
+    background: linear-gradient(to right, rgb(121, 121, 121), rgb(103, 103, 103));
+}
+.купить
+{
+    position: relative;
+    background-color: #11d000;
+    width: 100px;
+    outline: 2px solid black;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 5px; padding-left: 170px; padding-right: 170px; top: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a 
+{
+    text-decoration: none;
+}
+.back 
+{
+    position: absolute; width: 40px; right: 10px; top: 0; cursor: pointer;
+    background-color: #11d00000;
+    z-index: 2;
+}
+.back  img 
+{
+    position: relative; width: 100%;
+    filter: invert(1);
+}
 
