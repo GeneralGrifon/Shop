@@ -768,18 +768,18 @@ ______________________________________________ <br>
 
 	<div class="marmelad">
         <h1>★Барби★</h1>
-        <img src="./grandgriffon/лепс.jpg" alt="">
+        <img src="./grandgriffon/barbicover.jpg" alt="">
         <div class="mcontrols">
-            <div class="playbutton" id="playb6" style="z-index: 11;
+            <div class="playbutton" id="playb7" style="z-index: 11;
         overflow: hidden;  ">
-                <img src="./grandgriffon/barbicover.png" alt="">
+                <img src="./grandgriffon/pb.png" alt="">
             </div>
-            <div class="stopbutton" id="stopb6" style="z-index: 11">
+            <div class="stopbutton" id="stopb7" style="z-index: 11">
                 <img src="./grandgriffon/sb.png" alt="">
             </div>
         </div>
         <h2>12000 р.</h2>
-        <a href="idontbelive.html">
+        <a href="barbie.html">
             <div class="bye">купить</div>
         </a> 
     </div>
@@ -906,6 +906,11 @@ ______________________________________________ <br>
         <source src="./grandgriffon/лепс модерн2.mp3" type="audio/mpeg">
         Ваш браузер не поддерживает аудио элемент.
       </audio>
+	</audio>
+	<audio id="track7">
+        <source src="./grandgriffon/барбиforsale.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио элемент.
+      </audio>
 </div>
 
 <div id="info3" class="redirect info">
@@ -928,6 +933,19 @@ ______________________________________________ <br>
     </div>
 
     <script>
+
+	    var track7 = document.getElementById('track7');
+        var playDiv = document.getElementById('playb7');
+        var stopDiv = document.getElementById('stopb7');
+        
+        playDiv.addEventListener('click', function() {
+            track7.play();
+        });
+        
+        stopDiv.addEventListener('click', function() {
+            track7.pause();
+            track7.currentTime = 0;
+        });
 
 	    var track1 = document.getElementById('track1');
         var playDiv = document.getElementById('playb1');
