@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="★Я тебе не верю★">
+  <meta property="og:description" content="17000 р.">
+  <meta property="og:image" content="https://i.ytimg.com/vi/jt0xdbjVazM/maxresdefault.jpg">
+  <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Garcia Rec.">
+  <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXv6-NrO2sATPWZLQskwodm-8jEoFzwy2BEPhYxRC5jBfDCyemGUPDQZXjWzaVRX4uJxE&usqp=CAU">
+  <link rel="stylesheet" href="Grand.css">
+    <title>Document</title>
+    <style>
+
+    .mcontrols
+    {
+    position: absolute; width: 150px; height: auto; background-color: #11d00000; 
+    top: 370px; left: 120px;
+    z-index: 1; display: flex; flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .playbutton
+    {
+        position: relative;
+        background-color: rgba(0, 255, 255, 0);
+        margin-right: 3px;
+        width: 60px; height: 60px;
+    }
+    .playbutton img 
+    {
+        position: relative; width: 100%;
+        top: 0;left: 0;margin: 0;padding: 0;
+        border: none;
+        
+    }
+    .stopbutton
+    {
+        position: relative;
+        top: 0;
+        margin-left: 3px;
+        width: 60px; height: 60px;
+    }
+    .stopbutton img 
+    {
+        position: relative; width: 100%;
+        top: 0;left: 0;margin: 0;padding: 0;
+        outline: none;
+        border: none;
+    }
+
+    </style>
+
+</head>
+<body>
+    <div class="marmeladpage">
+        <a href="index.html">
+            <div class="back">
+                <img src="https://www.svgrepo.com/show/114939/go-back-arrow.svg" alt="">
+            </div>
+        </a>
+        <h1>★Барби★</h1>
+
+        <div class="mcontrols">
+            <div class="playbutton" id="playb7" style="z-index: 11; overflow: hidden;  ">
+                <img src="./grandgriffon/pb.png" alt="">
+            </div>
+            <div class="stopbutton" id="stopb7" style="z-index: 11;">
+                <img src="./grandgriffon/sb.png" alt="">
+            </div>
+        </div>
+
+        <div class="marmcover">
+            <img src="./grandgriffon/barbicover.jpg" alt="">
+        </div>
+        <p>
+            Забавно что кавер был написан за пару лет до выхода фильма. <br>
+            Правда если бы я снимал свою версию то Кен врят ли бы отказался 
+            от рок-стар образа.. <br>
+            Я думаю такой кавер сделает запоминающейся любую вееринку.<br>
+            <br>
+            
+        </p>
+        <h1>12000 р.</h1>
+        <a href="https://t.me/Recardo777">
+            <div class="купить">
+                купить
+            </div>
+        </a> 
+        
+    </div>
+
+    <audio id="track7">
+        <source src="./grandgriffon/барбиforsale.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио элемент.
+      </audio>
+
+    <script>
+        var track = document.getElementById('track7');
+        var playDiv = document.getElementById('playb7');
+        var stopDiv = document.getElementById('stopb7');
+        
+        playDiv.addEventListener('click', function() {
+            track.play();
+        });
+        
+        stopDiv.addEventListener('click', function() {
+            track.pause();
+            track.currentTime = 0;
+        });
+
+    </script>
+    
+</body>
+</html>
