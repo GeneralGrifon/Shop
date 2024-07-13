@@ -12,7 +12,58 @@
   <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXv6-NrO2sATPWZLQskwodm-8jEoFzwy2BEPhYxRC5jBfDCyemGUPDQZXjWzaVRX4uJxE&usqp=CAU">
   <link rel="stylesheet" href="Grand.css">
     <title>Document</title>
-    
+    <style>
+        
+        t 
+        {
+        position: absolute;
+        width: 100px;
+        background-color: rgba(0, 0, 0, 0.484);
+        bottom: 0; left: -115px;
+        color: azure;
+        padding: 5px;
+        }
+
+    .mcontrols
+    {
+    position: absolute; width: 150px; height: auto; background-color: #11d00000; 
+    top: 250px; left: 120px;
+    z-index: 1; display: flex; flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .playbutton
+    {
+        position: relative;
+        background-color: rgba(0, 255, 255, 0);
+        margin-right: 3px;
+        width: 60px; height: 60px;
+        cursor: pointer;
+    }
+    .playbutton img 
+    {
+        position: relative; width: 100%;
+        top: 0;left: 0;margin: 0;padding: 0;
+        border: none;
+        
+    }
+    .stopbutton
+    {
+        position: relative;
+        top: 0;
+        margin-left: 3px;
+        width: 60px; height: 60px;
+        cursor: pointer;
+    }
+    .stopbutton img 
+    {
+        position: relative; width: 100%;
+        top: 0;left: 0;margin: 0;padding: 0;
+        outline: none;
+        border: none;
+    }
+
+    </style>
 
 </head>
 <body>
@@ -23,6 +74,14 @@
             </div>
         </a>
         <h1>★Перемирие★</h1>
+        <div class="mcontrols">
+            <div class="playbutton" id="playb8" style="z-index: 11; overflow: hidden;  ">
+                <img src="./grandgriffon/pb.png" alt="">
+            </div>
+            <div class="stopbutton" id="stopb8" style="z-index: 11;">
+                <img src="./grandgriffon/sb.png" alt="">
+            </div>
+        </div>
         <div class="marmcover">
             <img src="https://i1.sndcdn.com/artworks-000061434672-oauimx-t500x500.jpg" alt="">
         </div>
@@ -42,5 +101,26 @@
         </a> 
         
     </div>
+
+    <audio id="track8">
+        <source src="/grandgriffon/виагра промо2.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио элемент.
+      </audio>
+
+        <script>
+        var track = document.getElementById('track8');
+        var playDiv = document.getElementById('playb8');
+        var stopDiv = document.getElementById('stopb8');
+        
+        playDiv.addEventListener('click', function() {
+            track.play();
+        });
+        
+        stopDiv.addEventListener('click', function() {
+            track.pause();
+            track.currentTime = 0;
+        });
+
+    </script>
 </body>
 </html>
