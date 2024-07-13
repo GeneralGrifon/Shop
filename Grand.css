@@ -2,8 +2,8 @@
 {
     position: absolute; width: 100vw; height: 100vh; background-color: rgb(40, 40, 40); top: 0; left: 0;
     overflow: hidden;
-    display: block;
-    /* display: none; */
+/*     display: block; */
+    display: none;
     
 }
 .garciaava 
