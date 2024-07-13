@@ -943,6 +943,11 @@ ______________________________________________ <br>
         <source src="./grandgriffon/барбифул.mp3" type="audio/mpeg">
         Ваш браузер не поддерживает аудио элемент.
       </audio>
+	<audio id="track8">
+        <source src="./grandgriffon/виагра промо2.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио элемент.
+      </audio>
+	
 </div>
 
 <div id="info3" class="redirect info">
@@ -965,6 +970,19 @@ ______________________________________________ <br>
     </div>
 
     <script>
+
+	    var track8 = document.getElementById('track8');
+        var playDiv = document.getElementById('playb8');
+        var stopDiv = document.getElementById('stopb8');
+        
+        playDiv.addEventListener('click', function() {
+            track8.play();
+        });
+        
+        stopDiv.addEventListener('click', function() {
+            track8.pause();
+            track8.currentTime = 0;
+        });
 
 	    var track7 = document.getElementById('track7');
         var playDiv = document.getElementById('playb7');
