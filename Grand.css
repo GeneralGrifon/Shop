@@ -1,14 +1,16 @@
 .GrandGriffonGlow
 {
-    position: absolute; width: 100vw; height: 99vh; background-color: black; top: 0; left: 0;
+    position: absolute; width: 100vw; height: 100vh; background-color: rgb(40, 40, 40); top: 0; left: 0;
     overflow: hidden;
     display: block;
+    /* display: none; */
     
 }
 .garciaava 
 {
     position: absolute; width: 100%; height: 90%;
-    display: none; justify-content: center; align-items: center;
+     justify-content: center; align-items: center;
+     display: none;
 }
 .garciaava img 
 {
@@ -18,7 +20,6 @@
     filter: brightness(0.7);
 
 }
-
 h1 
     {
         position: relative; color: white; 
@@ -41,6 +42,7 @@ h1
         /* border: 2px solid rgb(255, 217, 147);   */
         text-shadow: 0 0 10px orange;
         margin-right: 10px; padding-left: 10px;
+        font-weight: 100;
         color: white; font-size: 23px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-align: center;
         cursor: pointer;
@@ -50,19 +52,25 @@ h1
     {
         /* position: absolute;  */
         width: 98%; height: 0%; margin: 10px; background: #00273e00;
-        border: 1px solid rgba(247, 247, 247, 0.242);
+        border: 1px solid rgba(247, 247, 247, 0);
         display: flex; 
         perspective: 1900px;
         overflow: hidden; 
     }
+
     .marmeladbox 
     {
         align-items: center;
+        height: 90%;
+        position: absolute;
+        overflow-y: scroll; 
+        flex-wrap: wrap;
     }
     .redirect 
     {
         background-color: rgb(0, 0, 0); width: 100%; 
         overflow: hidden;
+        height: 100%;
     }
     .info {
         display: none;
@@ -70,7 +78,6 @@ h1
       .info.active {
         display: flex;
         height: 50%;
-          background-color: black;
       }
     /* .marmeladbox.active 
     {
@@ -92,7 +99,9 @@ h1
         height: 95%; 
         /* min-height: 300px; */
         margin: 10px;
-        padding: 0px; border: 2px solid rgb(238, 200, 32);  border-radius: 5px;
+        padding: 0px; 
+        border: 2px solid rgb(238, 200, 32);  
+        border-radius: 5px;
         cursor: pointer;
         transform-style: preserve-3d; transition: 0.3s;
         /* right: 0; */
@@ -114,9 +123,9 @@ h1
         font-size: 15px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-        .candy_wrapper
+    .candy_wrapper
     {
-        position: absolute; width: 100%; height: 85%; background: #f9f9f9; top: 15%; left: 0;
+        position: absolute; width: 100%; height: 82%; background: #f9f9f9; top: 18%; left: 0;
         transition: 0.5s;
         filter: invert(1);
         display: flex;
@@ -124,7 +133,7 @@ h1
     }
     .candy_wrapper:hover 
     {
-/*         opacity: 1; */
+        /* opacity: 1; */
         opacity: 0;
         /* top: 50%; */
     }
@@ -138,15 +147,18 @@ h1
         position: relative; 
         /* background: linear-gradient(rgba(255, 255, 255, 0.571), rgba(255, 255, 255, 0.055)); */
         /* background: linear-gradient(rgba(255, 255, 255, 0.228), rgba(255, 255, 255, 0.676)); */
-        background-color: #ffffff;
+        background: linear-gradient(black, rgb(81, 81, 81));
         box-shadow: 0 0 20px black;
         /* background-color: rgba(240, 248, 255, 0.418);  */
-        width: 300px; height: 90%; 
+        width: 250px; height: 60%; 
         /* min-height: 400px; */
         margin: 10px;
-        padding: 0px; border: 2px solid rgb(255, 217, 147);  
-        box-shadow: 0 0 10px orange;
-        border-radius: 1px;
+        padding: 0px; 
+        outline: 1px solid rgba(255, 255, 255, 0.135);
+        /* border-radius: 10px; */
+        box-shadow: 10px 10px 15px black;  
+        /* box-shadow: 0 0 10px orange; */
+        border-radius: 7px;
         cursor: pointer;
         transform-style: preserve-3d; transition: 0.3s;
         overflow: hidden;
@@ -165,18 +177,18 @@ h1
     .marmelad h1 
     {
         position: relative;
-        font-size: 20px;
+        font-size: 25px;
         z-index: 2;
         background-color: #0090ea00;
-        color: rgb(0, 194, 228);
+        color: rgb(255, 255, 255);
         width: 100%;
         left: 0; margin: 0;
         padding: 0px;
         top: -25px;
-        font-weight: 500;
-        /* margin-top: 20px; */
+        font-weight: 100;
         text-align: center;
-        text-shadow: none;
+        text-shadow: 0 0 3px cyan,
+        0 0 10px cyan;
 
     }
     .marmelad h2
@@ -184,13 +196,15 @@ h1
         position: relative;
         font-size: 20px;
         z-index: 2;
-        color: rgba(0, 0, 0, 0.655);
+        color: rgb(249, 249, 249);
+        text-shadow: 0 0 3px yellow,
+        0 0 7px yellow;
         text-align: center;
         width: 100%;
         top: 20px;
         left: 0; margin: 0;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 500;
+        font-weight: 100;
     }
     .marmelad img 
     {
@@ -209,6 +223,10 @@ h1
         /* padding-bottom: 0px; */
         /* opacity: 0.5; */
         /* display: none; */
+    }
+    .marmelad p 
+    {
+        background-color: #ae00ff;
     }
     .playbutton
     {
@@ -251,17 +269,17 @@ h1
     }
     .bye 
     {
-        /* display: relative; */
         position: absolute;
         width: 120px; height: auto;
         padding: 10px;
-        top: 150px; left: 60px;
-        background-color: rgb(0, 190, 0);
+        top: 150px; left: 45px;
+        background-color: rgb(0, 190, 0); border-radius: 2px;
+        box-shadow:  10px 10px 13px rgba(0, 0, 0, 0.61);
         text-align: center;
-        /* top: 20px; */
         color: white;
         opacity: 0;
         transition: 0.3s;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .redirect 
     {
@@ -287,26 +305,41 @@ h1
         0 0 15px yellow;
     }
 
-   @media (max-width: 1000px) 
+    @media (max-width: 1000px) 
     {
+
+        .candy_wrapper
+    {
+        position: absolute; width: 100%; height: 85%;
+        top: 15%; 
+    }
+
         .garciaava img  
         {
             width: 90%;
+            /* border-radius: none; */
         }
         .info.active 
         {
             display: block;
-            height: 80%;
+            height: 90%;
             overflow-y: scroll;
         }
-        
+        .marmeladbox 
+        {
+        align-items: center;
+        height: 90%;
+        position: absolute;
+        overflow-y: scroll; 
+        flex-wrap: wrap;
+        }
         .marmelad
         {
             position: relative; 
-            width: 80%; 
+            width: 90%; 
             height: 70%; 
             margin-bottom: 40px;
-            margin-left: 10%;
+            margin-left: 2%;
         }
         .selectors 
             {
@@ -316,7 +349,7 @@ h1
             }
             .mcontrols 
             {
-                top: 270px;
+                top: 290px;
             }
             .shugar 
             {
@@ -326,7 +359,7 @@ h1
             }
             .marmelad h1 
             {
-                font-weight: 500;
+                font-weight: 100;
             }
             .bye 
                 {
@@ -334,7 +367,7 @@ h1
         position: absolute;
         width: 120px; height: auto;
         padding: 10px;
-        top: 48%; left: 25%;
+        top: 48%; left: 31%;
         background-color: rgb(0, 190, 0);
         text-align: center;
         /* top: 20px; */
@@ -370,6 +403,7 @@ h1
       .info::-webkit-scrollbar-thumb {
         background: #ae00ff; /* Цвет ползунка */
       }
+
       .marmeladpage
 {
     position: absolute; width: 100%; height: 100%; top: 0; left: 0;
@@ -398,7 +432,7 @@ h1
     font-size: 20px;
     text-decoration: none;
     color: white;
-    padding: 5px; padding-left: 160px; padding-right: 160px; top: 15px;
+    padding: 5px; padding-left: 150px; padding-right: 150px; top: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 a 
@@ -417,3 +451,25 @@ a
     filter: invert(1);
 }
 
+
+
+.productdetails
+{
+    position: relative; 
+    width: 400px; height: 400px;
+    left: 0;
+    background-color: #ae00ff;
+}
+
+.product-container 
+{
+    position: absolute;
+    width: 100%; height: 0%;
+    background-color: #15ff0030;
+    left: 0; top: 50%;
+    overflow: hidden;
+}
+.product-container.active 
+{
+    background-color: #15ff00;
+}
