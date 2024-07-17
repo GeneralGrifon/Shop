@@ -427,9 +427,9 @@ ______________________________________________ <br>
         </div>
 
 <div class="selectors">
+    <div data-target="info2" id="sel2" class="sel">магаз</div>
     <div data-target="info4" id="sel4" class="sel">кейсы</div>
     <div data-target="info1" id="sel1" class="sel">даю</div>
-    <div data-target="info2" id="sel2" class="sel">магаз</div>
     <div data-target="info5" id="sel5" class="sel">понты</div>
     <!-- <div data-target="info6" id="sel6" class="sel">магаз</div> -->
     <div data-target="info3" id="sel3" class="sel">связь</div>
@@ -480,8 +480,8 @@ ______________________________________________ <br>
       <div class="shugar">
         <h1>аранжайз</h1>
         <p>
-            - Написание инструментала под твой вокал. <br>
-            - Сведение с твоим вокалом.
+            Написание инструментала под твой вокал. <br>
+            Сведение с твоим вокалом.
         </p>
         <h1>от 7000 р.</h1>
         <div class="candy_wrapper">
@@ -502,12 +502,12 @@ ______________________________________________ <br>
     <div class="shugar">
         <h1>продюсирование</h1>
         <p>
-            - Заключение договора о сотрудничестве. <br>
-            - Запись полноценного албома. <br>
-            - Создание сценического образа. <br>
-            - Наставничество во время записи. <br>
-            - Подготовка к живым выступлениям. <br>
-            - Продвижение в медиа. <br>
+            Заключение договора о сотрудничестве. <br>
+            Запись полноценного албома. <br>
+            Создание сценического образа. <br>
+            Наставничество во время записи. <br>
+            Подготовка к живым выступлениям. <br>
+            Продвижение в медиа. <br>
         </p>
         <h1>договорная</h1>
         <div class="candy_wrapper">
@@ -531,7 +531,7 @@ ______________________________________________ <br>
     </div> -->
 </div>
 
-<div id="info2"class="marmeladbox info">
+<div id="info2"class="start marmeladbox info">
 
 	<div class="marmelad">
         <h1>★Перемирие★</h1>
@@ -712,12 +712,12 @@ ______________________________________________ <br>
     напишите название трека/слово "бронь"/ сумма. 
     Сумма брони от <m>3000р.</m> <br><br>
     Ну и можете подписаться на канал где будет актуальная информация по продуктам
-	<a href="https://t.me/grandgriffon">GGSTORE.</a>  <br>  
+	<a href="https://t.me/grandgriffon">GPSTORE.</a>  <br>  
     
     </P>
 </div>
 
-<div id="info4" class="start readywork info">
+<div id="info4" class=" readywork info">
 
     <div class="slot">
         <img src="https://sun9-62.userapi.com/impg/P5od0gJ4gMdk-wfPH8t0kwnw8imv8Ko26lcwRw/7bEef-K_hwY.jpg?size=1280x1280&quality=96&sign=449df8e29fd3c03b974b2cde073265c4&type=album" alt="">
@@ -872,7 +872,8 @@ ______________________________________________ <br>
 
     </script>
 
-<script>
+
+    <!-- <script>
     document.addEventListener('DOMContentLoaded', () => {
         document.body.addEventListener('click', event => {
             if (event.target.classList.contains('sel')) {
@@ -899,7 +900,8 @@ ______________________________________________ <br>
             });
         }
     });
-</script>
+    </script> -->
+
     <!-- <script>
         document.querySelectorAll('.sel').forEach(item => {
             item.addEventListener('click', handleClick);
@@ -920,6 +922,37 @@ ______________________________________________ <br>
         }
     </script> -->
     
+    <script>
+        // Функция для добавления обработчиков событий
+        function addEventListeners(element, events, handler) {
+            events.forEach(event => element.addEventListener(event, handler));
+        }
+    
+        // Получаем все элементы с классом 'sel'
+        const selElements = document.querySelectorAll('.sel');
+    
+        // Добавляем обработчики событий 'click' для каждого элемента
+        selElements.forEach(item => {
+            item.addEventListener('click', handleClick);
+        });
+    
+        // Обработчик события
+        function handleClick(event) {
+            event.preventDefault(); // Предотвращаем стандартное поведение
+    
+            const target = this.getAttribute('data-target');
+            const infoElements = document.querySelectorAll('.info');
+    
+            infoElements.forEach(info => {
+                if (info.id === target) {
+                    info.classList.toggle('active');
+                } else {
+                    info.classList.remove('active');
+                }
+            });
+        }
+    </script>
+
     <script>
         var audio = $("#menu")[0];
         $('.m').mouseenter(function () {
