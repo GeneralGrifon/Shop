@@ -452,11 +452,10 @@ h1
             .sel 
             {
                 font-size: 15px;
+                display: flex;
+                align-items: center;
             }
-            .mcontrols 
-            {
-                top: 290px;
-            }
+
             .shugar 
             {
                 width: 90%;
@@ -469,17 +468,9 @@ h1
             }
             .bye 
                 {
-        /* display: relative; */
-        position: absolute;
-        width: 120px; height: auto;
-        padding: 10px;
-        top: 48%; left: 31%;
-        background-color: rgb(0, 190, 0);
-        text-align: center;
-        /* top: 20px; */
-        color: white;
-        opacity: 0;
-        transition: 0.3s;
+
+        top: 48%; 
+ 
                 }
                 .marmelad img 
                 {
