@@ -75,52 +75,37 @@ right: 0%; top: 0%;
 #simp .simp-album .simp-cover {
   position: relative;
   margin: 0px;
-  /* float: left; */
-  margin-left: 10%; 
-  margin-top: 5%;
   outline: 1px solid rgb(255, 255, 255); 
   width: 60%; height: 600px;
-  /* padding-bottom: 40%;  */
   border-radius: 4px;
 background-color: rgba(1, 228, 1, 0);
-/* float: right; */
-/* margin-right: 10%; */
 transform-style: preserve-3d;
-transform: rotateY(-30deg); transition: 0.333s;
 transform-origin: 50% 0;
-/* display: flex; */
-/* justify-content: center; */
 }
-#simp .simp-album .simp-cover:hover 
-{
-  transform: rotateY(0deg);
-  scale: 1.1;
-} 
+
 
 #simp .simp-album .simp-cover img{
-  /* max-width:80px; */
   width:100%;margin:0;padding:0;display:block;
   position: relative;
   }
 
-#simp .simp-album .simp-title{font-size:120%;
+#simp .simp-album .simp-title{font-size:100%;
   font-weight:bold;
   font-size: 4vh;
   top: 0;
   position: absolute;
   display: none;
 
-
 }
 
 #simp .simp-album .simp-artist{font-size:90%;
   color:#ffffff;
-  font-size: 4vh;
+  font-size: 15px;
   position: absolute; 
-  top: 0; margin-top: 1%;
-  text-shadow: 0 0px 5px rgb(255, 104, 3),
-              0 0 10px rgb(255, 104, 3),
-              0 0 15px rgb(255, 104, 3)
+  margin: 10px;
+  text-shadow: 0 0px 5px rgb(24, 255, 3),
+              0 0 10px rgb(24, 255, 3),
+              0 0 15px rgb(24, 255, 3)
 
     ;
   
@@ -130,15 +115,15 @@ transform-origin: 50% 0;
 
 /* CONTROLS  */
 #simp .simp-controls{
-    padding:1%;
-      /* outline: 2px solid rgb(255, 140, 0); */
+  position: absolute;
+    padding:12px;
       height: 200px;
       display: block;
-      background-color: #00000072;
-      outline: 1px solid white;
+      background-color: #ffffff17;
+      outline: 1px solid rgba(255, 255, 255, 0.329); border-radius: 10px;
       margin: 1%;
       width: 38%;
-      /* backdrop-filter: blur(20px); */
+      bottom: 0; left: 0;
 
 } 
 
@@ -149,8 +134,8 @@ transform-origin: 50% 0;
     outline: 2px solid rgba(255, 255, 255, 0.284); margin-right: 10px;
 }
 
-#simp .simp-controls button[disabled]{color:#636469;cursor:initial;}
-#simp .simp-controls button:not([disabled]):hover{background:#4082bc;color:#fff;}
+#simp .simp-controls button[disabled]{color:#636469;cursor:initial; } 
+#simp .simp-controls button:not([disabled]):hover{background:#00e10b;color:#fff;}
 
 #simp .simp-controls .simp-prev{width: 70px; margin-left: 10px;}
 #simp .simp-controls .simp-next{width: 70px;}
@@ -159,6 +144,7 @@ transform-origin: 50% 0;
 {
   background-color: #006eff; 
   scale: 1.2; 
+  
   /* margin-left: 10px;
   margin-right: 60px; */
 }
@@ -174,7 +160,7 @@ transform-origin: 50% 0;
 #simp .simp-controls .simp-time,#simp .simp-controls .simp-others{margin-left:10px;}
 
 /* громкость */
-#simp .simp-controls .simp-volume{width:28%; margin: 0;}
+#simp .simp-controls .simp-volume{width:28%; margin: 0; display: none;}
 
 #simp .simp-controls .simp-volume .simp-mute{margin:10px;}
 #simp .simp-controls .simp-others .simp-active{background:#ffff0042;}
@@ -197,6 +183,7 @@ transform-origin: 50% 0;
       position:relative;
       z-index:2;
       outline: 1px solid rgba(0, 255, 208, 0); }
+      
 
 #simp .simp-controls input[type=range]::-webkit-slider-runnable-track{background:rgba(249, 249, 249, 0.451);height:7px;border-radius:2.5px;transition:box-shadow .3s ease;position:relative;}
 #simp .simp-controls input[type=range]::-moz-range-track{background:rgba(184, 205, 183, 0.66);height:5px;border-radius:2.5px;transition:box-shadow .3s ease;position:relative;}
@@ -212,17 +199,17 @@ transform-origin: 50% 0;
 #simp .simp-controls input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;background:rgb(255, 255, 255);
 
   height:25px;width:25px;margin-top:-10px;cursor:pointer;border-radius:50%;
-  box-shadow: 0 0px 5px rgb(255, 104, 3),
-              0 0 10px rgb(255, 104, 3),
-              0 0 15px rgb(255, 104, 3)
+  box-shadow: 0 0px 5px rgba(24, 255, 3, 0.804),
+              0 0 10px rgba(24, 255, 3, 0.68),
+              0 0 15px rgba(24, 255, 3, 0.489)
 
     ;}
-#simp .simp-controls input[type=range]::-moz-range-thumb{-webkit-appearance:none;background:#fff;height:13px;width:13px;cursor:pointer;border-radius:50%;box-shadow:0 1px 1px rgba(0,0,0,.15), 0 0 0 1px rgba(47,52,61,.2);}
+#simp .simp-controls input[type=range]::-moz-range-thumb{-webkit-appearance:none;background:#ffffff;height:13px;width:13px;cursor:pointer;border-radius:50%;box-shadow:0 1px 1px rgba(0,0,0,.15), 0 0 0 1px rgba(47,52,61,.2);}
 
 
 #simp .simp-footer{padding:10px 10px 12px;font-size:90%;text-align:center;opacity:.7;}
 #simp .simp-display{overflow:hidden;height:auto; width: 100%;
-  background-color: #006eff00;
+  background-color: #00ff2a00;
   transition:max-height .5s ease-in-out;}
 #simp .simp-hide{max-height:0;}
 
@@ -243,20 +230,20 @@ transform-origin: 50% 0;
   padding-bottom: 10px;
   /* margin-left: 10px; */
    background-color: #84ff0000;
-   outline: 1px solid rgb(255, 255, 255);
+   outline: 1px solid rgba(255, 255, 255, 0);
    
   }
 #simp ul li{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;
-  margin:0;
-  padding:30px 20px;
+  margin: 10px;
+  outline: 1px solid white; border-radius: 5px;
+  padding: 5px;
   cursor:pointer;
   font-size: 2.5vh;}
-#simp ul li:last-child{padding-bottom:30px;}
+/* #simp ul li:last-child{padding-bottom:10px;} */
 #simp ul li:nth-child(odd){background:#00fbff00;}
 #simp ul li:hover{background:#000000fe;}
-#simp ul li.simp-active{background:#00fff784;color:#fff;}
-#simp ul li .simp-desc{font-size:90%;opacity:.5;margin-left:5px;}
-
+#simp ul li.simp-active{background:#ffffff1a;color:#1aff00; }
+#simp ul li .simp-desc{font-size:90%;opacity:1;margin-left:5px;}
 
 /* playlist scrollbar */
 #simp ul{overflow-y:auto;overflow-x:hidden;scrollbar-color:#73797f #2f3841;}
@@ -278,55 +265,77 @@ transform-origin: 50% 0;
   {
     position: relative;
     width: 100%;
-    height: 180px;
+    height: 300px;
+    background-color: rgba(255, 0, 0, 0);
+    /* display: flex; justify-content: sp; */
   }
   #simp .simp-album .simp-cover
   {
-    height: 150px;
+    left: 0; margin-left: 10px;
+    position: absolute;
+    width: 80%;
+    height: 300px;
   }
   #simp .simp-playlist
   {
-    background-color: rgba(255, 0, 0, 0);
-    width: 100%;
+    background-color: rgba(255, 255, 255, 0.089);
+    outline: 1px solid white;
+    width: 97%;
     height: 10%;
+    border-radius: 10px;
   }
   #simp .simp-controls 
   {
-    width: 96%;
-    height: 150px;
+    width: 92%;
+    height: auto;
     overflow: hidden;
+    padding: 10px;
   }
-  #simp ul li 
+  /* #simp ul li 
   {
     padding:3px 10px;
-  }
+  } */
   #simp .simp-controls .simp-volume{width:50%; margin: 0;}
 } 
 /* #simp .simp-time .simp-slash,#simp .simp-time .end-time{display:none;} */
 
-@media screen and (max-width:400px) {
-  #simp .simp-album .simp-cover {margin-right:20px; outline: 1px solid rgb(255, 255, 255); width: 150px; height: 150px; border-radius: 4px; }
-  #simp .simp-controls{padding:0px;
-    transform: scale(0.9);
-      /* outline: 2px solid rgb(255, 140, 0); */
-      height: 190px;
-      display: block;
 
-}
-#simp .simp-album .simp-artist
-{ font-size: 2.2vh;}
-/* #simp .simp-time .simp-slash,#simp .simp-time .end-time{display:none;} */
-}
 </style>
 <body>
   <div class="simple-audio-player" id="simp" data-config='{"shide_top":false,"shide_btm":false,"auto_load":false}'>
 
-
     <div class="simp-playlist">
       <ul>
+        <li><span class="simp-source" data-src="./Diva/Я не твоя про.mp3"
+          data-cover="./Diva/free.png">
+        </span><span class="simp-desc">Это не про меня</span></li>
+        
+        <li><span class="simp-source" data-src="./Diva/благиня кутежа.mp3"
+            data-cover="./Diva/afro.png">
+          </span><span class="simp-desc">Корпоративы</span></li>
+        
+        <li><span class="simp-source" data-src="./Diva/Lilac soft.mp3"
+            data-cover="./Diva/sd.jpg">
+          </span><span class="simp-desc">Риск</span></li>
+          <!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9xCoL0D9LblapDHj_tjqa7zN5EkrSmH6vPA&s -->
 
-	      <li><span class="simp-source" data-src="demo/прощай.mp3" 
-	data-cover="https://franksd.files.wordpress.com/2015/08/goodbye1.jpeg">     
+          <li><span class="simp-source" data-src="./Diva/K Sane.mp3"
+            data-cover="./Diva/саня.jpeg">
+          </span><span class="simp-desc">К Сане</span></li>
+
+
+
+          <li><span class="simp-source" data-src="./Diva/Zaya Balla.mp3"
+            data-cover="./Diva/корона.jpg">
+            <!-- https://img.freepik.com/premium-photo/cute-rabbit-queen-with-gold-medal-red-dress-3d-illustration_994418-2373.jpg -->
+          </span><span class="simp-desc">Зая Бала</span></li>
+
+          <li><span class="simp-source" data-src="./Diva/Butterfly of the night.mp3"
+            data-cover="./Diva/look.jpg">
+          </span><span class="simp-desc">Лечу к тебе</span></li>
+
+	      <!-- <li><span class="simp-source" data-src="demo/прощай.mp3" 
+	      data-cover="https://franksd.files.wordpress.com/2015/08/goodbye1.jpeg">     
         Sashk Only</span><span class="simp-desc">Good bye (2021 demo)</span></li>
 
         <li><span class="simp-source" data-src="demo/modern rock master.mp3" 
@@ -336,7 +345,6 @@ transform-origin: 50% 0;
         <li><span class="simp-source" data-src="demo/EZ DEATH SELL pro3333.mp3" 
           data-cover="https://i.pinimg.com/originals/2a/8b/85/2a8b8578b823cabd3580b8a4928ce4d8.gif">
                 Sashk Only</span><span class="simp-desc">Ritual (2021 demo)</span></li>
-
       
         <li><span class="simp-source" data-src="demo/big bird 2019.mp3" 
 	data-cover="https://media.tenor.com/7Qh1t-QrlWQAAAAC/condor-bird.gif">
@@ -350,18 +358,10 @@ transform-origin: 50% 0;
           data-cover="https://media.tenor.com/HaeTkuiHGh4AAAAC/desert-digital-paint.gif">
                 Sashk Only</span><span class="simp-desc">Cloudy</span></li>
 	      
-	      
         <li><span class="simp-source" data-src="!по красоте2/Black And Booty.mp3" 
 	data-cover="https://64.media.tumblr.com/852a5373d33712174f86b07c6b2a0810/4b4ae908bd4fbfba-a8/s540x810/17744aeb7919f2a502cb9bf009915cdb54029ac1.gifv">
-        Sashk Only</span><span class="simp-desc">Black nad Booty (2020 demo)</span></li>
-
-        <!-- <li><span class="simp-source" data-src="demo/RRQ 2023 V FINAL.mp3" 
-          data-cover="https://media.tenor.com/U0rx27zLmvoAAAAC/fefe-mini-milk.gif">
-                Sashk Only</span><span class="simp-desc">RRQ (2023 demo)</span></li> -->
-<!-- 	      https://c.tenor.com/ajSwgblbR4EAAAAC/twerk-pizza.gif -->
-	      
-	 
-        
+        Sashk Only</span><span class="simp-desc">Black nad Booty (2020 demo)</span></li> -->
+   
       </ul>
     </div>
     <!-- <div class="leftblock"></div>
@@ -373,9 +373,6 @@ transform-origin: 50% 0;
     /*
 Example: https://setstori.blogspot.com/2016/01/nightmareside.html
 */
-
-
-
 
 // Multiple events to a listener
 function addEventListener_multi(element, eventNames, handler) {
@@ -395,7 +392,6 @@ function getRelativePos(elm) {
   var pPos = elm.parentNode.getBoundingClientRect(); // parent pos
   var cPos = elm.getBoundingClientRect(); // target pos
   var pos = {};
-
   pos.top    = cPos.top    - pPos.top + elm.parentNode.scrollTop,
   pos.right  = cPos.right  - pPos.right,
   pos.bottom = cPos.bottom - pPos.bottom,
@@ -695,7 +691,7 @@ if (document.querySelector('#simp')) {
   simp_elem += '<div class="simp-tracker simp-load"><input class="simp-progress" type="range" min="0" max="100" value="0" disabled/><div class="simp-buffer"></div></div>';
   simp_elem += '<div class="simp-time flex flex-align"><span class="start-time">00:00</span><span class="simp-slash">&#160;/&#160;</span><span class="end-time">00:00</span></div>';
   simp_elem += '<div class="simp-volume flex flex-align"><button type="button" class="simp-mute fa fa-volume-up"></button><input class="simp-v-slider" type="range" min="0" max="100" value="100"/></div>';
-  simp_elem += '<div class="simp-others flex flex-align"><button type="button" class="simp-plext fa fa-play-circle" title="Auto Play"></button><button type="button" class="simp-random fa fa-random" title="Random"></button><div class="simp-shide"><button type="button" class="simp-shide-top fa fa-caret-up" title="Show/Hide Album"></button><button type="button" class="simp-shide-bottom fa fa-caret-down" title="Show/Hide Playlist"></button></div></div>';
+  // simp_elem += '<div class="simp-others flex flex-align"><button type="button" class="simp-plext fa fa-play-circle" title="Auto Play"></button><button type="button" class="simp-random fa fa-random" title="Random"></button><div class="simp-shide"><button type="button" class="simp-shide-top fa fa-caret-up" title="Show/Hide Album"></button><button type="button" class="simp-shide-bottom fa fa-caret-down" title="Show/Hide Playlist"></button></div></div>';
   simp_elem += '</div>'; //simp-controls
   
   var simp_player = document.createElement('div');
